@@ -46,7 +46,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li id="installMenuItem" style="display: none;"><a href="#" id="pwaInstallBtn" class="btn btn-sm btn-outline"><i class="fas fa-download"></i> Install App</a></li>
+                <li id="installMenuItem"><a href="#" id="pwaInstallBtn" class="btn btn-sm btn-outline"><i class="fas fa-download"></i> Install App</a></li>
                 <li><a href="/signup" class="btn btn-sm btn-outline">Register</a></li>
                 <li><a href="/login" class="btn btn-sm btn-primary">Login</a></li>
             </ul>
@@ -577,7 +577,7 @@
     window.addEventListener('beforeinstallprompt', function(e) {
         e.preventDefault();
         deferredPrompt = e;
-        if (installMenuItem) installMenuItem.style.display = 'block';
+        if (installMenuItem) installMenuItem.classList.add('show-pwa');
     });
 
     if (pwaInstallBtn) {
@@ -592,7 +592,7 @@
                     console.log('User dismissed PWA installation');
                 }
                 deferredPrompt = null;
-                if (installMenuItem) installMenuItem.style.display = 'none';
+                if (installMenuItem) installMenuItem.classList.remove('show-pwa');
             });
         });
     }

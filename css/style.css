@@ -184,6 +184,8 @@
     color: var(--white);
     border-color: var(--white);
 }
+#installMenuItem { display: none !important; }
+#installMenuItem.show-pwa { display: block !important; }
 
 /* ===== BUTTONS ===== */
 .btn {
@@ -578,6 +580,7 @@
     .main-nav { height: 140px; }
     .main-logo img { height: 120px; }
     .menu-toggle { display: none; }
+    #installMenuItem { display: none !important; }
 
     .nav-menu {
         position: static;
