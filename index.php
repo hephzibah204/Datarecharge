@@ -9,6 +9,79 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="description" content="Buy cheap data bundles, airtime, DSTV, GOTV, electricity. Best rates for MTN, Airtel, Glo, 9mobile.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datasubzainbayotech.com.ng/">
+    <meta property="og:title" content="DataRecharge — Cheapest Data & Airtime Reseller Nigeria">
+    <meta property="og:description" content="Buy cheap data bundles, airtime, DSTV, GOTV, electricity. Best rates for MTN, Airtel, Glo, 9mobile. Automated instant delivery.">
+    <meta property="og:image" content="https://datasubzainbayotech.com.ng/logo1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://datasubzainbayotech.com.ng/">
+    <meta property="twitter:title" content="DataRecharge — Cheapest Data & Airtime Reseller Nigeria">
+    <meta property="twitter:description" content="Buy cheap data bundles, airtime, DSTV, GOTV, electricity. Best rates for MTN, Airtel, Glo, 9mobile. Automated instant delivery.">
+    <meta property="twitter:image" content="https://datasubzainbayotech.com.ng/logo1.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DataRecharge",
+      "url": "https://datasubzainbayotech.com.ng",
+      "logo": "https://datasubzainbayotech.com.ng/logo1.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2348150744650",
+        "contactType": "customer service",
+        "areaServed": "NG",
+        "availableLanguage": "en"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "DataRecharge",
+      "url": "https://datasubzainbayotech.com.ng"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How To Buy Cheap Data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Simply log in to your DataRecharge account, click on 'Fund My Account' to add wallet balance, and select your preferred network plan to buy data instantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I check my data balance on different networks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For MTN: dial *461*4#; Glo: dial *127*0#; Airtel: dial *140#; 9mobile SME: dial *229*9#; 9mobile Gifting: dial *228#."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods can I use to fund my wallet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can fund your DataRecharge wallet using bank transfers, online cards via Paystack, sending airtime, or redeeming coupon codes."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="apple-touch-icon" href="logo.png">
@@ -46,6 +119,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#faq">FAQ</a></li>
+                <li><a href="/articles/">Articles</a></li>
                 <li id="installMenuItem"><a href="#" id="pwaInstallBtn" class="btn btn-sm btn-outline"><i class="fas fa-download"></i> Install App</a></li>
                 <li><a href="/signup" class="btn btn-sm btn-outline">Register</a></li>
                 <li><a href="/login" class="btn btn-sm btn-primary">Login</a></li>
@@ -406,7 +480,7 @@
                         <a href="#" aria-label="Google Plus"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="/articles/">Articles</a></li></ul></div>
                 <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Data</a></li><li><a href="#services">Airtime</a></li><li><a href="#services">Cable TV</a></li><li><a href="#services">Electricity</a></li><li><a href="#services">Bulk SMS</a></li></ul></div>
                 <div class="footer-col"><h4>Contact</h4><ul class="footer-contact"><li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Ikenne, Ogun State</li><li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+2348150744650">+234 815 074 4650</a></li><li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@datasubzainbayotech.com.ng">datasubzainbayotech.com.ng</a></li></ul></div>
             </div>
