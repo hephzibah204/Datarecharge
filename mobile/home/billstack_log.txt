@@ -1,0 +1,1 @@
+{"status":true,"message":"Account reserved","data":{"reference":"R-DJPRHWJTXM","account":[{"account_number":"6675338350","account_name":"BillStack\/Vtu -Mustapha","bank_name":"PalmPay","bank_id":"PALMPAY","bank_code":"PALMPAY","created_at":"2024-11-18 09:22:23"}],"meta":{"firstName":"Mustapha","lastName":"Sharu","email":"sharuopay@gmail.com"}}}

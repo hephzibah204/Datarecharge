@@ -1,0 +1,348 @@
+[2025-07-01 04:36:02] FAILED: Transaction ID: trans_686365b1d019c8.07152630 | API Response: You are not sending to a valid GLO number.
+[2025-07-01 15:17:46] INFO: Network mapped → 2 → 4
+[2025-07-01 15:17:49] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10194631,"airtime_type":"VTU","ident":"Airtime55cd5c079-11ab-4","network":4,"paid_amount":"97.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"386.69","balance_after":"289.69","Status":"successful","api_response":"You have topped up N100 to 2347011940847. Your balance is now NGN10539779.44. TRX ID: 4830009393.","create_date":"2025-07-01T16:17:49.380826","Ported_number":true}
+[2025-07-01 15:17:49] FAILED: API response status - successful | Response: {"id":10194631,"airtime_type":"VTU","ident":"Airtime55cd5c079-11ab-4","network":4,"paid_amount":"97.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"386.69","balance_after":"289.69","Status":"successful","api_response":"You have topped up N100 to 2347011940847. Your balance is now NGN10539779.44. TRX ID: 4830009393.","create_date":"2025-07-01T16:17:49.380826","Ported_number":true}
+[2025-07-01 15:25:43] INFO: Network mapped → 2 → 4
+[2025-07-01 15:25:46] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10194713,"airtime_type":"VTU","ident":"Airtime6a5e7b5a9-0086-4","network":4,"paid_amount":"97.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"234.69","balance_after":"137.69","Status":"successful","api_response":"You have topped up N100 to 2347011940847. Your balance is now NGN10514090.44. TRX ID: 4830028211.","create_date":"2025-07-01T16:25:46.643299","Ported_number":true}
+[2025-07-01 15:25:46] FAILED: API response status - successful | Response: {"id":10194713,"airtime_type":"VTU","ident":"Airtime6a5e7b5a9-0086-4","network":4,"paid_amount":"97.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"234.69","balance_after":"137.69","Status":"successful","api_response":"You have topped up N100 to 2347011940847. Your balance is now NGN10514090.44. TRX ID: 4830028211.","create_date":"2025-07-01T16:25:46.643299","Ported_number":true}
+[2025-07-01 15:50:36] INFO: Network mapped → 1 → 1
+[2025-07-01 15:50:37] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10194998,"airtime_type":"VTU","ident":"Airtime10a35d1969-796f-4","network":1,"paid_amount":"97.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"137.69","balance_after":"40.69","Status":"failed","api_response":"You are not sending to a valid MTN number.","create_date":"2025-07-01T16:50:37.707160","Ported_number":true}
+[2025-07-01 15:50:37] FAILED: API response status - failed | Response: {"id":10194998,"airtime_type":"VTU","ident":"Airtime10a35d1969-796f-4","network":1,"paid_amount":"97.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"137.69","balance_after":"40.69","Status":"failed","api_response":"You are not sending to a valid MTN number.","create_date":"2025-07-01T16:50:37.707160","Ported_number":true}
+[2025-07-01 15:53:51] INFO: Network mapped → 2 → 4
+[2025-07-01 15:53:54] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10195032,"airtime_type":"VTU","ident":"Airtime590b3d2b4-efec-4","network":4,"paid_amount":"97.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"137.69","balance_after":"40.69","Status":"successful","api_response":"You have topped up N100 to 2347011940847. Your balance is now NGN10221633.44. TRX ID: 4830098116.","create_date":"2025-07-01T16:53:54.328512","Ported_number":true}
+[2025-07-01 15:53:54] FAILED: API response status - successful | Response: {"id":10195032,"airtime_type":"VTU","ident":"Airtime590b3d2b4-efec-4","network":4,"paid_amount":"97.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"137.69","balance_after":"40.69","Status":"successful","api_response":"You have topped up N100 to 2347011940847. Your balance is now NGN10221633.44. TRX ID: 4830098116.","create_date":"2025-07-01T16:53:54.328512","Ported_number":true}
+[2025-07-01 16:02:26] INFO: Network mapped → 4 → 2
+[2025-07-01 16:02:26] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"2","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:02:26] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:02:43] INFO: Network mapped → 4 → 2
+[2025-07-01 16:02:44] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"2","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:02:44] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:02:53] INFO: Network mapped → 2 → 4
+[2025-07-01 16:02:53] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:02:53] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:03:00] INFO: Network mapped → 3 → 4
+[2025-07-01 16:03:00] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:03:00] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:03:07] INFO: Network mapped → 1 → 1
+[2025-07-01 16:03:07] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:03:07] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:03:17] INFO: Network mapped → 4 → 2
+[2025-07-01 16:03:17] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"2","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:03:17] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:10:57] INFO: Network mapped → 4 → 2
+[2025-07-01 16:10:57] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"2","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:10:57] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:11:06] INFO: Network mapped → 2 → 4
+[2025-07-01 16:11:06] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07011940847","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 16:11:06] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N40.69 "]}
+[2025-07-01 17:23:57] INFO: Network mapped → 4 → 3
+[2025-07-01 17:23:58] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"3","amount":100,"mobile_number":"07010915999","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10196090,"airtime_type":"VTU","ident":"Airtime931d8f2cf-d0df-4","network":3,"paid_amount":"96.0","mobile_number":"07010915999","amount":"100","plan_amount":"100","plan_network":"9MOBILE","balance_before":"258.49","balance_after":"162.49","Status":"failed","api_response":"You are not sending to a valid 9MOBILE number.","create_date":"2025-07-01T18:23:58.615000","Ported_number":true}
+[2025-07-01 17:23:58] FAILED: API response status - failed | Response: {"id":10196090,"airtime_type":"VTU","ident":"Airtime931d8f2cf-d0df-4","network":3,"paid_amount":"96.0","mobile_number":"07010915999","amount":"100","plan_amount":"100","plan_network":"9MOBILE","balance_before":"258.49","balance_after":"162.49","Status":"failed","api_response":"You are not sending to a valid 9MOBILE number.","create_date":"2025-07-01T18:23:58.615000","Ported_number":true}
+[2025-07-01 17:24:35] INFO: Network mapped → 4 → 3
+[2025-07-01 17:24:36] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"3","amount":100,"mobile_number":"07010915999","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10196100,"airtime_type":"VTU","ident":"Airtime708837713-e69d-4","network":3,"paid_amount":"96.0","mobile_number":"07010915999","amount":"100","plan_amount":"100","plan_network":"9MOBILE","balance_before":"258.49","balance_after":"162.49","Status":"failed","api_response":"You are not sending to a valid 9MOBILE number.","create_date":"2025-07-01T18:24:36.097417","Ported_number":true}
+[2025-07-01 17:24:36] FAILED: API response status - failed | Response: {"id":10196100,"airtime_type":"VTU","ident":"Airtime708837713-e69d-4","network":3,"paid_amount":"96.0","mobile_number":"07010915999","amount":"100","plan_amount":"100","plan_network":"9MOBILE","balance_before":"258.49","balance_after":"162.49","Status":"failed","api_response":"You are not sending to a valid 9MOBILE number.","create_date":"2025-07-01T18:24:36.097417","Ported_number":true}
+[2025-07-01 17:24:55] INFO: Network mapped → 2 → 4
+[2025-07-01 17:24:57] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07010915999","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10196105,"airtime_type":"VTU","ident":"Airtime75607e669-0248-4","network":4,"paid_amount":"97.0","mobile_number":"07010915999","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"258.49","balance_after":"161.49","Status":"successful","api_response":"You have topped up N100 to 2347010915999. Your balance is now NGN9810720.44. TRX ID: 4830332413.","create_date":"2025-07-01T18:24:57.618076","Ported_number":true}
+[2025-07-01 17:24:57] FAILED: API response status - successful | Response: {"id":10196105,"airtime_type":"VTU","ident":"Airtime75607e669-0248-4","network":4,"paid_amount":"97.0","mobile_number":"07010915999","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"258.49","balance_after":"161.49","Status":"successful","api_response":"You have topped up N100 to 2347010915999. Your balance is now NGN9810720.44. TRX ID: 4830332413.","create_date":"2025-07-01T18:24:57.618076","Ported_number":true}
+[2025-07-01 17:28:23] INFO: Network mapped → 1 → 1
+[2025-07-01 17:28:25] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07034082219","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10196161,"airtime_type":"VTU","ident":"Airtime9ae2a5de5-8ad6-4","network":1,"paid_amount":"97.0","mobile_number":"07034082219","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"161.49","balance_after":"64.49000000000001","Status":"successful","api_response":"You have topped up N100 to 2347034082219. Your balance is now NGN9792640.44. TRX ID: 4830341909.","create_date":"2025-07-01T18:28:25.796446","Ported_number":true}
+[2025-07-01 17:28:25] FAILED: API response status - successful | Response: {"id":10196161,"airtime_type":"VTU","ident":"Airtime9ae2a5de5-8ad6-4","network":1,"paid_amount":"97.0","mobile_number":"07034082219","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"161.49","balance_after":"64.49000000000001","Status":"successful","api_response":"You have topped up N100 to 2347034082219. Your balance is now NGN9792640.44. TRX ID: 4830341909.","create_date":"2025-07-01T18:28:25.796446","Ported_number":true}
+[2025-07-01 17:32:13] INFO: Network mapped → 1 → 1
+[2025-07-01 17:32:15] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07034082219","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10196214,"airtime_type":"VTU","ident":"Airtime1001203028-8c98-4","network":1,"paid_amount":"97.0","mobile_number":"07034082219","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"262.49","balance_after":"165.49","Status":"successful","api_response":"You have topped up N100 to 2347034082219. Your balance is now NGN9767650.44. TRX ID: 4830352458.","create_date":"2025-07-01T18:32:15.028986","Ported_number":true}
+[2025-07-01 17:32:15] FAILED: API response status - successful | Response: {"id":10196214,"airtime_type":"VTU","ident":"Airtime1001203028-8c98-4","network":1,"paid_amount":"97.0","mobile_number":"07034082219","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"262.49","balance_after":"165.49","Status":"successful","api_response":"You have topped up N100 to 2347034082219. Your balance is now NGN9767650.44. TRX ID: 4830352458.","create_date":"2025-07-01T18:32:15.028986","Ported_number":true}
+[2025-07-01 17:45:15] INFO: Network mapped → 1 → 1
+[2025-07-01 17:45:17] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07034082219","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10196391,"airtime_type":"VTU","ident":"Airtime5b99cfec6-6126-4","network":1,"paid_amount":"97.0","mobile_number":"07034082219","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"165.49","balance_after":"68.49000000000001","Status":"successful","api_response":"You have topped up N100 to 2347034082219. Your balance is now NGN9695270.44. TRX ID: 4830388927.","create_date":"2025-07-01T18:45:17.048406","Ported_number":true}
+[2025-07-01 17:45:17] SUCCESS: trans_68641eabb36a09.69023914 completed. New balance: 1500
+[2025-07-01 17:46:34] INFO: Network mapped → 2 → 4
+[2025-07-01 17:46:34] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07010915999","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N68.49000000000001 "]}
+[2025-07-01 17:46:34] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N68.49000000000001 "]}
+[2025-07-01 17:47:02] INFO: Network mapped → 2 → 4
+[2025-07-01 17:47:02] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07010915999","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N68.49000000000001 "]}
+[2025-07-01 17:47:02] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N68.49000000000001 "]}
+[2025-07-01 17:47:09] INFO: Network mapped → 4 → 3
+[2025-07-01 17:47:09] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"3","amount":100,"mobile_number":"07010915999","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N68.49000000000001 "]}
+[2025-07-01 17:47:09] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N68.49000000000001 "]}
+[2025-07-01 18:29:46] INFO: Network mapped → 2 → 4
+[2025-07-01 18:29:49] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":100,"mobile_number":"07010915999","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":10197017,"airtime_type":"VTU","ident":"Airtime7a9cc22d1-6d66-4","network":4,"paid_amount":"97.0","mobile_number":"07010915999","amount":"100","plan_amount":"100","plan_network":"AIRTEL","balance_before":"216.99","balance_after":"119.99000000000001","Status":"successful","api_response":"You have topped up N100 to 2347010915999. Your balance is now NGN9454895.44. TRX ID: 4830520642.","create_date":"2025-07-01T19:29:49.290659","Ported_number":true}
+[2025-07-01 18:29:49] SUCCESS: trans_6864291a39f9e7.08929686 completed. New balance: 1400
+[2025-08-25 19:25:39] INFO: Network mapped → 1 → 1
+[2025-08-25 19:25:40] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":260,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-25 19:25:40] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-25 19:25:49] INFO: Network mapped → 1 → 1
+[2025-08-25 19:25:50] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":260,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-25 19:25:50] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-26 14:33:23] INFO: Network mapped → 1 → 1
+[2025-08-26 14:33:23] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"08063951160","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-26 14:33:23] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-26 14:33:48] INFO: Network mapped → 1 → 1
+[2025-08-26 14:33:49] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"08063951160","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-26 14:33:49] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 16:31:33] INFO: Network mapped → 2 → 4
+[2025-08-27 16:31:33] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"4","amount":500,"mobile_number":"09046543511","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 16:31:33] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 16:31:42] INFO: Network mapped → 2 → 4
+[2025-08-27 16:31:44] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"4","amount":500,"mobile_number":"09046543511","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 16:31:44] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 16:51:39] INFO: Network mapped → 1 → 1
+[2025-08-27 16:51:39] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"07064492320","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 16:51:39] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 16:51:50] INFO: Network mapped → 1 → 1
+[2025-08-27 16:51:51] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"07064492320","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 16:51:51] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 20:25:54] INFO: Network mapped → 3 → 2
+[2025-08-27 20:25:55] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"2","amount":100,"mobile_number":"08156815206","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-27 20:25:56] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 08:51:39] INFO: Network mapped → 1 → 1
+[2025-08-28 08:51:40] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":300,"mobile_number":"08144457725","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 08:51:40] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 08:51:58] INFO: Network mapped → 1 → 1
+[2025-08-28 08:51:58] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":300,"mobile_number":"08144457725","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 08:51:58] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 11:08:24] INFO: Network mapped → 1 → 1
+[2025-08-28 11:08:30] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":500,"mobile_number":"08067328424","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 11:08:31] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 11:08:41] INFO: Network mapped → 1 → 1
+[2025-08-28 11:08:42] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":500,"mobile_number":"08067328424","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 11:08:42] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 11:09:10] INFO: Network mapped → 1 → 1
+[2025-08-28 11:09:11] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":500,"mobile_number":"08067328424","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 11:09:11] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:14:55] INFO: Network mapped → 1 → 1
+[2025-08-28 14:14:56] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":100,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:14:56] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:18:07] INFO: Network mapped → 1 → 1
+[2025-08-28 14:18:09] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":100,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:18:09] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:18:19] INFO: Network mapped → 1 → 1
+[2025-08-28 14:18:21] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":100,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:18:21] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:18:27] INFO: Network mapped → 1 → 1
+[2025-08-28 14:18:31] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":100,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:18:31] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:32:38] INFO: Network mapped → 1 → 1
+[2025-08-28 14:32:42] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":100,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 14:32:42] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 17:31:59] INFO: Network mapped → 1 → 1
+[2025-08-28 17:32:04] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"08133718884","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 17:32:04] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 17:32:14] INFO: Network mapped → 1 → 1
+[2025-08-28 17:32:21] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"08133718884","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 17:32:21] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 18:18:22] INFO: Network mapped → 1 → 1
+[2025-08-28 18:18:22] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":150,"mobile_number":"09068517929","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 18:18:22] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 18:18:37] INFO: Network mapped → 1 → 1
+[2025-08-28 18:18:41] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":150,"mobile_number":"09068517929","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 18:18:41] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 18:18:57] INFO: Network mapped → 1 → 1
+[2025-08-28 18:18:59] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":150,"mobile_number":"09068517929","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-28 18:19:00] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-30 20:06:31] INFO: Network mapped → 1 → 1
+[2025-08-30 20:06:31] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"07078644463","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-30 20:06:32] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-30 20:06:47] INFO: Network mapped → 1 → 1
+[2025-08-30 20:06:48] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"07078644463","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-30 20:06:48] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-30 20:06:58] INFO: Network mapped → 1 → 1
+[2025-08-30 20:06:58] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":200,"mobile_number":"07078644463","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-30 20:06:58] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-31 21:51:13] INFO: Network mapped → 1 → 1
+[2025-08-31 21:51:14] API Request to https://smeplug.ng/api/v1/data/purchase | Payload: {"network":"1","amount":100,"mobile_number":"07026608483","Ported_number":true,"airtime_type":"VTU"} | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-08-31 21:51:14] FAILED: API response status -  | Response: {"msg":"No Valid Authorization. Check for your api keys"}
+[2025-09-01 16:44:03] INFO: Network mapped → 1 → 1
+[2025-09-01 16:44:03] ERROR: Airtime API not configured.
+[2025-09-01 17:23:12] INFO: Network mapped → 1 → 1
+[2025-09-01 17:23:12] ERROR: Airtime API not configured.
+[2025-09-03 07:38:08] INFO: Network mapped → 1 → 1
+[2025-09-03 07:38:12] ERROR: Airtime API not configured.
+[2025-09-03 07:38:30] INFO: Network mapped → 1 → 1
+[2025-09-03 07:38:30] ERROR: Airtime API not configured.
+[2025-09-03 08:21:45] INFO: Network mapped → 1 → 1
+[2025-09-03 08:21:45] ERROR: Airtime API not configured.
+[2025-09-03 13:50:25] INFO: Network mapped → 1 → 1
+[2025-09-03 13:50:25] ERROR: Airtime API not configured.
+[2025-09-03 17:36:06] INFO: Network mapped → 2 → 4
+[2025-09-03 17:36:06] ERROR: Airtime API not configured.
+[2025-09-03 17:36:32] INFO: Network mapped → 2 → 4
+[2025-09-03 17:36:32] ERROR: Airtime API not configured.
+[2025-09-03 18:14:42] INFO: Network mapped → 1 → 1
+[2025-09-03 18:14:42] ERROR: Airtime API not configured.
+[2025-09-03 21:09:08] INFO: Network mapped → 1 → 1
+[2025-09-03 21:09:08] ERROR: Airtime API not configured.
+[2025-09-04 07:37:46] INFO: Network mapped → 1 → 1
+[2025-09-04 07:37:46] ERROR: Airtime API not configured.
+[2025-09-04 12:42:58] INFO: Network mapped → 2 → 4
+[2025-09-04 12:42:58] ERROR: Airtime API not configured.
+[2025-09-04 13:44:40] INFO: Network mapped → 1 → 1
+[2025-09-04 13:44:40] ERROR: Airtime API not configured.
+[2025-09-04 14:10:42] INFO: Network mapped → 1 → 1
+[2025-09-04 14:10:42] ERROR: Airtime API not configured.
+[2025-09-04 14:40:01] INFO: Network mapped → 2 → 4
+[2025-09-04 14:40:01] ERROR: Airtime API not configured.
+[2025-09-04 20:25:31] INFO: Network mapped → 1 → 1
+[2025-09-04 20:25:32] ERROR: Airtime API not configured.
+[2025-09-04 20:41:52] INFO: Network mapped → 1 → 1
+[2025-09-04 20:41:52] ERROR: Airtime API not configured.
+[2025-09-04 23:09:15] INFO: Network mapped → 1 → 1
+[2025-09-04 23:09:15] ERROR: Airtime API not configured.
+[2025-09-05 10:46:55] INFO: Network mapped → 1 → 1
+[2025-09-05 10:46:55] ERROR: Airtime API not configured.
+[2025-09-05 23:25:48] INFO: Network mapped → 1 → 1
+[2025-09-05 23:25:48] ERROR: Insufficient wallet balance.
+[2025-09-06 11:48:53] INFO: Network mapped → 2 → 4
+[2025-09-06 11:48:53] ERROR: Airtime API not configured.
+[2025-09-06 11:49:06] INFO: Network mapped → 2 → 4
+[2025-09-06 11:49:06] ERROR: Airtime API not configured.
+[2025-09-06 20:44:12] INFO: Network mapped → 2 → 4
+[2025-09-06 20:44:12] ERROR: Airtime API not configured.
+[2025-09-06 22:45:44] INFO: Network mapped → 1 → 1
+[2025-09-06 22:45:50] API Request to https://alrahuzdata.com.ng/api/topup | Payload: {"network":"1","amount":100,"mobile_number":"07034082219","Ported_number":true,"airtime_type":"VTU"} | Response: 
+[2025-09-06 22:45:50] FAILED: API response status -  | Response: 
+[2025-09-06 22:47:01] INFO: Network mapped → 1 → 1
+[2025-09-06 22:47:04] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07034082219","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11060053,"airtime_type":"VTU","ident":"Airtime136014206-87d6-4","network":1,"paid_amount":"97.0","mobile_number":"07034082219","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"1228.0","balance_after":"1131.0","Status":"successful","api_response":"You have topped up N100 to 2347034082219. Your balance is now NGN7193418.89. TRX ID: 5017297281.","create_date":"2025-09-06T23:47:36.805313","Ported_number":true}
+[2025-09-06 22:47:04] SUCCESS: trans_68bcb9e6cb6876.81946935 completed. New balance: 125
+[2025-09-06 22:57:55] INFO: Network mapped → 1 → 1
+[2025-09-06 22:57:59] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"09064608804","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11060112,"airtime_type":"VTU","ident":"Airtime7e2e06b32-9481-4","network":1,"paid_amount":"97.0","mobile_number":"09064608804","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"1131.0","balance_after":"1034.0","Status":"successful","api_response":"You have topped up N100 to 2349064608804. Your balance is now NGN7177127.89. TRX ID: 5017306130.","create_date":"2025-09-06T23:58:31.430769","Ported_number":true}
+[2025-09-06 22:58:01] SUCCESS: trans_68bcbc74b0e3c6.42870407 completed. New balance: 9125
+[2025-09-07 15:43:00] INFO: Network mapped → 1 → 1
+[2025-09-07 15:43:01] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":60,"mobile_number":"08060965027","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["minimum airtime topup is N100"]}
+[2025-09-07 15:43:01] FAILED: API response status -  | Response: {"error":["minimum airtime topup is N100"]}
+[2025-09-07 20:45:10] INFO: Network mapped → 1 → 1
+[2025-09-07 20:45:12] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":130,"mobile_number":"08163812758","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11073611,"airtime_type":"VTU","ident":"Airtime83d8e2324-2de7-4","network":1,"paid_amount":"126.1","mobile_number":"08163812758","amount":"130","plan_amount":"130","plan_network":"MTN","balance_before":"147.0","balance_after":"20.900000000000006","Status":"successful","api_response":"You have topped up N130 to 2348163812758. Your balance is now NGN3843265.89. TRX ID: 5019161174.","create_date":"2025-09-07T21:45:46.085809","Ported_number":true}
+[2025-09-07 20:45:12] SUCCESS: trans_68bdeed705d126.68095837 completed. New balance: 10
+[2025-09-08 07:02:26] INFO: Network mapped → 1 → 1
+[2025-09-08 07:02:27] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":117,"mobile_number":"08105688623","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11076423,"airtime_type":"VTU","ident":"Airtime1007562426-6bed-4","network":1,"paid_amount":"113.49","mobile_number":"08105688623","amount":"117","plan_amount":"117","plan_network":"MTN","balance_before":"6970.9","balance_after":"6857.41","Status":"successful","api_response":"You have topped up N117 to 2348105688623. Your balance is now NGN2908799.89. TRX ID: 5019643841.","create_date":"2025-09-08T08:03:01.663254","Ported_number":true}
+[2025-09-08 07:02:27] SUCCESS: trans_68be7f82933de0.67134308 completed. New balance: 0
+[2025-09-08 15:02:22] INFO: Network mapped → 2 → 4
+[2025-09-08 15:02:25] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":300,"mobile_number":"09016424947","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11081774,"airtime_type":"VTU","ident":"Airtime8274b7ce0-3a41-4","network":4,"paid_amount":"291.0","mobile_number":"09016424947","amount":"300","plan_amount":"300","plan_network":"AIRTEL","balance_before":"6086.41","balance_after":"5795.41","Status":"successful","api_response":"You have topped up N300 to 2349016424947. Your balance is now NGN5021961.89. TRX ID: 5021186372.","create_date":"2025-09-08T16:02:59.476472","Ported_number":true}
+[2025-09-08 15:02:25] SUCCESS: trans_68beeffe52b314.09345778 completed. New balance: 90
+[2025-09-08 22:39:29] INFO: Network mapped → 1 → 1
+[2025-09-08 22:39:30] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":450,"mobile_number":"07039347850","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11089245,"airtime_type":"VTU","ident":"Airtime6d2ee17fb-2b5e-4","network":1,"paid_amount":"436.5","mobile_number":"07039347850","amount":"450","plan_amount":"450","plan_network":"MTN","balance_before":"4287.06","balance_after":"3850.5600000000004","Status":"successful","api_response":"You have topped up N450 to 2347039347850. Your balance is now NGN2322948.89. TRX ID: 5022999488.","create_date":"2025-09-08T23:40:05.477906","Ported_number":true}
+[2025-09-08 22:39:31] SUCCESS: trans_68bf5b214ebab2.87518588 completed. New balance: 20
+[2025-09-09 06:13:27] INFO: Network mapped → 1 → 1
+[2025-09-09 06:13:29] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"08063951160","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11089747,"airtime_type":"VTU","ident":"Airtime8c6b9e8c8-ff23-4","network":1,"paid_amount":"485.0","mobile_number":"08063951160","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"3850.56","balance_after":"3365.56","Status":"successful","api_response":"You have topped up N500 to 2348063951160. Your balance is now NGN2160659.89. TRX ID: 5023180747.","create_date":"2025-09-09T07:14:04.246956","Ported_number":true}
+[2025-09-09 06:13:29] SUCCESS: trans_68bfc587c33de0.59065441 completed. New balance: 1230
+[2025-09-09 08:57:03] INFO: Network mapped → 1 → 1
+[2025-09-09 08:57:05] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":200,"mobile_number":"08060164623","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11091516,"airtime_type":"VTU","ident":"Airtime33ef77692-0d9c-4","network":1,"paid_amount":"194.0","mobile_number":"08060164623","amount":"200","plan_amount":"200","plan_network":"MTN","balance_before":"3365.56","balance_after":"3171.56","Status":"successful","api_response":"You have topped up N200 to 2348060164623. Your balance is now NGN1439210.89. TRX ID: 5023559654.","create_date":"2025-09-09T09:57:40.108600","Ported_number":true}
+[2025-09-09 08:57:05] SUCCESS: trans_68bfebdfcbae12.36770054 completed. New balance: 230
+[2025-09-09 09:09:06] INFO: Network mapped → 1 → 1
+[2025-09-09 09:09:06] ERROR: Insufficient wallet balance.
+[2025-09-09 10:30:13] INFO: Network mapped → 1 → 1
+[2025-09-09 10:30:15] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"09064608804","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11092781,"airtime_type":"VTU","ident":"Airtime2168e5a2f-51d1-4","network":1,"paid_amount":"485.0","mobile_number":"09064608804","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"2901.56","balance_after":"2416.56","Status":"successful","api_response":"You have topped up N500 to 2349064608804. Your balance is now NGN487355.89. TRX ID: 5023867260.","create_date":"2025-09-09T11:30:50.873219","Ported_number":true}
+[2025-09-09 10:30:15] SUCCESS: trans_68c001b6302f00.89398592 completed. New balance: 7425
+[2025-09-09 16:13:41] INFO: Network mapped → 1 → 1
+[2025-09-09 16:13:43] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"09064608804","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11096834,"airtime_type":"VTU","ident":"Airtime4257ac7e4-c031-4","network":1,"paid_amount":"97.0","mobile_number":"09064608804","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"2416.56","balance_after":"2319.56","Status":"successful","api_response":"You have topped up N100 to 2349064608804. Your balance is now NGN9069155.89. TRX ID: 5025069129.","create_date":"2025-09-09T17:14:18.900189","Ported_number":true}
+[2025-09-09 16:13:43] SUCCESS: trans_68c05236370db6.44345451 completed. New balance: 325
+[2025-09-09 16:41:59] INFO: Network mapped → 1 → 1
+[2025-09-09 16:42:08] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"08100179914","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11097196,"airtime_type":"VTU","ident":"Airtime97f9a3a96-79e2-4","network":1,"paid_amount":"97.0","mobile_number":"08100179914","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"2319.56","balance_after":"2222.56","Status":"successful","api_response":"You have topped up N100 to 2348100179914. Your balance is now NGN8930826.89. TRX ID: 5025167630.","create_date":"2025-09-09T17:42:43.971653","Ported_number":true}
+[2025-09-09 16:42:08] SUCCESS: trans_68c058d955c425.77453205 completed. New balance: 2830
+[2025-09-09 17:36:26] INFO: Network mapped → 1 → 1
+[2025-09-09 17:36:29] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":200,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11097924,"airtime_type":"VTU","ident":"Airtime2ede454cf-dc10-4","network":1,"paid_amount":"194.0","mobile_number":"08034533286","amount":"200","plan_amount":"200","plan_network":"MTN","balance_before":"2222.56","balance_after":"2028.56","Status":"successful","api_response":"You have topped up N200 to 2348034533286. Your balance is now NGN8594039.89. TRX ID: 5025352706.","create_date":"2025-09-09T18:37:05.185421","Ported_number":true}
+[2025-09-09 17:36:29] SUCCESS: trans_68c0659b50f071.21303697 completed. New balance: 274
+[2025-09-09 20:32:43] INFO: Network mapped → 1 → 1
+[2025-09-09 20:32:44] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07079031203","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11102210,"airtime_type":"VTU","ident":"Airtime371f3564e-b3ad-4","network":1,"paid_amount":"97.0","mobile_number":"07079031203","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"866.56","balance_after":"769.56","Status":"successful","api_response":"You have topped up N100 to 2347079031203. Your balance is now NGN7078418.89. TRX ID: 5026048383.","create_date":"2025-09-09T21:33:20.266491","Ported_number":true}
+[2025-09-09 20:32:44] SUCCESS: trans_68c08eeb293ed8.36920310 completed. New balance: 2225
+[2025-09-09 20:33:51] INFO: Network mapped → 1 → 1
+[2025-09-09 20:33:53] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07079044464","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11102243,"airtime_type":"VTU","ident":"Airtime8c408dc83-ca2f-4","network":1,"paid_amount":"97.0","mobile_number":"07079044464","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"769.56","balance_after":"672.56","Status":"successful","api_response":"You have topped up N100 to 2347079044464. Your balance is now NGN7064799.89. TRX ID: 5026051928.","create_date":"2025-09-09T21:34:28.707230","Ported_number":true}
+[2025-09-09 20:33:53] SUCCESS: trans_68c08f2f84ea89.49688315 completed. New balance: 2125
+[2025-09-09 20:34:21] INFO: Network mapped → 1 → 1
+[2025-09-09 20:34:23] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07079029340","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11102256,"airtime_type":"VTU","ident":"Airtime966724954-7de6-4","network":1,"paid_amount":"97.0","mobile_number":"07079029340","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"672.56","balance_after":"575.56","Status":"successful","api_response":"You have topped up N100 to 2347079029340. Your balance is now NGN7059639.89. TRX ID: 5026053857.","create_date":"2025-09-09T21:34:58.814720","Ported_number":true}
+[2025-09-09 20:34:23] SUCCESS: trans_68c08f4de90c60.80530864 completed. New balance: 2025
+[2025-09-09 20:35:52] INFO: Network mapped → 1 → 1
+[2025-09-09 20:35:54] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07079040362","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11102289,"airtime_type":"VTU","ident":"Airtime22839723e-bc8f-4","network":1,"paid_amount":"97.0","mobile_number":"07079040362","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"575.56","balance_after":"478.55999999999995","Status":"successful","api_response":"You have topped up N100 to 2347079040362. Your balance is now NGN7049095.89. TRX ID: 5026058454.","create_date":"2025-09-09T21:36:30.485736","Ported_number":true}
+[2025-09-09 20:35:55] SUCCESS: trans_68c08fa88438a1.73687718 completed. New balance: 1925
+[2025-09-09 20:36:18] INFO: Network mapped → 1 → 1
+[2025-09-09 20:36:20] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07079043178","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11102298,"airtime_type":"VTU","ident":"Airtime17f7f7220-5414-4","network":1,"paid_amount":"97.0","mobile_number":"07079043178","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"478.56","balance_after":"381.56","Status":"successful","api_response":"You have topped up N100 to 2347079043178. Your balance is now NGN7041745.89. TRX ID: 5026059898.","create_date":"2025-09-09T21:36:55.825531","Ported_number":true}
+[2025-09-09 20:36:20] SUCCESS: trans_68c08fc2b80bd2.64367960 completed. New balance: 1825
+[2025-09-10 05:50:14] INFO: Network mapped → 1 → 1
+[2025-09-10 05:50:15] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"08063951160","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11104801,"airtime_type":"VTU","ident":"Airtime2c7f0d476-cf08-4","network":1,"paid_amount":"485.0","mobile_number":"08063951160","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"8011.56","balance_after":"7526.56","Status":"successful","api_response":"You have topped up N500 to 2348063951160. Your balance is now NGN6393293.89. TRX ID: 5026451469.","create_date":"2025-09-10T06:50:51.532160","Ported_number":true}
+[2025-09-10 05:50:15] SUCCESS: trans_68c111962a2e04.06611191 completed. New balance: 730
+[2025-09-10 06:37:37] INFO: Network mapped → 1 → 1
+[2025-09-10 06:38:09] INFO: Network mapped → 1 → 1
+[2025-09-10 06:46:33] INFO: Network mapped → 1 → 1
+[2025-09-10 06:46:34] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":174,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11105074,"airtime_type":"VTU","ident":"Airtime6d2b98f5f-670c-4","network":1,"paid_amount":"168.78","mobile_number":"08034533286","amount":"174","plan_amount":"174","plan_network":"MTN","balance_before":"7526.56","balance_after":"7357.780000000001","Status":"successful","api_response":"You have topped up N174 to 2348034533286. Your balance is now NGN6281251.89. TRX ID: 5026525978.","create_date":"2025-09-10T07:47:10.657975","Ported_number":true}
+[2025-09-10 06:46:34] SUCCESS: trans_68c11ec93c0884.32418996 completed. New balance: 100
+[2025-09-11 09:49:40] INFO: Network mapped → 2 → 4
+[2025-09-11 09:49:43] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"4","amount":300,"mobile_number":"09016424947","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11120731,"airtime_type":"VTU","ident":"Airtime1a3ef5822-b55b-4","network":4,"paid_amount":"291.0","mobile_number":"09016424947","amount":"300","plan_amount":"300","plan_network":"AIRTEL","balance_before":"3438.78","balance_after":"3147.78","Status":"successful","api_response":"You have topped up N300 to 2349016424947. Your balance is now NGN3864107.89. TRX ID: 5030263723.","create_date":"2025-09-11T10:50:20.452859","Ported_number":true}
+[2025-09-11 09:49:43] SUCCESS: trans_68c29b347de795.49356058 completed. New balance: 60
+[2025-09-11 10:36:25] INFO: Network mapped → 1 → 1
+[2025-09-11 10:36:27] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"07044955996","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11121277,"airtime_type":"VTU","ident":"Airtime2c4c5a607-5329-4","network":1,"paid_amount":"485.0","mobile_number":"07044955996","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"3147.78","balance_after":"2662.78","Status":"successful","api_response":"You have topped up N500 to 2347044955996. Your balance is now NGN3681011.89. TRX ID: 5030408068.","create_date":"2025-09-11T11:37:04.437466","Ported_number":true}
+[2025-09-11 10:36:27] SUCCESS: trans_68c2a629de9382.74655733 completed. New balance: 11475
+[2025-09-11 13:19:31] INFO: Network mapped → 1 → 1
+[2025-09-11 13:19:31] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"2347072560198","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["invalid mobile number 2347072560198!"]}
+[2025-09-11 13:19:32] FAILED: API response status -  | Response: {"error":["invalid mobile number 2347072560198!"]}
+[2025-09-11 13:19:50] INFO: Network mapped → 1 → 1
+[2025-09-11 13:19:52] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07072560198","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11123013,"airtime_type":"VTU","ident":"Airtime81ab00604-9936-4","network":1,"paid_amount":"97.0","mobile_number":"07072560198","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"2662.78","balance_after":"2565.78","Status":"successful","api_response":"You have topped up N100 to 2347072560198. Your balance is now NGN2676037.89. TRX ID: 5030929272.","create_date":"2025-09-11T14:20:29.649808","Ported_number":true}
+[2025-09-11 13:19:52] SUCCESS: trans_68c2cc7706b361.93841720 completed. New balance: 8575
+[2025-09-11 14:46:46] INFO: Network mapped → 1 → 1
+[2025-09-11 14:46:47] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":300,"mobile_number":"08105688623","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11123907,"airtime_type":"VTU","ident":"Airtime2a7b95f81-901d-4","network":1,"paid_amount":"291.0","mobile_number":"08105688623","amount":"300","plan_amount":"300","plan_network":"MTN","balance_before":"2565.78","balance_after":"2274.78","Status":"successful","api_response":"You have topped up N300 to 2348105688623. Your balance is now NGN2352510.89. TRX ID: 5031192828.","create_date":"2025-09-11T15:47:24.958978","Ported_number":true}
+[2025-09-11 14:46:47] SUCCESS: trans_68c2e0d61357a7.72702941 completed. New balance: 2880
+[2025-09-12 09:18:43] INFO: Network mapped → 1 → 1
+[2025-09-12 09:18:45] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"08063951160","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11136769,"airtime_type":"VTU","ident":"Airtime3e306e0ce-fef5-4","network":1,"paid_amount":"485.0","mobile_number":"08063951160","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"1764.78","balance_after":"1279.78","Status":"successful","api_response":"You have topped up N500 to 2348063951160. Your balance is now NGN6948061.89. TRX ID: 5033229449.","create_date":"2025-09-12T10:19:23.542102","Ported_number":true}
+[2025-09-12 09:18:45] SUCCESS: trans_68c3e57369e610.27289331 completed. New balance: 7200
+[2025-09-12 13:01:51] INFO: Network mapped → 1 → 1
+[2025-09-12 13:01:52] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"08105688623","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11138819,"airtime_type":"VTU","ident":"Airtime1e92f944b-aa22-4","network":1,"paid_amount":"485.0","mobile_number":"08105688623","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"4949.78","balance_after":"4464.78","Status":"successful","api_response":"You have topped up N500 to 2348105688623. Your balance is now NGN6114769.89. TRX ID: 5034131839.","create_date":"2025-09-12T14:02:31.340783","Ported_number":true}
+[2025-09-12 13:01:53] SUCCESS: trans_68c419bf837612.50418759 completed. New balance: 3880
+[2025-09-12 14:39:21] INFO: Network mapped → 1 → 1
+[2025-09-12 14:39:22] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":200,"mobile_number":"07033521732","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11139840,"airtime_type":"VTU","ident":"Airtime94cc849d5-97d9-4","network":1,"paid_amount":"194.0","mobile_number":"07033521732","amount":"200","plan_amount":"200","plan_network":"MTN","balance_before":"3954.78","balance_after":"3760.78","Status":"successful","api_response":"You have topped up N200 to 2347033521732. Your balance is now NGN5773238.89. TRX ID: 5034502358.","create_date":"2025-09-12T15:40:00.872238","Ported_number":true}
+[2025-09-12 14:39:22] SUCCESS: trans_68c430991b7c00.73418324 completed. New balance: 1830
+[2025-09-12 18:51:05] INFO: Network mapped → 1 → 1
+[2025-09-12 18:51:06] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":230,"mobile_number":"08107672204","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11143255,"airtime_type":"VTU","ident":"Airtime23308645f-d5a0-4","network":1,"paid_amount":"223.1","mobile_number":"08107672204","amount":"230","plan_amount":"230","plan_network":"MTN","balance_before":"2975.78","balance_after":"2752.6800000000003","Status":"successful","api_response":"You have topped up N230 to 2348107672204. Your balance is now NGN4233824.89. TRX ID: 5035443206.","create_date":"2025-09-12T19:51:45.358280","Ported_number":true}
+[2025-09-12 18:51:06] SUCCESS: trans_68c46b99191602.49199817 completed. New balance: 2250
+[2025-09-12 19:20:32] INFO: Network mapped → 1 → 1
+[2025-09-12 19:20:33] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":210,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11143966,"airtime_type":"VTU","ident":"Airtime27eb30361-5f0d-4","network":1,"paid_amount":"203.7","mobile_number":"08034533286","amount":"210","plan_amount":"210","plan_network":"MTN","balance_before":"2752.68","balance_after":"2548.98","Status":"successful","api_response":"You have topped up N210 to 2348034533286. Your balance is now NGN3974179.89. TRX ID: 5035562834.","create_date":"2025-09-12T20:21:12.617025","Ported_number":true}
+[2025-09-12 19:20:33] SUCCESS: trans_68c472809d77e8.92905379 completed. New balance: 800
+[2025-09-12 20:05:43] INFO: Network mapped → 1 → 1
+[2025-09-12 20:05:45] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11145234,"airtime_type":"VTU","ident":"Airtime939ac3270-3691-4","network":1,"paid_amount":"97.0","mobile_number":"08034533286","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"2548.98","balance_after":"2451.98","Status":"successful","api_response":"You have topped up N100 to 2348034533286. Your balance is now NGN3486566.89. TRX ID: 5035745773.","create_date":"2025-09-12T21:06:23.989612","Ported_number":true}
+[2025-09-12 20:05:45] SUCCESS: trans_68c47d174e8e64.72442866 completed. New balance: 700
+[2025-09-13 10:43:09] INFO: Network mapped → 1 → 1
+[2025-09-13 10:43:11] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":250,"mobile_number":"08146656975","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11150963,"airtime_type":"VTU","ident":"Airtime7b59745bc-97a1-4","network":1,"paid_amount":"242.5","mobile_number":"08146656975","amount":"250","plan_amount":"250","plan_network":"MTN","balance_before":"2451.98","balance_after":"2209.48","Status":"successful","api_response":"You have topped up N250 to 2348146656975. Your balance is now NGN7128621.89. TRX ID: 5036929351.","create_date":"2025-09-13T11:43:50.792240","Ported_number":true}
+[2025-09-13 10:43:11] SUCCESS: trans_68c54abd1eb007.89186367 completed. New balance: 0
+[2025-09-13 16:42:03] INFO: Network mapped → 1 → 1
+[2025-09-13 16:42:04] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"07046779779","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11154446,"airtime_type":"VTU","ident":"Airtime668981815-e4bf-4","network":1,"paid_amount":"485.0","mobile_number":"07046779779","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"1589.48","balance_after":"1104.48","Status":"successful","api_response":"You have topped up N500 to 2347046779779. Your balance is now NGN5886027.89. TRX ID: 5038062527.","create_date":"2025-09-13T17:42:44.325213","Ported_number":true}
+[2025-09-13 16:42:04] SUCCESS: trans_68c59edb7804a8.45618859 completed. New balance: 0
+[2025-09-13 19:20:14] INFO: Network mapped → 1 → 1
+[2025-09-13 19:20:15] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":200,"mobile_number":"08034533286","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11157172,"airtime_type":"VTU","ident":"Airtime656041d97-ccc0-4","network":1,"paid_amount":"194.0","mobile_number":"08034533286","amount":"200","plan_amount":"200","plan_network":"MTN","balance_before":"319.48","balance_after":"125.48000000000002","Status":"successful","api_response":"You have topped up N200 to 2348034533286. Your balance is now NGN4869690.89. TRX ID: 5038622335.","create_date":"2025-09-13T20:20:55.240607","Ported_number":true}
+[2025-09-13 19:20:15] SUCCESS: trans_68c5c3ee4645d2.50019202 completed. New balance: 0
+[2025-09-13 20:08:14] INFO: Network mapped → 1 → 1
+[2025-09-13 20:08:14] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"08063951160","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N125.48 "]}
+[2025-09-13 20:08:14] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N125.48 "]}
+[2025-09-13 20:08:31] INFO: Network mapped → 1 → 1
+[2025-09-13 20:08:31] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"08063951160","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["You can't topup due to insufficient balance  N125.48 "]}
+[2025-09-13 20:08:31] FAILED: API response status -  | Response: {"error":["You can't topup due to insufficient balance  N125.48 "]}
+[2025-09-13 20:59:15] INFO: Network mapped → 1 → 1
+[2025-09-13 20:59:15] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"2347076545875","Ported_number":true,"airtime_type":"VTU"} | Response: {"error":["invalid mobile number 2347076545875!"]}
+[2025-09-13 20:59:15] FAILED: API response status -  | Response: {"error":["invalid mobile number 2347076545875!"]}
+[2025-09-13 20:59:38] INFO: Network mapped → 1 → 1
+[2025-09-13 20:59:39] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07076545875","Ported_number":true,"airtime_type":"VTU"} | Response: 
+[2025-09-13 20:59:39] FAILED: API response status -  | Response: 
+[2025-09-13 21:00:00] INFO: Network mapped → 1 → 1
+[2025-09-13 21:00:02] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"07076545875","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11159580,"airtime_type":"VTU","ident":"Airtime249a635bc-adf0-4","network":1,"paid_amount":"97.0","mobile_number":"07076545875","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"3095.48","balance_after":"2998.48","Status":"successful","api_response":"You have topped up N100 to 2347076545875. Your balance is now NGN4020193.89. TRX ID: 5038946710.","create_date":"2025-09-13T22:00:41.924959","Ported_number":true}
+[2025-09-13 21:00:02] SUCCESS: trans_68c5db50e0e315.28608231 completed. New balance: 3575
+[2025-09-13 21:28:21] INFO: Network mapped → 1 → 1
+[2025-09-13 21:28:22] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":1200,"mobile_number":"09064608804","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11160071,"airtime_type":"VTU","ident":"Airtime346d34cb9-a632-4","network":1,"paid_amount":"1164.0","mobile_number":"09064608804","amount":"1200","plan_amount":"1200","plan_network":"MTN","balance_before":"2998.48","balance_after":"1834.48","Status":"successful","api_response":"You have topped up N1200 to 2349064608804. Your balance is now NGN3854775.89. TRX ID: 5039010833.","create_date":"2025-09-13T22:29:02.519516","Ported_number":true}
+[2025-09-13 21:28:22] SUCCESS: trans_68c5e1f551e313.48204888 completed. New balance: 2375
+[2025-09-14 08:15:02] INFO: Network mapped → 1 → 1
+[2025-09-14 08:15:04] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"09030053923","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11162153,"airtime_type":"VTU","ident":"Airtime4c9f4e0d5-bee7-4","network":1,"paid_amount":"97.0","mobile_number":"09030053923","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"13999.48","balance_after":"13902.48","Status":"successful","api_response":"You have topped up N100 to 2349030053923. Your balance is now NGN4063105.89. TRX ID: 5039460908.","create_date":"2025-09-14T09:15:45.147255","Ported_number":true}
+[2025-09-14 08:15:05] SUCCESS: trans_68c67987388120.19764605 completed. New balance: 280
+[2025-09-14 13:17:42] INFO: Network mapped → 1 → 1
+[2025-09-14 13:17:42] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"09864608804","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11165296,"airtime_type":"VTU","ident":"Airtime109280697-d2d5-4","network":1,"paid_amount":"485.0","mobile_number":"09864608804","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"13902.48","balance_after":"13417.48","Status":"failed","api_response":"You are not sending to a valid MTN number.","create_date":"2025-09-14T14:18:23.412178","Ported_number":true}
+[2025-09-14 13:17:42] FAILED: API response status - failed | Response: {"id":11165296,"airtime_type":"VTU","ident":"Airtime109280697-d2d5-4","network":1,"paid_amount":"485.0","mobile_number":"09864608804","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"13902.48","balance_after":"13417.48","Status":"failed","api_response":"You are not sending to a valid MTN number.","create_date":"2025-09-14T14:18:23.412178","Ported_number":true}
+[2025-09-14 13:17:48] INFO: Network mapped → 1 → 1
+[2025-09-14 13:17:49] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"09864608804","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11165299,"airtime_type":"VTU","ident":"Airtime7fa0684fa-99e5-4","network":1,"paid_amount":"485.0","mobile_number":"09864608804","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"13902.48","balance_after":"13417.48","Status":"failed","api_response":"You are not sending to a valid MTN number.","create_date":"2025-09-14T14:18:30.019565","Ported_number":true}
+[2025-09-14 13:17:49] FAILED: API response status - failed | Response: {"id":11165299,"airtime_type":"VTU","ident":"Airtime7fa0684fa-99e5-4","network":1,"paid_amount":"485.0","mobile_number":"09864608804","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"13902.48","balance_after":"13417.48","Status":"failed","api_response":"You are not sending to a valid MTN number.","create_date":"2025-09-14T14:18:30.019565","Ported_number":true}
+[2025-09-14 13:18:05] INFO: Network mapped → 1 → 1
+[2025-09-14 13:18:07] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":500,"mobile_number":"09064608804","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11165304,"airtime_type":"VTU","ident":"Airtime58f5fd789-4b5d-4","network":1,"paid_amount":"485.0","mobile_number":"09064608804","amount":"500","plan_amount":"500","plan_network":"MTN","balance_before":"13902.48","balance_after":"13417.48","Status":"successful","api_response":"You have topped up N500 to 2349064608804. Your balance is now NGN8770815.89. TRX ID: 5040149551.","create_date":"2025-09-14T14:18:47.629895","Ported_number":true}
+[2025-09-14 13:18:07] SUCCESS: trans_68c6c08dd53c79.09707419 completed. New balance: 7575
+[2025-09-14 13:18:46] INFO: Network mapped → 1 → 1
+[2025-09-14 13:18:47] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":150,"mobile_number":"08105688623","Ported_number":true,"airtime_type":"VTU"} | Response: 
+[2025-09-14 13:18:47] FAILED: API response status -  | Response: 
+[2025-09-14 13:19:54] INFO: Network mapped → 1 → 1
+[2025-09-14 13:19:54] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":150,"mobile_number":"08105688623","Ported_number":true,"airtime_type":"VTU"} | Response: 
+[2025-09-14 13:19:54] FAILED: API response status -  | Response: 
+[2025-09-14 14:53:17] INFO: Network mapped → 1 → 1
+[2025-09-14 14:53:18] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":180,"mobile_number":"08163812758","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11166209,"airtime_type":"VTU","ident":"Airtime905d59784-ff47-4","network":1,"paid_amount":"174.6","mobile_number":"08163812758","amount":"180","plan_amount":"180","plan_network":"MTN","balance_before":"13212.48","balance_after":"13037.88","Status":"successful","api_response":"You have topped up N180 to 2348163812758. Your balance is now NGN8378692.89. TRX ID: 5040383904.","create_date":"2025-09-14T15:53:59.506011","Ported_number":true}
+[2025-09-14 14:53:18] SUCCESS: trans_68c6d6dd38c3d8.68493485 completed. New balance: 0
+[2025-09-15 12:26:28] INFO: Network mapped → 1 → 1
+[2025-09-15 12:26:30] API Request to https://alrahuzdata.com.ng/api/topup/ | Payload: {"network":"1","amount":100,"mobile_number":"08060298788","Ported_number":true,"airtime_type":"VTU"} | Response: {"id":11178046,"airtime_type":"VTU","ident":"Airtime7a3c598f7-015c-4","network":1,"paid_amount":"97.0","mobile_number":"08060298788","amount":"100","plan_amount":"100","plan_network":"MTN","balance_before":"9415.88","balance_after":"9318.88","Status":"successful","api_response":"You have topped up N100 to 2348060298788. Your balance is now NGN4521613.89. TRX ID: 5043016249.","create_date":"2025-09-15T13:27:11.820352","Ported_number":true}
+[2025-09-15 12:26:30] SUCCESS: trans_68c805f4ed45d7.67555624 completed. New balance: 1900

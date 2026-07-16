@@ -1,0 +1,6 @@
+Array
+(
+    [requestSuccessful] => 
+    [responseMessage] => Request method 'GET' not supported
+    [responseCode] => 99
+)

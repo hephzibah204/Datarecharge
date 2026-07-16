@@ -1,0 +1,2 @@
+HTTP Code: 201
+Response: {"id":10189085,"airtime_type":"VTU","ident":"Airtime8c988d620-69e8-4","network":2,"paid_amount":"93.0","mobile_number":"07011940847","amount":"100","plan_amount":"100","plan_network":"GLO","balance_before":"386.69","balance_after":"293.69","Status":"failed","api_response":"You are not sending to a valid GLO number.","create_date":"2025-07-01T05:36:02.337110","Ported_number":true}

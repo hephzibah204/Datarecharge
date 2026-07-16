@@ -1,0 +1,1247 @@
+[31-Jul-2024 12:40:54 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[31-Jul-2024 12:40:54 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[31-Jul-2024 12:40:55 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[31-Jul-2024 18:47:46 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[31-Jul-2024 22:18:47 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[31-Jul-2024 22:59:28 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[01-Aug-2024 13:47:56 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[01-Aug-2024 13:47:56 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[01-Aug-2024 13:47:58 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[01-Aug-2024 20:15:22 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[02-Aug-2024 16:18:15 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[02-Aug-2024 16:18:15 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[02-Aug-2024 16:18:16 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[03-Aug-2024 07:58:30 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[03-Aug-2024 07:58:30 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[03-Aug-2024 07:58:31 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[03-Aug-2024 13:08:15 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(44): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[03-Aug-2024 20:29:36 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[03-Aug-2024 20:29:37 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[04-Aug-2024 15:28:31 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[04-Aug-2024 16:51:03 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[04-Aug-2024 16:51:04 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[04-Aug-2024 18:16:22 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[04-Aug-2024 18:16:22 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[04-Aug-2024 18:16:23 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[04-Aug-2024 18:16:28 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[05-Aug-2024 15:30:31 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[06-Aug-2024 11:33:51 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[06-Aug-2024 11:33:51 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[06-Aug-2024 11:33:52 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[06-Aug-2024 14:52:01 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[06-Aug-2024 14:52:23 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[06-Aug-2024 20:15:44 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[08-Aug-2024 21:41:47 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[08-Aug-2024 21:41:47 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[08-Aug-2024 21:41:48 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[08-Aug-2024 21:41:54 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[11-Aug-2024 16:44:58 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 15:34:34 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 15:34:34 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 15:34:35 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 15:34:35 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 15:34:41 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 15:34:48 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 17:47:35 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 17:47:36 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 17:47:36 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 19:31:27 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[12-Aug-2024 21:27:47 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[13-Aug-2024 13:00:38 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[14-Aug-2024 19:31:50 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[14-Aug-2024 23:05:43 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 08:42:21 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 08:42:21 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 08:42:21 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 08:42:21 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 08:42:22 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 08:42:22 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 08:42:22 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 08:42:23 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 10:01:25 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 10:24:32 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 14:18:41 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 14:18:42 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 14:18:42 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[15-Aug-2024 17:52:31 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[16-Aug-2024 18:06:18 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[16-Aug-2024 18:06:18 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[17-Aug-2024 11:39:47 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[17-Aug-2024 11:39:47 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[17-Aug-2024 11:39:47 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[17-Aug-2024 16:50:28 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[17-Aug-2024 16:50:29 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[17-Aug-2024 16:50:32 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[18-Aug-2024 09:16:39 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[18-Aug-2024 09:16:41 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[18-Aug-2024 10:52:57 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[18-Aug-2024 10:52:58 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[18-Aug-2024 10:52:58 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[18-Aug-2024 10:52:59 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[18-Aug-2024 10:53:00 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[19-Aug-2024 05:58:39 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[19-Aug-2024 09:38:22 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[19-Aug-2024 09:38:23 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[19-Aug-2024 21:00:10 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[20-Aug-2024 10:02:05 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[20-Aug-2024 10:02:26 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[20-Aug-2024 10:02:26 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[20-Aug-2024 10:02:27 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[21-Aug-2024 23:09:51 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[22-Aug-2024 08:31:51 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[22-Aug-2024 16:46:33 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[22-Aug-2024 21:19:30 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[22-Aug-2024 21:52:28 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[22-Aug-2024 21:52:29 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[22-Aug-2024 21:52:29 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No such file or directory in /home/tgkbpdek/public_html/core/Models/Model.php:30
+Stack trace:
+#0 /home/tgkbpdek/public_html/core/Models/Model.php(30): PDO->__construct('mysql:host=loca...', 'tgkbpdek_vtu', '@Dontech82kiru2')
+#1 /home/tgkbpdek/public_html/core/Models/Model.php(24): Model->connectDb()
+#2 /home/tgkbpdek/public_html/core/Controllers/Subscriber.php(53): Model->__construct()
+#3 /home/tgkbpdek/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/tgkbpdek/public_html/mobile/login/index.php(24): require_once('/home/tgkbpdek/...')
+#5 {main}
+  thrown in /home/tgkbpdek/public_html/core/Models/Model.php on line 30
+[22-Sep-2024 05:59:27 Africa/Lagos] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/vtutele1/public_html/core/Controllers/Subscriber.php on line 1871
+[22-Sep-2024 05:59:40 Africa/Lagos] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/vtutele1/public_html/core/Controllers/Subscriber.php on line 1871
+[22-Sep-2024 06:00:25 Africa/Lagos] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/vtutele1/public_html/core/Controllers/Subscriber.php on line 1871
+[22-Sep-2024 06:02:15 Africa/Lagos] PHP Fatal error:  Cannot redeclare Subscriber::purchaseElectricityToken() in /home/vtutele1/public_html/core/Controllers/Subscriber.php on line 1820
+[02-Nov-2024 13:24:15 Africa/Lagos] PHP Fatal error:  Uncaught Error: Class 'Model' not found in /home/vtutele1/public_html/core/Models/SubscriberModel.php:3
+Stack trace:
+#0 /home/vtutele1/public_html/mobile/home/includes/auto_loader.php(5): require_once()
+#1 [internal function]: {closure}('SubscriberModel')
+#2 /home/vtutele1/public_html/core/Controllers/Subscriber.php(57): spl_autoload_call('SubscriberModel')
+#3 /home/vtutele1/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/vtutele1/public_html/mobile/login/index.php(6): require_once('/home/vtutele1/...')
+#5 {main}
+  thrown in /home/vtutele1/public_html/core/Models/SubscriberModel.php on line 3
+[02-Nov-2024 13:26:16 Africa/Lagos] PHP Fatal error:  Uncaught Error: Class 'Model' not found in /home/vtutele1/public_html/core/Models/SubscriberModel.php:3
+Stack trace:
+#0 /home/vtutele1/public_html/mobile/home/includes/auto_loader.php(5): require_once()
+#1 [internal function]: {closure}('SubscriberModel')
+#2 /home/vtutele1/public_html/core/Controllers/Subscriber.php(57): spl_autoload_call('SubscriberModel')
+#3 /home/vtutele1/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/vtutele1/public_html/mobile/login/index.php(6): require_once('/home/vtutele1/...')
+#5 {main}
+  thrown in /home/vtutele1/public_html/core/Models/SubscriberModel.php on line 3
+[02-Nov-2024 13:26:50 Africa/Lagos] PHP Fatal error:  Uncaught Error: Class 'Model' not found in /home/vtutele1/public_html/core/Models/SubscriberModel.php:3
+Stack trace:
+#0 /home/vtutele1/public_html/mobile/home/includes/auto_loader.php(5): require_once()
+#1 [internal function]: {closure}('SubscriberModel')
+#2 /home/vtutele1/public_html/core/Controllers/Subscriber.php(57): spl_autoload_call('SubscriberModel')
+#3 /home/vtutele1/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/vtutele1/public_html/mobile/login/index.php(6): require_once('/home/vtutele1/...')
+#5 {main}
+  thrown in /home/vtutele1/public_html/core/Models/SubscriberModel.php on line 3
+[10-Nov-2024 15:31:42 Africa/Lagos] PHP Parse error:  syntax error, unexpected variable "$d", expecting "function" or "const" in /home/aqriiatw/public_html/core/Models/SubscriberModel.php on line 83
+[10-Nov-2024 15:31:44 Africa/Lagos] PHP Parse error:  syntax error, unexpected variable "$d", expecting "function" or "const" in /home/aqriiatw/public_html/core/Models/SubscriberModel.php on line 83
+[10-Nov-2024 15:31:53 Africa/Lagos] PHP Parse error:  syntax error, unexpected variable "$d", expecting "function" or "const" in /home/aqriiatw/public_html/core/Models/SubscriberModel.php on line 83
+[10-Nov-2024 15:32:20 Africa/Lagos] PHP Parse error:  syntax error, unexpected variable "$d", expecting "function" or "const" in /home/aqriiatw/public_html/core/Models/SubscriberModel.php on line 82
+[10-Nov-2024 15:32:47 Africa/Lagos] PHP Parse error:  syntax error, unexpected variable "$d", expecting "function" or "const" in /home/aqriiatw/public_html/core/Models/SubscriberModel.php on line 82
+[10-Nov-2024 15:38:33 Africa/Lagos] PHP Parse error:  syntax error, unexpected variable "$d", expecting "function" or "const" in /home/aqriiatw/public_html/core/Models/SubscriberModel.php on line 83
+[16-Nov-2024 15:57:54 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:57:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:18 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:20 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:21 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:22 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:23 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:24 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:25 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:26 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:27 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:28 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:28 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:29 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:29 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:29 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:30 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:31 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:31 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:31 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[16-Nov-2024 15:58:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:16 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:17 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:18 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:19 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:19 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 05:44:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 07:52:33 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 07:52:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 07:53:36 UTC] PHP Warning:  require_once(../home/includes/route.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/login/index.php on line 6
+[18-Nov-2024 07:53:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../home/includes/route.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/login/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/aqriiatw/public_html/mobile/login/index.php on line 6
+[18-Nov-2024 07:53:38 UTC] PHP Warning:  require_once(../home/includes/route.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/login/index.php on line 6
+[18-Nov-2024 07:53:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../home/includes/route.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/login/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/aqriiatw/public_html/mobile/login/index.php on line 6
+[18-Nov-2024 07:53:44 UTC] PHP Warning:  require_once(../home/includes/route.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/login/index.php on line 6
+[18-Nov-2024 07:53:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../home/includes/route.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/login/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/aqriiatw/public_html/mobile/login/index.php on line 6
+[18-Nov-2024 08:38:24 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 08:38:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 08:38:26 UTC] PHP Warning:  require_once(../../core/helpers/vendor/manifest.php): Failed to open stream: No such file or directory in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[18-Nov-2024 08:38:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../core/helpers/vendor/manifest.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php:20
+Stack trace:
+#0 /home/aqriiatw/public_html/mobile/home/includes/route.php(23): require_once()
+#1 /home/aqriiatw/public_html/mobile/login/index.php(6): require_once('/home/aqriiatw/...')
+#2 {main}
+  thrown in /home/aqriiatw/public_html/mobile/home/includes/auto_loader.php on line 20
+[21-Dec-2024 02:14:02 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/keytopup/shop.keytopup.com.ng/mobile/login/index.php on line 12
+[21-Dec-2024 02:14:02 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/keytopup/shop.keytopup.com.ng/mobile/login/index.php on line 12
+[21-Dec-2024 02:36:51 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/keytopup/public_html/mobile/login/index.php on line 12
+[21-Dec-2024 02:36:51 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/keytopup/public_html/mobile/login/index.php on line 12
+[31-Dec-2024 16:12:55 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'lsgcnnrx_mastersub'@'localhost' (using password: YES) in /home/quicktel/public_html/core/Models/Model.php:29
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/Model.php(29): PDO->__construct()
+#1 /home/quicktel/public_html/core/Models/Model.php(23): Model->connectDb()
+#2 /home/quicktel/public_html/core/Controllers/Subscriber.php(57): Model->__construct()
+#3 /home/quicktel/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/quicktel/public_html/mobile/login/index.php(6): require_once('/home/quicktel/...')
+#5 {main}
+  thrown in /home/quicktel/public_html/core/Models/Model.php on line 29
+[31-Dec-2024 16:12:58 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'lsgcnnrx_mastersub'@'localhost' (using password: YES) in /home/quicktel/public_html/core/Models/Model.php:29
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/Model.php(29): PDO->__construct()
+#1 /home/quicktel/public_html/core/Models/Model.php(23): Model->connectDb()
+#2 /home/quicktel/public_html/core/Controllers/Subscriber.php(57): Model->__construct()
+#3 /home/quicktel/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/quicktel/public_html/mobile/login/index.php(6): require_once('/home/quicktel/...')
+#5 {main}
+  thrown in /home/quicktel/public_html/core/Models/Model.php on line 29
+[31-Dec-2024 16:13:01 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'lsgcnnrx_mastersub'@'localhost' (using password: YES) in /home/quicktel/public_html/core/Models/Model.php:29
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/Model.php(29): PDO->__construct()
+#1 /home/quicktel/public_html/core/Models/Model.php(23): Model->connectDb()
+#2 /home/quicktel/public_html/core/Controllers/Subscriber.php(57): Model->__construct()
+#3 /home/quicktel/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/quicktel/public_html/mobile/login/index.php(6): require_once('/home/quicktel/...')
+#5 {main}
+  thrown in /home/quicktel/public_html/core/Models/Model.php on line 29
+[08-Nov-2025 07:19:48 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'evogyjdq_apidocument'@'localhost' (using password: YES) in /home/xtfphfml/public_html/core/Models/Model.php:29
+Stack trace:
+#0 /home/xtfphfml/public_html/core/Models/Model.php(29): PDO->__construct('mysql:host=loca...', 'evogyjdq_apidoc...', Object(SensitiveParameterValue))
+#1 /home/xtfphfml/public_html/core/Models/Model.php(23): Model->connectDb()
+#2 /home/xtfphfml/public_html/core/Controllers/Subscriber.php(57): Model->__construct()
+#3 /home/xtfphfml/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/xtfphfml/public_html/mobile/login/index.php(6): require_once('/home/xtfphfml/...')
+#5 {main}
+  thrown in /home/xtfphfml/public_html/core/Models/Model.php on line 29
+[08-Nov-2025 07:19:57 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'evogyjdq_apidocument'@'localhost' (using password: YES) in /home/xtfphfml/public_html/core/Models/Model.php:29
+Stack trace:
+#0 /home/xtfphfml/public_html/core/Models/Model.php(29): PDO->__construct('mysql:host=loca...', 'evogyjdq_apidoc...', Object(SensitiveParameterValue))
+#1 /home/xtfphfml/public_html/core/Models/Model.php(23): Model->connectDb()
+#2 /home/xtfphfml/public_html/core/Controllers/Subscriber.php(57): Model->__construct()
+#3 /home/xtfphfml/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/xtfphfml/public_html/mobile/login/index.php(6): require_once('/home/xtfphfml/...')
+#5 {main}
+  thrown in /home/xtfphfml/public_html/core/Models/Model.php on line 29
+[08-Nov-2025 07:21:19 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'evogyjdq_apidocument'@'localhost' (using password: YES) in /home/xtfphfml/public_html/core/Models/Model.php:29
+Stack trace:
+#0 /home/xtfphfml/public_html/core/Models/Model.php(29): PDO->__construct('mysql:host=loca...', 'evogyjdq_apidoc...', Object(SensitiveParameterValue))
+#1 /home/xtfphfml/public_html/core/Models/Model.php(23): Model->connectDb()
+#2 /home/xtfphfml/public_html/core/Controllers/Subscriber.php(57): Model->__construct()
+#3 /home/xtfphfml/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/xtfphfml/public_html/mobile/login/index.php(6): require_once('/home/xtfphfml/...')
+#5 {main}
+  thrown in /home/xtfphfml/public_html/core/Models/Model.php on line 29
+[08-Nov-2025 11:30:46 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'evogyjdq_apidocument'@'localhost' (using password: YES) in /home/xtfphfml/public_html/core/Models/Model.php:29
+Stack trace:
+#0 /home/xtfphfml/public_html/core/Models/Model.php(29): PDO->__construct('mysql:host=loca...', 'evogyjdq_apidoc...', Object(SensitiveParameterValue))
+#1 /home/xtfphfml/public_html/core/Models/Model.php(23): Model->connectDb()
+#2 /home/xtfphfml/public_html/core/Controllers/Subscriber.php(57): Model->__construct()
+#3 /home/xtfphfml/public_html/mobile/home/includes/route.php(57): Subscriber->__construct()
+#4 /home/xtfphfml/public_html/mobile/login/index.php(6): require_once('/home/xtfphfml/...')
+#5 {main}
+  thrown in /home/xtfphfml/public_html/core/Models/Model.php on line 29
+[10-Nov-2025 16:56:29 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:56:29 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:56:29 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:56:38 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:56:38 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:56:38 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:57:05 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:57:05 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:57:05 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:09 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:09 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:09 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:09 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:09 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:09 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:58 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:58 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 16:59:58 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:05 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:05 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:05 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:40 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:40 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:40 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:42 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:42 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:42 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:44 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:44 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:44 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:45 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:45 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:45 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:47 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:47 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:47 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:52 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:52 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:52 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:56 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:56 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:56 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:58 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:58 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:02:58 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:03:06 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:03:06 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:03:06 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:06 Africa/Lagos] PHP Warning:  include(login5.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:06 Africa/Lagos] PHP Warning:  include(login5.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:06 Africa/Lagos] PHP Warning:  include(): Failed opening 'login5.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:14 Africa/Lagos] PHP Warning:  include(login5.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:14 Africa/Lagos] PHP Warning:  include(login5.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:14 Africa/Lagos] PHP Warning:  include(): Failed opening 'login5.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:49 Africa/Lagos] PHP Warning:  include(login2.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:49 Africa/Lagos] PHP Warning:  include(login2.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:49 Africa/Lagos] PHP Warning:  include(): Failed opening 'login2.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:53 Africa/Lagos] PHP Warning:  include(login2.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:53 Africa/Lagos] PHP Warning:  include(login2.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:04:53 Africa/Lagos] PHP Warning:  include(): Failed opening 'login2.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:03 Africa/Lagos] PHP Warning:  include(login3.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:03 Africa/Lagos] PHP Warning:  include(login3.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:03 Africa/Lagos] PHP Warning:  include(): Failed opening 'login3.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:07 Africa/Lagos] PHP Warning:  include(login3.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:07 Africa/Lagos] PHP Warning:  include(login3.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:07 Africa/Lagos] PHP Warning:  include(): Failed opening 'login3.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:16 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:16 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:16 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:27 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:27 Africa/Lagos] PHP Warning:  include(login4.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:27 Africa/Lagos] PHP Warning:  include(): Failed opening 'login4.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:49 Africa/Lagos] PHP Warning:  include(login5.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:49 Africa/Lagos] PHP Warning:  include(login5.php): Failed to open stream: No such file or directory in /home/xtfphfml/public_html/mobile/login/index.php on line 12
+[10-Nov-2025 17:05:49 Africa/Lagos] PHP Warning:  include(): Failed opening 'login5.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/xtfphfml/public_html/mobile/login/index.php on line 12

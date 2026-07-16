@@ -1,0 +1,573 @@
+Array
+(
+    [status] => 1
+    [message] => PALMPAY already reserved
+    [data] => Array
+        (
+            [reference] => R-XFUWCOYGZL
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6696073259
+                            [account_name] => BillStack/Abdul Kura Data -IBRAHIM
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2024-11-19 05:23:03
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => IBRAHIM 
+                    [lastName] => Ibrahim ATEKPA
+                    [email] => musatekps@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 1
+    [message] => Account reserved
+    [data] => Array
+        (
+            [reference] => R-UMYPUWVAOH
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6600747211
+                            [account_name] => BillStack/Abdul Kura Data -Muhammad
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-16 10:19:12
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Muhammad
+                    [lastName] => Mk
+                    [email] => muhammadashir380@gmail.co
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 1
+    [message] => PALMPAY already reserved
+    [data] => Array
+        (
+            [reference] => R-EQLFHXZPRK
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6662182964
+                            [account_name] => BillStack/Abdul Kura Data -Muwafakadeen
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2024-11-19 06:46:03
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Muwafakadeen 
+                    [lastName] => Idris 
+                    [email] => laushimusa89@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 1
+    [message] => Account reserved
+    [data] => Array
+        (
+            [reference] => R-PLPHMFEAKV
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6658864793
+                            [account_name] => BillStack/Abdul Kura Data -habib
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-16 12:47:23
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => habib
+                    [lastName] => isah
+                    [email] => adb@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Email supplied is Invalid
+)
+Array
+(
+    [status] => 
+    [message] => Email supplied is Invalid
+)
+Array
+(
+    [status] => 
+    [message] => Email supplied is Invalid
+)
+Array
+(
+    [status] => 1
+    [message] => Account reserved
+    [data] => Array
+        (
+            [reference] => R-CEBGWXPJQH
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6663112818
+                            [account_name] => BillStack/Abdul Kura Data -Lukman 
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-16 01:22:06
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Lukman 
+                    [lastName] => Suleiman 
+                    [email] => lssanda58@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 
+    [message] => Mutliple request at a time for same email
+)
+Array
+(
+    [status] => 1
+    [message] => PALMPAY already reserved
+    [data] => Array
+        (
+            [reference] => R-NXYHXRJBHQ
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6636084077
+                            [account_name] => BillStack/Abdul Kura Data -sahabi
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-09 10:54:09
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => sahabi
+                    [lastName] => isaha
+                    [email] => ab@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 1
+    [message] => PALMPAY already reserved
+    [data] => Array
+        (
+            [reference] => R-CEBGWXPJQH
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6663112818
+                            [account_name] => BillStack/Abdul Kura Data -Lukman 
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-16 01:22:06
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Lukman 
+                    [lastName] => Suleiman 
+                    [email] => lssanda58@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 1
+    [message] => PALMPAY already reserved
+    [data] => Array
+        (
+            [reference] => R-YOXSGLLFUH
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6608162161
+                            [account_name] => BillStack/Abdul Kura Data -Auwal Salisu
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-13 09:02:19
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Auwal Salisu
+                    [lastName] => Sa&#39;id
+                    [email] => ssauwal016@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 1
+    [message] => PALMPAY already reserved
+    [data] => Array
+        (
+            [reference] => R-UHLYHRQCMZ
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6619718185
+                            [account_name] => BillStack/Abdul Kura Data -Abdulrahim 
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-12 10:25:14
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Abdulrahim 
+                    [lastName] => yakubu 
+                    [email] => abdulrahimyakubu252@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 1
+    [message] => Account reserved
+    [data] => Array
+        (
+            [reference] => R-VKHMGTYURF
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6682111705
+                            [account_name] => BillStack/Abdul Kura Data -MATRA
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-17 05:45:35
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => MATRA
+                    [lastName] => ali
+                    [email] => jdhdhdjdjdjd@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 
+    [message] => Phone should be 11 digit long
+)
+Array
+(
+    [status] => 1
+    [message] => PALMPAY already reserved
+    [data] => Array
+        (
+            [reference] => R-YUYQJPGGKM
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6649770709
+                            [account_name] => BillStack/Abdul Kura Data -Nafiu 
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-15 08:41:19
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Nafiu 
+                    [lastName] => Yau
+                    [email] => www.nafiuyau61@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 
+    [message] => Phone should be 11 digit long
+)
+Array
+(
+    [status] => 1
+    [message] => Account reserved
+    [data] => Array
+        (
+            [reference] => R-BNYKCUSVWG
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6625604144
+                            [account_name] => BillStack/Abdul Kura Data -Saidu
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-19 03:40:11
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Saidu
+                    [lastName] => hasihm
+                    [email] => saiduhashimusaidu@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 1
+    [message] => Account reserved
+    [data] => Array
+        (
+            [reference] => R-CDAGRWJLPF
+            [account] => Array
+                (
+                    [0] => Array
+                        (
+                            [account_number] => 6665707592
+                            [account_name] => BillStack/Abdul Kura Data -Ibrahim 
+                            [bank_name] => PalmPay
+                            [bank_id] => PALMPAY
+                            [bank_code] => PALMPAY
+                            [created_at] => 2025-01-20 01:43:40
+                        )
+
+                )
+
+            [meta] => Array
+                (
+                    [firstName] => Ibrahim 
+                    [lastName] => yahaya
+                    [email] => abdulrahaman59@gmail.com
+                )
+
+        )
+
+)
+Array
+(
+    [status] => 
+    [message] => Provider not reachable.
+)
+Array
+(
+    [status] => 
+    [message] => Provider not reachable.
+)

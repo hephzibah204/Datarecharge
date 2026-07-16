@@ -1,0 +1,1 @@
+{"error":["You can't purchase this plan due to insufficient GLO CORPORATE GIFTING DATA BUCKET BALANCE or insufficient wallet balance, pls fund your GLO CORPORATE GIFTING DATA BUCKET or main wallet to retry"]}

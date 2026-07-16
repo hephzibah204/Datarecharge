@@ -1,0 +1,1 @@
+{"code":"013","response_description":"BELOW MINIMUM AMOUNT ALLOWED","content":{"errors":""}}

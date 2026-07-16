@@ -1,0 +1,123 @@
+[29-Sep-2024 00:41:47 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/pnv/index.php on line 207
+[29-Sep-2024 00:44:15 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/pnv/index.php on line 207
+[13-Nov-2024 09:24:40 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/pnv/index.php on line 133
+[17-Nov-2024 12:29:55 UTC] PHP Fatal error:  Cannot redeclare ApiModel::verifyBillstackNotification() in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 1183
+[19-Nov-2024 22:34:55 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/pnv/index.php on line 133
+[22-Nov-2024 13:01:07 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/pnv/index.php on line 157
+[22-Nov-2024 13:01:09 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/pnv/index.php on line 133
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$firstName in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 57
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$middleName in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 58
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$lastName in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 59
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$phoneNumber in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 60
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$dob in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 61
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$state in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 62
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$town in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 63
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$addressLine in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 64
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$lga in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 65
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthCountry in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 66
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthState in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 67
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthLGA in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 68
+[22-Nov-2024 13:01:11 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[22-Nov-2024 13:01:12 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/aqriiatw/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/aqriiatw/public_html/core/Controllers/PNV.php(74): ApiModel->recordReport(7.0, '16521732276849', NULL, '08069627715', '{"id":1,"firstn...', 'regular', 'YET')
+#2 /home/aqriiatw/public_html/api/pnv/index.php(191): PNV->verifyMyPNV(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 374
+[22-Nov-2024 15:32:39 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/pnv/index.php on line 157
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$firstName in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 57
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$middleName in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 58
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$lastName in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 59
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$phoneNumber in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 60
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$dob in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 61
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$state in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 62
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$town in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 63
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$addressLine in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 64
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$lga in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 65
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthCountry in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 66
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthState in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 67
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthLGA in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 68
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[22-Nov-2024 15:32:43 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/aqriiatw/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/aqriiatw/public_html/core/Controllers/PNV.php(74): ApiModel->recordReport(7.0, '88491732285915', NULL, '09161636816', '{"id":1,"firstn...', 'premium', 'YET')
+#2 /home/aqriiatw/public_html/api/pnv/index.php(191): PNV->verifyMyPNV(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 374
+[22-Nov-2024 21:08:08 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/pnv/index.php on line 157
+[22-Nov-2024 21:08:09 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 145
+[22-Nov-2024 21:08:09 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/PNV.php on line 145
+[22-Nov-2024 21:08:09 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/pnv/index.php on line 207
+[24-Nov-2024 16:09:23 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/pnv/index.php on line 133
+[05-Dec-2024 21:24:58 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/pnv/index.php on line 157
+[05-Dec-2024 21:24:59 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/quicktel/public_html/core/Controllers/PNV.php on line 145
+[05-Dec-2024 21:24:59 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/quicktel/public_html/core/Controllers/PNV.php on line 145
+[05-Dec-2024 21:24:59 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quicktel/public_html/core/Models/ApiModel.php:1185) in /home/quicktel/public_html/api/pnv/index.php on line 207
+[07-Dec-2024 16:53:13 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/pnv/index.php on line 157
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$firstName in /home/quicktel/public_html/core/Controllers/PNV.php on line 57
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$middleName in /home/quicktel/public_html/core/Controllers/PNV.php on line 58
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$lastName in /home/quicktel/public_html/core/Controllers/PNV.php on line 59
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$phoneNumber in /home/quicktel/public_html/core/Controllers/PNV.php on line 60
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$dob in /home/quicktel/public_html/core/Controllers/PNV.php on line 61
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$state in /home/quicktel/public_html/core/Controllers/PNV.php on line 62
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$town in /home/quicktel/public_html/core/Controllers/PNV.php on line 63
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$addressLine in /home/quicktel/public_html/core/Controllers/PNV.php on line 64
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$lga in /home/quicktel/public_html/core/Controllers/PNV.php on line 65
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthCountry in /home/quicktel/public_html/core/Controllers/PNV.php on line 66
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthState in /home/quicktel/public_html/core/Controllers/PNV.php on line 67
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthLGA in /home/quicktel/public_html/core/Controllers/PNV.php on line 68
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[07-Dec-2024 16:53:22 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/PNV.php(74): ApiModel->recordReport(7, '39871733586750', NULL, '09039975155', '{"id":1,"firstn...', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/pnv/index.php(191): PNV->verifyMyPNV(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[12-Dec-2024 12:39:30 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/pnv/index.php on line 157
+[12-Dec-2024 12:39:35 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 55
+[12-Dec-2024 12:39:35 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 55
+[12-Dec-2024 12:39:35 Africa/Lagos] PHP Warning:  Attempt to read property "Status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 145
+[12-Dec-2024 12:39:35 Africa/Lagos] PHP Warning:  Attempt to read property "Status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 145
+[12-Dec-2024 12:39:35 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 149
+[12-Dec-2024 12:46:27 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/pnv/index.php on line 157
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$firstName in /home/keytopup/public_html/core/Controllers/PNV.php on line 57
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$middleName in /home/keytopup/public_html/core/Controllers/PNV.php on line 58
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$lastName in /home/keytopup/public_html/core/Controllers/PNV.php on line 59
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$phoneNumber in /home/keytopup/public_html/core/Controllers/PNV.php on line 60
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$dob in /home/keytopup/public_html/core/Controllers/PNV.php on line 61
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$state in /home/keytopup/public_html/core/Controllers/PNV.php on line 62
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$town in /home/keytopup/public_html/core/Controllers/PNV.php on line 63
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$addressLine in /home/keytopup/public_html/core/Controllers/PNV.php on line 64
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$lga in /home/keytopup/public_html/core/Controllers/PNV.php on line 65
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthCountry in /home/keytopup/public_html/core/Controllers/PNV.php on line 66
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthState in /home/keytopup/public_html/core/Controllers/PNV.php on line 67
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$birthLGA in /home/keytopup/public_html/core/Controllers/PNV.php on line 68
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/keytopup/public_html/core/Models/ApiModel.php on line 358
+[12-Dec-2024 12:46:33 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/keytopup/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/keytopup/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/keytopup/public_html/core/Controllers/PNV.php(74): ApiModel->recordReport()
+#2 /home/keytopup/public_html/api/pnv/index.php(191): PNV->verifyMyPNV()
+#3 {main}
+  thrown in /home/keytopup/public_html/core/Models/ApiModel.php on line 374
+[17-Dec-2024 01:44:29 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/pnv/index.php on line 157
+[17-Dec-2024 01:44:32 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 55
+[17-Dec-2024 01:44:32 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 55
+[17-Dec-2024 01:44:32 Africa/Lagos] PHP Warning:  Attempt to read property "Status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 145
+[17-Dec-2024 01:44:32 Africa/Lagos] PHP Warning:  Attempt to read property "Status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 145
+[17-Dec-2024 01:44:32 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 149
+[17-Dec-2024 01:52:27 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/pnv/index.php on line 157
+[17-Dec-2024 01:52:29 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 55
+[17-Dec-2024 01:52:29 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 55
+[17-Dec-2024 01:52:29 Africa/Lagos] PHP Warning:  Attempt to read property "Status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 145
+[17-Dec-2024 01:52:29 Africa/Lagos] PHP Warning:  Attempt to read property "Status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 145
+[17-Dec-2024 01:52:29 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 149
+[17-Dec-2024 02:58:51 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/pnv/index.php on line 157
+[17-Dec-2024 02:58:53 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 55
+[17-Dec-2024 02:58:53 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 55
+[17-Dec-2024 02:58:53 Africa/Lagos] PHP Warning:  Attempt to read property "Status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 145
+[17-Dec-2024 02:58:53 Africa/Lagos] PHP Warning:  Attempt to read property "Status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 145
+[17-Dec-2024 02:58:53 Africa/Lagos] PHP Warning:  Attempt to read property "status" on null in /home/keytopup/public_html/core/Controllers/PNV.php on line 149

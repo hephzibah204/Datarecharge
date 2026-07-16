@@ -1,0 +1,6 @@
+[30-Nov-2024 05:22:22 Africa/Lagos] PHP Warning:  Undefined variable $parentdirectory in /home/aqriiatw/public_html/alkam/dashboard/includes/route.php on line 25
+[30-Nov-2024 05:22:22 Africa/Lagos] PHP Warning:  Undefined array key "url" in /home/aqriiatw/public_html/alkam/dashboard/includes/route.php on line 31
+[30-Nov-2024 05:22:22 Africa/Lagos] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/aqriiatw/public_html/alkam/dashboard/includes/route.php on line 31
+[30-Nov-2024 05:22:22 Africa/Lagos] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/aqriiatw/public_html/core/Controllers/Controller.php on line 165
+[30-Nov-2024 05:22:22 Africa/Lagos] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/aqriiatw/public_html/core/Controllers/Controller.php on line 165
+[30-Nov-2024 05:22:22 Africa/Lagos] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in /home/aqriiatw/public_html/core/Controllers/Controller.php on line 165

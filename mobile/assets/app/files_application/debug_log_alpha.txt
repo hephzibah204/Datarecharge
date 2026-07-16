@@ -1,0 +1,225 @@
+2025-03-20 14:38:23 - Script started
+2025-03-20 14:38:23 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=9, number=07000047994, amount=650
+2025-03-20 14:38:23 - Fetching user details
+2025-03-20 14:38:23 - User found: sId=152, old_balance=600
+2025-03-20 14:38:23 - Insufficient balance
+2025-03-20 14:40:13 - Script started
+2025-03-20 14:40:13 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=9, number=07000047994, amount=650
+2025-03-20 14:40:13 - Fetching user details
+2025-03-20 14:40:13 - User found: sId=152, old_balance=1000
+2025-03-20 14:40:13 - Fetching plan details
+2025-03-22 18:37:51 - Script started
+2025-03-22 18:37:51 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=9, number=07000047994, amount=600
+2025-03-22 18:37:51 - Fetching user details
+2025-03-22 18:37:51 - User found: sId=147, old_balance=5303.5
+2025-03-22 18:37:51 - Fetching plan details
+2025-03-22 18:46:35 - Script started
+2025-03-22 18:46:35 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=9, number=07000047994, amount=600
+2025-03-22 18:46:35 - Fetching user details
+2025-03-22 18:46:35 - User found: sId=147, old_balance=4353.5
+2025-03-22 18:46:35 - Fetching plan details
+2025-03-22 20:44:17 - Script started
+2025-03-22 20:44:17 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=9, number=07000047994, amount=600
+2025-03-22 20:44:17 - Fetching user details
+2025-03-22 20:44:17 - User found: sId=147, old_balance=2588.5
+2025-03-22 20:44:17 - Fetching plan details
+2025-03-23 17:17:46 - Script started
+2025-03-23 17:17:46 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=18, number=07000047994, amount=400
+2025-03-23 17:17:46 - Fetching user details
+2025-03-23 17:17:46 - User found: sId=152, old_balance=1900
+2025-03-23 17:17:46 - Fetching plan details
+2025-03-23 17:55:36 - Script started
+2025-03-23 17:55:36 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=9, number=07000047994, amount=600
+2025-03-23 17:55:36 - Fetching user details
+2025-03-23 17:55:36 - User found: sId=147, old_balance=2588.5
+2025-03-23 17:55:36 - Fetching plan details
+2025-03-23 17:55:36 - Plan found: bundle_code=53
+2025-03-23 17:55:36 - Fetching API configurations
+2025-03-23 17:55:36 - API key and link retrieved
+2025-03-23 17:55:36 - Payload prepared: {"service_id":"alpha","plan_id":53,"number":"07000047994"}
+2025-03-23 17:55:36 - Requesting API authentication
+2025-03-23 17:55:39 - API authentication successful
+2025-03-23 17:55:39 - Sending API request
+2025-03-23 17:55:42 - API response: {"status":"success","message":"Alpha service purchase successful","transaction_reference":"APS1rdLHrBB7daShIYKnze"}
+2025-03-23 17:55:42 - API response decoded: Array
+(
+    [status] => success
+    [message] => Alpha service purchase successful
+    [transaction_reference] => APS1rdLHrBB7daShIYKnze
+)
+
+2025-03-23 17:55:42 - Transaction status: 0, reference: APS1rdLHrBB7daShIYKnze, new balance: 1988.5
+2025-03-23 17:55:42 - Wallet updated successfully
+2025-03-23 17:55:42 - Script completed
+2025-03-24 02:19:06 - Script started
+2025-03-24 02:19:06 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=9, number=07000047994, amount=600
+2025-03-24 02:19:06 - Fetching user details
+2025-03-24 02:19:06 - User found: sId=147, old_balance=5196.5
+2025-03-24 02:19:06 - Fetching plan details
+2025-03-24 02:19:06 - Plan found: bundle_code=53
+2025-03-24 02:19:06 - Fetching API configurations
+2025-03-24 02:19:06 - API key and link retrieved
+2025-03-24 02:19:06 - Payload prepared: {"service_id":"alpha","plan_id":53,"number":"07000047994"}
+2025-03-24 02:19:06 - Requesting API authentication
+2025-03-24 02:19:07 - API authentication successful
+2025-03-24 02:19:07 - Sending API request
+2025-03-24 02:19:07 - API response: {"status":"success","message":"Alpha service purchase successful","transaction_reference":"APz4D5gejj8pjFya2jc0Md"}
+2025-03-24 02:19:07 - API response decoded: Array
+(
+    [status] => success
+    [message] => Alpha service purchase successful
+    [transaction_reference] => APz4D5gejj8pjFya2jc0Md
+)
+
+2025-03-24 02:19:07 - Transaction status: 0, reference: APz4D5gejj8pjFya2jc0Md, new balance: 4596.5
+2025-03-24 02:19:07 - Wallet updated successfully
+2025-03-24 02:19:07 - Script completed
+2025-03-24 09:16:38 - Script started
+2025-03-24 09:16:38 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=9, number=07000047994, amount=600
+2025-03-24 09:16:38 - Fetching user details
+2025-03-24 09:16:38 - User found: sId=147, old_balance=1228.5
+2025-03-24 09:16:38 - Fetching plan details
+2025-03-24 09:16:38 - Plan found: bundle_code=53
+2025-03-24 09:16:38 - Fetching API configurations
+2025-03-24 09:16:38 - API key and link retrieved
+2025-03-24 09:16:38 - Payload prepared: {"service_id":"alpha","plan_id":53,"number":"07000047994"}
+2025-03-24 09:16:38 - Requesting API authentication
+2025-03-24 09:16:39 - API authentication successful
+2025-03-24 09:16:39 - Sending API request
+2025-03-24 09:16:40 - API response: {"status":"success","message":"Alpha service purchase successful","transaction_reference":"APNWUbz3AzRwe5c7xsQcgs"}
+2025-03-24 09:16:40 - API response decoded: Array
+(
+    [status] => success
+    [message] => Alpha service purchase successful
+    [transaction_reference] => APNWUbz3AzRwe5c7xsQcgs
+)
+
+2025-03-24 09:16:40 - Transaction status: 0, reference: APNWUbz3AzRwe5c7xsQcgs, new balance: 628.5
+2025-03-24 16:21:41 - Script started
+2025-03-24 16:21:41 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=9, number=07000047994, amount=600
+2025-03-24 16:21:41 - Fetching user details
+2025-03-24 16:21:41 - User found: sId=152, old_balance=1602
+2025-03-24 16:21:41 - Fetching plan details
+2025-03-24 16:21:41 - Plan found: bundle_code=53
+2025-03-24 16:21:41 - Fetching API configurations
+2025-03-24 16:21:41 - API key and link retrieved
+2025-03-24 16:21:41 - Payload prepared: {"service_id":"alpha","plan_id":53,"number":"07000047994"}
+2025-03-24 16:21:41 - Requesting API authentication
+2025-03-24 16:21:42 - API authentication successful
+2025-03-24 16:21:42 - Sending API request
+2025-03-24 16:21:43 - API response: {"status":"success","message":"Alpha service purchase successful","transaction_reference":"APvHfQujEIcnTTZh4H8vWM"}
+2025-03-24 16:21:43 - API response decoded: Array
+(
+    [status] => success
+    [message] => Alpha service purchase successful
+    [transaction_reference] => APvHfQujEIcnTTZh4H8vWM
+)
+
+2025-03-24 16:21:43 - Transaction status: 0, reference: APvHfQujEIcnTTZh4H8vWM, new balance: 1002
+2025-03-24 16:32:10 - Script started
+2025-03-24 16:32:10 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=9, number=07000047994, amount=600
+2025-03-24 16:32:10 - Fetching user details
+2025-03-24 16:32:10 - User found: sId=152, old_balance=1602
+2025-03-24 16:32:10 - Fetching plan details
+2025-03-24 16:32:10 - Plan found: bundle_code=53
+2025-03-24 16:32:10 - Fetching API configurations
+2025-03-24 16:32:10 - API key and link retrieved
+2025-03-24 16:32:10 - Payload prepared: {"service_id":"alpha","plan_id":53,"number":"07000047994"}
+2025-03-24 16:32:10 - Requesting API authentication
+2025-03-24 16:32:11 - API authentication successful
+2025-03-24 16:32:11 - Sending API request
+2025-03-24 16:32:12 - API response: {"status":"success","message":"Alpha service purchase successful","transaction_reference":"APiNuoKVV6BqtaOsZgsumP"}
+2025-03-24 16:32:12 - API response decoded: Array
+(
+    [status] => success
+    [message] => Alpha service purchase successful
+    [transaction_reference] => APiNuoKVV6BqtaOsZgsumP
+)
+
+2025-03-24 16:32:12 - Transaction status: 0, reference: APiNuoKVV6BqtaOsZgsumP, new balance: 1002
+2025-03-24 16:32:12 - Transaction recorded successfully
+2025-03-24 16:32:12 - Wallet updated successfully
+2025-03-24 16:32:12 - Script completed
+2025-03-24 16:33:44 - Script started
+2025-03-24 16:33:44 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=9, number=07000047994, amount=600
+2025-03-24 16:33:44 - Fetching user details
+2025-03-24 16:33:44 - User found: sId=147, old_balance=9078.5
+2025-03-24 16:33:44 - Fetching plan details
+2025-03-24 16:33:44 - Plan found: bundle_code=53
+2025-03-24 16:33:44 - Fetching API configurations
+2025-03-24 16:33:44 - API key and link retrieved
+2025-03-24 16:33:44 - Payload prepared: {"service_id":"alpha","plan_id":53,"number":"07000047994"}
+2025-03-24 16:33:44 - Requesting API authentication
+2025-03-24 16:33:45 - API authentication successful
+2025-03-24 16:33:45 - Sending API request
+2025-03-24 16:33:46 - API response: {"status":"success","message":"Alpha service purchase successful","transaction_reference":"AP1zRlslASFW9hkikZZL6o"}
+2025-03-24 16:33:46 - API response decoded: Array
+(
+    [status] => success
+    [message] => Alpha service purchase successful
+    [transaction_reference] => AP1zRlslASFW9hkikZZL6o
+)
+
+2025-03-24 16:33:46 - Transaction status: 0, reference: AP1zRlslASFW9hkikZZL6o, new balance: 8478.5
+2025-03-24 16:33:46 - Transaction recorded successfully
+2025-03-24 16:33:46 - Wallet updated successfully
+2025-03-24 16:33:46 - Script completed
+2025-03-25 09:41:51 - Script started
+2025-03-25 09:41:51 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=9, number=07000047994, amount=600
+2025-03-25 09:41:51 - Fetching user details
+2025-03-25 09:41:51 - User found: sId=147, old_balance=7418.5
+2025-03-25 09:41:51 - Fetching plan details
+2025-03-25 09:41:51 - Plan found: bundle_code=53
+2025-03-25 09:41:51 - Fetching API configurations
+2025-03-25 09:41:51 - API key and link retrieved
+2025-03-25 09:41:51 - Payload prepared: {"service_id":"alpha","plan_id":53,"number":"07000047994"}
+2025-03-25 09:41:51 - Requesting API authentication
+2025-03-25 09:41:53 - API authentication successful
+2025-03-25 09:41:53 - Sending API request
+2025-03-25 09:41:54 - API response: {"status":"success","message":"Alpha service purchase successful","transaction_reference":"APZR2onHfzaPr6UWwA58bC"}
+2025-03-25 09:41:54 - API response decoded: Array
+(
+    [status] => success
+    [message] => Alpha service purchase successful
+    [transaction_reference] => APZR2onHfzaPr6UWwA58bC
+)
+
+2025-03-25 09:41:54 - Transaction status: 0, reference: APZR2onHfzaPr6UWwA58bC, new balance: 6818.5
+2025-03-25 09:41:54 - Transaction recorded successfully
+2025-03-25 09:41:54 - Wallet updated successfully
+2025-03-25 09:41:54 - Script completed
+2025-03-26 12:15:45 - Script started
+2025-03-26 12:15:45 - Received input: token=739e236bc6497f4d4f9b9ad63133424e, plan_id=9, number=07000047994, amount=600
+2025-03-26 12:15:45 - Fetching user details
+2025-03-26 12:15:45 - User found: sId=1407, old_balance=0
+2025-03-26 12:15:45 - Insufficient balance
+2025-03-26 12:44:29 - Script started
+2025-03-26 12:44:29 - Received input: token=6a7cd56e2cba582bb754af197cdd97bd, plan_id=9, number=07000047994, amount=600
+2025-03-26 12:44:29 - Fetching user details
+2025-03-26 12:44:29 - User found: sId=3, old_balance=1800
+2025-03-26 12:44:29 - Fetching plan details
+2025-03-26 12:44:29 - Plan found: bundle_code=53
+2025-03-26 12:44:29 - Fetching API configurations
+2025-03-26 12:44:29 - API key and link retrieved
+2025-03-26 12:44:29 - Payload prepared: {"service_id":"alpha","plan_id":53,"number":"07000047994"}
+2025-03-26 12:44:29 - Requesting API authentication
+2025-03-26 12:44:30 - API authentication successful
+2025-03-26 12:44:30 - Sending API request
+2025-03-26 12:44:31 - API response: {"status":"success","message":"Alpha service purchase successful","transaction_reference":"APK6a3ycHjYf9BJU7dmhVY"}
+2025-03-26 12:44:31 - API response decoded: Array
+(
+    [status] => success
+    [message] => Alpha service purchase successful
+    [transaction_reference] => APK6a3ycHjYf9BJU7dmhVY
+)
+
+2025-03-26 12:44:31 - Transaction status: 0, reference: APK6a3ycHjYf9BJU7dmhVY, new balance: 1200
+2025-03-26 12:44:31 - Transaction recorded successfully
+2025-03-26 12:44:31 - Wallet updated successfully
+2025-03-26 12:44:31 - Script completed
+2025-04-12 06:18:40 - Script started
+2025-04-12 06:18:40 - Received input: token=dbc6562a82ce30d340fa7d75d6d6e21c, plan_id=9, number=08060292267
+, amount=600
+2025-04-12 06:18:40 - Fetching user details
+2025-04-12 06:18:40 - User found: sId=2104, old_balance=0
+2025-04-12 06:18:40 - Insufficient balance

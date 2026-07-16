@@ -1,0 +1,75 @@
+User found: sId=152, Balance=1500
+API Response: {"status":"success","message":"Smile subscription successful","transaction_reference":"APwuM5SnCzr4FvgetrwWmf"}
+Transaction Saved: {"sId":152,"transref":"APwuM5SnCzr4FvgetrwWmf","status":0,"old_balance":1500,"new_balance":600}
+User debited: New Balance=600
+User found: sId=147, Balance=5253.5
+API Response: {"status":"success","message":"Smile subscription successful","transaction_reference":"APeaHYdb6ciz36QMXzyDuE"}
+Transaction Saved: {"sId":147,"transref":"APeaHYdb6ciz36QMXzyDuE","status":0,"old_balance":5253.5,"new_balance":4353.5}
+User debited: New Balance=4353.5
+User found: sId=147, Balance=4147.5
+API Response: {"status":"success","message":"Smile subscription successful","transaction_reference":"APa6ibwKgQHQrlmY65fObn"}
+Transaction Saved: {"sId":147,"transref":"APa6ibwKgQHQrlmY65fObn","status":0,"old_balance":4147.5,"new_balance":3247.5}
+User debited: New Balance=3247.5
+User found: sId=147, Balance=5128.5
+API Response: {"status":"success","message":"Smile subscription successful","transaction_reference":"APHCJLsQmi4tMuTDJ21R9F"}
+Transaction Saved: {"sId":147,"transref":"APHCJLsQmi4tMuTDJ21R9F","status":0,"old_balance":5128.5,"new_balance":4228.5}
+User debited: New Balance=4228.5
+User found: sId=152, Balance=1002
+API Response: {"status":"success","message":"Smile subscription successful","transaction_reference":"APiLyrKkfh29CQ3lwtnHWQ"}
+Transaction Saved: {"sId":152,"transref":"APiLyrKkfh29CQ3lwtnHWQ","status":0,"old_balance":1002,"new_balance":102}
+User debited: New Balance=102
+User found: sId=152, Balance=102
+Insufficient balance for user sId=152
+User found: sId=147, Balance=8478.5
+Login failed. Response: <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="refresh" content="0;url='https://ameenwebkey.ng'" />
+
+        <title>Redirecting to https://ameenwebkey.ng</title>
+    </head>
+    <body>
+        Redirecting to <a href="https://ameenwebkey.ng">https://ameenwebkey.ng</a>.
+    </body>
+</html>
+User found: sId=152, Balance=2500
+API Response: <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="refresh" content="0;url='https://ameenwebkey.ng'" />
+
+        <title>Redirecting to https://ameenwebkey.ng</title>
+    </head>
+    <body>
+        Redirecting to <a href="https://ameenwebkey.ng">https://ameenwebkey.ng</a>.
+    </body>
+</html>
+Transaction Saved: {"sId":152,"transref":"","status":1,"old_balance":2500,"new_balance":2500}
+Transaction failed for user sId=152
+User found: sId=152, Balance=2500
+API Response: {"status":"failed","message":"Transaction Failed","transaction_reference":"APhV1RJUqdAiz7E1f4czyr"}
+Transaction Saved: {"sId":152,"transref":"APhV1RJUqdAiz7E1f4czyr","status":1,"old_balance":2500,"new_balance":2500}
+Transaction failed for user sId=152
+User found: sId=152, Balance=2500
+API Response: {"status":"failed","message":"Insufficient funds. Please add a minimum balance of N650 to your account and try again."}
+User found: sId=152, Balance=2500
+API Response: {"status":"failed","message":"Insufficient funds. Please add a minimum balance of N650 to your account and try again."}
+User found: sId=152, Balance=2500
+API Response: {"status":"failed","message":"Insufficient funds. Please add a minimum balance of N650 to your account and try again."}
+User found: sId=152, Balance=2500
+API Response: {"status":"failed","message":"Insufficient funds. Please add a minimum balance of N650 to your account and try again."}
+Transaction failed for user sId=152
+User found: sId=147, Balance=7568.5
+API Response: {"status":"failed","message":"Insufficient funds. Please add a minimum balance of N650 to your account and try again."}
+Transaction failed for user sId=147
+User found: sId=147, Balance=7568.5
+API Response: {"status":"failed","message":"Insufficient funds. Please add a minimum balance of N650 to your account and try again."}
+Transaction failed for user sId=147
+User found: sId=147, Balance=7568.5
+API Response: {"status":"failed","message":"Insufficient funds. Please add a minimum balance of N650 to your account and try again."}
+Transaction failed for user sId=147
+User found: sId=147, Balance=6818.5
+API Response: {"status":"success","message":"Smile subscription successful","transaction_reference":"APhdqKMs4ylurUMzBCglaj"}
+Transaction failed for user sId=147

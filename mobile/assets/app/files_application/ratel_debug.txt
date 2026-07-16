@@ -1,0 +1,457 @@
+2025-03-21 15:13:56 - Script started
+2025-03-21 15:13:56 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=82, number=02064703762
+2025-03-21 15:13:56 - Fetching user details
+2025-03-21 15:13:56 - User found: sId=152, old_balance=1400
+2025-03-21 15:13:56 - Plan found: selling price = 150
+2025-03-21 15:13:56 - Fetching API configurations
+2025-03-21 15:13:56 - API key and link retrieved
+2025-03-21 15:13:56 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02064703762"}
+2025-03-21 15:13:56 - Requesting API authentication
+2025-03-21 15:13:57 - API authentication successful
+2025-03-21 15:13:57 - Sending API request
+2025-03-21 15:13:58 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-21 15:13:58 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-21 15:13:58 - Transaction status: 0, reference: AD1122334455, new balance: 1250
+2025-03-22 16:29:51 - Script started
+2025-03-22 16:29:51 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=80
+2025-03-22 16:29:51 - Fetching user details
+2025-03-22 16:29:51 - User found: sId=147, old_balance=432.5
+2025-03-22 16:29:51 - Plan found: selling price = 1050
+2025-03-22 16:29:51 - Insufficient balance
+2025-03-22 16:30:18 - Script started
+2025-03-22 16:30:18 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-22 16:30:18 - Fetching user details
+2025-03-22 16:30:18 - User found: sId=147, old_balance=432.5
+2025-03-22 16:30:18 - Plan found: selling price = 150
+2025-03-22 16:30:18 - Fetching API configurations
+2025-03-22 16:30:18 - API key and link retrieved
+2025-03-22 16:30:18 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-22 16:30:18 - Requesting API authentication
+2025-03-22 16:30:19 - API authentication successful
+2025-03-22 16:30:19 - Sending API request
+2025-03-22 16:30:23 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-22 16:30:23 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-22 16:30:23 - Transaction status: 0, reference: AD1122334455, new balance: 282.5
+2025-03-22 18:00:57 - Script started
+2025-03-22 18:00:57 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-22 18:00:57 - Fetching user details
+2025-03-22 18:00:57 - User found: sId=147, old_balance=432.5
+2025-03-22 18:00:57 - Plan found: selling price = 150
+2025-03-22 18:00:57 - Fetching API configurations
+2025-03-22 18:00:57 - API key and link retrieved
+2025-03-22 18:00:57 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-22 18:00:57 - Requesting API authentication
+2025-03-22 18:00:57 - API authentication successful
+2025-03-22 18:00:57 - Sending API request
+2025-03-22 18:00:58 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-22 18:00:58 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-22 18:00:58 - Transaction status: 0, reference: AD1122334455, new balance: 282.5
+2025-03-22 18:02:19 - Script started
+2025-03-22 18:02:19 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-22 18:02:19 - Fetching user details
+2025-03-22 18:02:19 - User found: sId=147, old_balance=432.5
+2025-03-22 18:02:19 - Plan found: selling price = 150
+2025-03-22 18:02:19 - Fetching API configurations
+2025-03-22 18:02:19 - API key and link retrieved
+2025-03-22 18:02:19 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-22 18:02:19 - Requesting API authentication
+2025-03-22 18:02:20 - API authentication successful
+2025-03-22 18:02:20 - Sending API request
+2025-03-22 18:02:21 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-22 18:02:21 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-22 18:02:21 - Transaction status: 0, reference: AD1122334455, new balance: 282.5
+2025-03-22 18:05:52 - Script started
+2025-03-22 18:05:52 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-22 18:05:52 - Fetching user details
+2025-03-22 18:05:52 - User found: sId=147, old_balance=432.5
+2025-03-22 18:05:52 - Plan found: selling price = 150
+2025-03-22 18:05:52 - Fetching API configurations
+2025-03-22 18:05:52 - API key and link retrieved
+2025-03-22 18:05:52 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-22 18:05:52 - Requesting API authentication
+2025-03-22 18:05:53 - API authentication successful
+2025-03-22 18:05:53 - Sending API request
+2025-03-22 18:05:54 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-22 18:05:54 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-22 18:05:54 - Transaction status: 0, reference: AD1122334455, new balance: 282.5
+2025-03-22 18:28:21 - Script started
+2025-03-22 18:28:21 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-22 18:28:21 - Fetching user details
+2025-03-22 18:28:21 - User found: sId=147, old_balance=333.5
+2025-03-22 18:28:21 - Plan found: selling price = 150
+2025-03-22 18:28:21 - Fetching API configurations
+2025-03-22 18:28:21 - API key and link retrieved
+2025-03-22 18:28:21 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-22 18:28:21 - Requesting API authentication
+2025-03-22 18:28:21 - API authentication successful
+2025-03-22 18:28:21 - Sending API request
+2025-03-22 18:28:22 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-22 18:28:22 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-22 18:28:22 - Transaction status: 0, reference: AD1122334455, new balance: 183.5
+2025-03-22 20:38:15 - Script started
+2025-03-22 20:38:15 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-22 20:38:15 - Fetching user details
+2025-03-22 20:38:15 - User found: sId=147, old_balance=2588.5
+2025-03-22 20:38:15 - Plan found: selling price = 150
+2025-03-22 20:38:15 - Fetching API configurations
+2025-03-22 20:38:15 - API key and link retrieved
+2025-03-22 20:38:15 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-22 20:38:15 - Requesting API authentication
+2025-03-22 20:38:15 - API authentication successful
+2025-03-22 20:38:15 - Sending API request
+2025-03-22 20:38:16 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-22 20:38:16 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-22 20:38:16 - Transaction status: 0, reference: AD1122334455, new balance: 2438.5
+2025-03-23 09:52:39 - Script started
+2025-03-23 09:52:39 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=80
+2025-03-23 09:52:39 - Fetching user details
+2025-03-23 09:52:39 - User found: sId=147, old_balance=2588.5
+2025-03-23 09:52:39 - Plan found: selling price = 1100
+2025-03-23 09:52:39 - Fetching API configurations
+2025-03-23 09:52:39 - API key and link retrieved
+2025-03-23 09:52:39 - Payload prepared: {"service_id":"ratel","plan_id":"80","number":"02097020165"}
+2025-03-23 09:52:39 - Requesting API authentication
+2025-03-23 09:52:40 - API authentication successful
+2025-03-23 09:52:40 - Sending API request
+2025-03-23 09:52:41 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 09:52:41 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 09:52:41 - Transaction status: 0, reference: AD1122334455, new balance: 1488.5
+2025-03-23 12:43:55 - Script started
+2025-03-23 12:43:55 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, number=02097020165, plan_id=82
+2025-03-23 12:43:55 - Fetching user details
+2025-03-23 12:43:55 - User found: sId=152, old_balance=1035
+2025-03-23 12:43:55 - Plan found: selling price = 150
+2025-03-23 12:43:55 - Fetching API configurations
+2025-03-23 12:43:55 - API key and link retrieved
+2025-03-23 12:43:55 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-23 12:43:55 - Requesting API authentication
+2025-03-23 12:43:56 - API authentication successful
+2025-03-23 12:43:56 - Sending API request
+2025-03-23 12:43:57 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 12:43:57 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 12:43:57 - Transaction status: 0, reference: AD1122334455, new balance: 885
+2025-03-23 12:49:42 - Script started
+2025-03-23 12:49:42 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, number=02097020165, plan_id=82
+2025-03-23 12:49:42 - Fetching user details
+2025-03-23 12:49:42 - User found: sId=152, old_balance=1035
+2025-03-23 12:49:42 - Plan found: selling price = 150
+2025-03-23 12:49:42 - Fetching API configurations
+2025-03-23 12:49:42 - API key and link retrieved
+2025-03-23 12:49:42 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-23 12:49:42 - Requesting API authentication
+2025-03-23 12:49:42 - API authentication successful
+2025-03-23 12:49:42 - Sending API request
+2025-03-23 12:49:43 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 12:49:43 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 12:49:43 - Transaction status: 0, reference: AD1122334455, new balance: 885
+2025-03-23 12:56:26 - Script started
+2025-03-23 12:56:26 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, number=02097020165, plan_id=82
+2025-03-23 12:56:26 - Fetching user details
+2025-03-23 12:56:26 - User found: sId=152, old_balance=1035
+2025-03-23 12:56:26 - Plan found: selling price = 150
+2025-03-23 12:56:26 - Fetching API configurations
+2025-03-23 12:56:26 - API key and link retrieved
+2025-03-23 12:56:26 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-23 12:56:26 - Requesting API authentication
+2025-03-23 12:56:27 - API authentication successful
+2025-03-23 12:56:27 - Sending API request
+2025-03-23 12:56:27 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 12:56:27 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 13:03:17 - Script started
+2025-03-23 13:03:17 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, number=02097020165, plan_id=82
+2025-03-23 13:03:17 - Fetching user details
+2025-03-23 13:03:17 - User found: sId=152, old_balance=1035
+2025-03-23 13:03:17 - Plan found: selling price = 150
+2025-03-23 13:03:17 - Fetching API configurations
+2025-03-23 13:03:17 - API key and link retrieved
+2025-03-23 13:03:17 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-23 13:03:17 - Requesting API authentication
+2025-03-23 13:03:19 - API authentication successful
+2025-03-23 13:03:19 - Sending API request
+2025-03-23 13:03:19 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 13:03:19 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 13:03:19 - Transaction recorded successfully
+2025-03-23 13:03:19 - Wallet updated successfully
+2025-03-23 13:03:19 - Script completed
+2025-03-23 15:50:38 - Script started
+2025-03-23 15:50:38 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-23 15:50:38 - Fetching user details
+2025-03-23 15:50:38 - User found: sId=147, old_balance=2588.5
+2025-03-23 15:50:38 - Plan found: selling price = 150
+2025-03-23 15:50:38 - Fetching API configurations
+2025-03-23 15:50:38 - API key and link retrieved
+2025-03-23 15:50:38 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-23 15:50:38 - Requesting API authentication
+2025-03-23 15:50:39 - API authentication successful
+2025-03-23 15:50:39 - Sending API request
+2025-03-23 15:50:40 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 15:50:40 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 17:50:21 - Script started
+2025-03-23 17:50:21 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-23 17:50:21 - Fetching user details
+2025-03-23 17:50:21 - User found: sId=147, old_balance=2588.5
+2025-03-23 17:50:21 - Plan found: selling price = 150
+2025-03-23 17:50:21 - Fetching API configurations
+2025-03-23 17:50:21 - API key and link retrieved
+2025-03-23 17:50:21 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-23 17:50:21 - Requesting API authentication
+2025-03-23 17:50:22 - API authentication successful
+2025-03-23 17:50:22 - Sending API request
+2025-03-23 17:50:23 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 17:50:23 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 18:58:13 - Script started
+2025-03-23 18:58:13 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-23 18:58:13 - Fetching user details
+2025-03-23 18:58:13 - User found: sId=147, old_balance=5759.5
+2025-03-23 18:58:13 - Plan found: selling price = 150
+2025-03-23 18:58:13 - Fetching API configurations
+2025-03-23 18:58:13 - API key and link retrieved
+2025-03-23 18:58:13 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-23 18:58:13 - Requesting API authentication
+2025-03-23 18:58:14 - API authentication successful
+2025-03-23 18:58:14 - Sending API request
+2025-03-23 18:58:15 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 18:58:15 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-24 02:17:28 - Script started
+2025-03-24 02:17:28 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-24 02:17:28 - Fetching user details
+2025-03-24 02:17:28 - User found: sId=147, old_balance=5196.5
+2025-03-24 02:17:28 - Plan found: selling price = 150
+2025-03-24 02:17:28 - Fetching API configurations
+2025-03-24 02:17:28 - API key and link retrieved
+2025-03-24 02:17:28 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-24 02:17:28 - Requesting API authentication
+2025-03-24 02:17:30 - API authentication successful
+2025-03-24 02:17:30 - Sending API request
+2025-03-24 02:17:31 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-24 02:17:31 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-24 04:16:37 - Script started
+2025-03-24 04:16:37 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, number=02097020165, plan_id=82
+2025-03-24 04:16:37 - Fetching user details
+2025-03-24 04:16:37 - User found: sId=152, old_balance=1702
+2025-03-24 04:16:37 - Plan found: selling price = 150
+2025-03-24 04:16:37 - Fetching API configurations
+2025-03-24 04:16:37 - API key and link retrieved
+2025-03-24 04:16:37 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-24 04:16:37 - Requesting API authentication
+2025-03-24 04:16:38 - API authentication successful
+2025-03-24 04:16:38 - Sending API request
+2025-03-24 04:16:39 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-24 04:16:39 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-24 07:58:28 - Script started
+2025-03-24 07:58:28 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-24 07:58:28 - Fetching user details
+2025-03-24 07:58:28 - User found: sId=147, old_balance=4297.5
+2025-03-24 07:58:28 - Plan found: selling price = 150
+2025-03-24 07:58:28 - Fetching API configurations
+2025-03-24 07:58:28 - API key and link retrieved
+2025-03-24 07:58:28 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-24 07:58:28 - Requesting API authentication
+2025-03-24 07:58:28 - API authentication successful
+2025-03-24 07:58:28 - Sending API request
+2025-03-24 07:58:29 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-24 07:58:29 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-24 07:58:29 - Duplicate transaction reference detected. Generating a new one.
+2025-03-24 07:58:29 - Transaction recorded successfully
+2025-03-24 07:58:29 - Wallet updated successfully
+2025-03-24 07:58:29 - Script completed
+2025-03-24 09:14:15 - Script started
+2025-03-24 09:14:15 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-24 09:14:15 - Fetching user details
+2025-03-24 09:14:15 - User found: sId=147, old_balance=1378.5
+2025-03-24 09:14:15 - Plan found: selling price = 150
+2025-03-24 09:14:15 - Fetching API configurations
+2025-03-24 09:14:15 - API key and link retrieved
+2025-03-24 09:14:15 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-24 09:14:15 - Requesting API authentication
+2025-03-24 09:14:16 - API authentication successful
+2025-03-24 09:14:16 - Sending API request
+2025-03-24 09:14:17 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-24 09:14:17 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-24 09:14:17 - Duplicate transaction reference detected. Generating a new one.
+2025-03-24 09:14:17 - Transaction recorded successfully
+2025-03-24 09:14:17 - Wallet updated successfully
+2025-03-24 09:14:17 - Script completed
+2025-03-24 15:41:20 - Script started
+2025-03-24 15:41:20 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-24 15:41:20 - Fetching user details
+2025-03-24 15:41:20 - User found: sId=147, old_balance=9228.5
+2025-03-24 15:41:20 - Plan found: selling price = 150
+2025-03-24 15:41:20 - Fetching API configurations
+2025-03-24 15:41:20 - API key and link retrieved
+2025-03-24 15:41:20 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-24 15:41:20 - Requesting API authentication
+2025-03-24 15:41:22 - API authentication successful
+2025-03-24 15:41:22 - Sending API request
+2025-03-24 15:41:23 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-24 15:41:23 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-24 15:41:23 - Duplicate transaction reference detected. Generating a new one.
+2025-03-24 15:41:23 - Transaction recorded successfully
+2025-03-24 15:41:23 - Wallet updated successfully
+2025-03-24 15:41:23 - Script completed
+2025-03-24 19:31:48 - Script started
+2025-03-24 19:31:48 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-24 19:31:48 - Fetching user details
+2025-03-24 19:31:48 - User found: sId=147, old_balance=7718.5
+2025-03-24 19:31:48 - Plan found: selling price = 150
+2025-03-24 19:31:48 - Fetching API configurations
+2025-03-24 19:31:48 - API key and link retrieved
+2025-03-24 19:31:48 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-24 19:31:48 - Requesting API authentication
+2025-03-24 19:31:49 - API authentication successful
+2025-03-24 19:31:49 - Sending API request
+2025-03-24 19:31:51 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-24 19:31:51 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-24 19:31:51 - Duplicate transaction reference detected. Generating a new one.
+2025-03-24 19:31:51 - Transaction recorded successfully
+2025-03-24 19:31:51 - Wallet updated successfully
+2025-03-24 19:31:51 - Script completed
+2025-03-25 09:39:41 - Script started
+2025-03-25 09:39:41 - Received input: token=7666eff826f0bc5c01518157933e0634, number=02097020165, plan_id=82
+2025-03-25 09:39:41 - Fetching user details
+2025-03-25 09:39:41 - User found: sId=147, old_balance=7568.5
+2025-03-25 09:39:41 - Plan found: selling price = 150
+2025-03-25 09:39:41 - Fetching API configurations
+2025-03-25 09:39:41 - API key and link retrieved
+2025-03-25 09:39:41 - Payload prepared: {"service_id":"ratel","plan_id":"82","number":"02097020165"}
+2025-03-25 09:39:41 - Requesting API authentication
+2025-03-25 09:39:42 - API authentication successful
+2025-03-25 09:39:42 - Sending API request
+2025-03-25 09:39:43 - API response: {"status":"success","message":"Ratel service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-25 09:39:43 - API response decoded: Array
+(
+    [status] => success
+    [message] => Ratel service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-25 09:39:43 - Duplicate transaction reference detected. Generating a new one.
+2025-03-25 09:39:43 - Transaction recorded successfully
+2025-03-25 09:39:43 - Wallet updated successfully
+2025-03-25 09:39:43 - Script completed

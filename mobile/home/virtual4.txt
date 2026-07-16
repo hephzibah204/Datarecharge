@@ -1,0 +1,1 @@
+{"status":true,"message":{"description":"Card withdraw successful.","details":{"trans_id":"PSprw17161150454534HI2","amount":"3","card":{"id":"8b6e5a0s-153c-4b9d-5262-0s9032f87e4","prev_balance":1375976824,"balance":3028,"currency":"usd"}}},"status_code":200}

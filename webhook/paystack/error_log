@@ -1,0 +1,21 @@
+[05-Jul-2023 15:12:29 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2ugcm72l66' for key 'transref' in /home/dannvtuc/public_html/core/Models/ApiModel.php:265
+Stack trace:
+#0 /home/dannvtuc/public_html/core/Models/ApiModel.php(265): PDOStatement->execute()
+#1 /home/dannvtuc/public_html/core/Controllers/ApiAccess.php(304): ApiModel->recordTransaction(47, 'Wallet Topup', 'Wallet funding ...', '2ugcm72l66', '99', '639', '738', 0)
+#2 /home/dannvtuc/public_html/webhook/paystack/index.php(42): ApiAccess->recordPaystackTransaction('47', 'Wallet Topup', 'Wallet funding ...', 99, '639', '2ugcm72l66', '0')
+#3 {main}
+  thrown in /home/dannvtuc/public_html/core/Models/ApiModel.php on line 265
+[05-Jul-2023 15:12:36 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2ugcm72l66' for key 'transref' in /home/dannvtuc/public_html/core/Models/ApiModel.php:265
+Stack trace:
+#0 /home/dannvtuc/public_html/core/Models/ApiModel.php(265): PDOStatement->execute()
+#1 /home/dannvtuc/public_html/core/Controllers/ApiAccess.php(304): ApiModel->recordTransaction(47, 'Wallet Topup', 'Wallet funding ...', '2ugcm72l66', '99', '738', '837', 0)
+#2 /home/dannvtuc/public_html/webhook/paystack/index.php(42): ApiAccess->recordPaystackTransaction('47', 'Wallet Topup', 'Wallet funding ...', 99, '738', '2ugcm72l66', '0')
+#3 {main}
+  thrown in /home/dannvtuc/public_html/core/Models/ApiModel.php on line 265
+[05-Jul-2023 15:12:45 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2ugcm72l66' for key 'transref' in /home/dannvtuc/public_html/core/Models/ApiModel.php:265
+Stack trace:
+#0 /home/dannvtuc/public_html/core/Models/ApiModel.php(265): PDOStatement->execute()
+#1 /home/dannvtuc/public_html/core/Controllers/ApiAccess.php(304): ApiModel->recordTransaction(47, 'Wallet Topup', 'Wallet funding ...', '2ugcm72l66', '99', '837', '936', 0)
+#2 /home/dannvtuc/public_html/webhook/paystack/index.php(42): ApiAccess->recordPaystackTransaction('47', 'Wallet Topup', 'Wallet funding ...', 99, '837', '2ugcm72l66', '0')
+#3 {main}
+  thrown in /home/dannvtuc/public_html/core/Models/ApiModel.php on line 265

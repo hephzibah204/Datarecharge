@@ -1,0 +1,245 @@
+[23-Sep-2024 08:15:03 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/vtutele1/public_html/core/Models/ApiModel.php:410
+Stack trace:
+#0 /home/vtutele1/public_html/core/Models/ApiModel.php(410): PDOStatement->execute()
+#1 /home/vtutele1/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(1, '13061727075439', NULL, '22741472098', 'null', 'regular', 'YET')
+#2 /home/vtutele1/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/vtutele1/public_html/core/Models/ApiModel.php on line 410
+[28-Sep-2024 07:18:50 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/bvn/index.php on line 121
+[29-Sep-2024 00:45:39 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/vtutele1/public_html/core/Models/ApiModel.php:410
+Stack trace:
+#0 /home/vtutele1/public_html/core/Models/ApiModel.php(410): PDOStatement->execute()
+#1 /home/vtutele1/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(159, '24571727567080', NULL, '22680730170', 'null', 'regular', 'YET')
+#2 /home/vtutele1/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/vtutele1/public_html/core/Models/ApiModel.php on line 410
+[18-Oct-2024 20:32:43 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/bvn/index.php on line 121
+[23-Oct-2024 17:38:01 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/vtutele1/public_html/core/Models/ApiModel.php:410
+Stack trace:
+#0 /home/vtutele1/public_html/core/Models/ApiModel.php(410): PDOStatement->execute()
+#1 /home/vtutele1/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(1, '63711729701454', NULL, '22741472098', 'null', 'regular', 'YET')
+#2 /home/vtutele1/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/vtutele1/public_html/core/Models/ApiModel.php on line 410
+[30-Oct-2024 02:20:40 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/bvn/index.php on line 121
+[01-Nov-2024 09:15:44 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/bvn/index.php on line 121
+[03-Nov-2024 13:44:12 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home1/vtutelec/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home1/vtutelec/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home1/vtutelec/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(295, '42461730637773', NULL, '22712128867', 'null', 'regular', 'YET')
+#2 /home1/vtutelec/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home1/vtutelec/public_html/core/Models/ApiModel.php on line 374
+[03-Nov-2024 16:09:07 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home1/vtutelec/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home1/vtutelec/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home1/vtutelec/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(295, '45861730646420', NULL, '22712128867', 'null', 'regular', 'YET')
+#2 /home1/vtutelec/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home1/vtutelec/public_html/core/Models/ApiModel.php on line 374
+[03-Nov-2024 16:09:08 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/vtutelec/public_html/core/Models/ApiModel.php:1401) in /home1/vtutelec/public_html/api/bvn/index.php on line 131
+[03-Nov-2024 16:09:13 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/vtutelec/public_html/core/Models/ApiModel.php:1401) in /home1/vtutelec/public_html/api/bvn/index.php on line 131
+[03-Nov-2024 16:09:13 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/vtutelec/public_html/core/Models/ApiModel.php:1401) in /home1/vtutelec/public_html/api/bvn/index.php on line 131
+[03-Nov-2024 16:09:18 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/vtutelec/public_html/core/Models/ApiModel.php:1401) in /home1/vtutelec/public_html/api/bvn/index.php on line 131
+[03-Nov-2024 16:09:22 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/vtutelec/public_html/core/Models/ApiModel.php:1401) in /home1/vtutelec/public_html/api/bvn/index.php on line 131
+[03-Nov-2024 16:09:27 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/vtutelec/public_html/core/Models/ApiModel.php:1401) in /home1/vtutelec/public_html/api/bvn/index.php on line 131
+[11-Nov-2024 22:26:26 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/bvn/index.php on line 143
+[11-Nov-2024 22:26:28 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/bvn/index.php on line 131
+[11-Nov-2024 22:26:28 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 58
+[11-Nov-2024 22:26:28 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 58
+[11-Nov-2024 22:26:28 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 59
+[11-Nov-2024 22:26:28 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[11-Nov-2024 22:26:28 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/aqriiatw/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/aqriiatw/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7.0, '82491731360352', NULL, '22618789935', 'null', 'regular', 'YET')
+#2 /home/aqriiatw/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 374
+[12-Nov-2024 14:13:31 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/bvn/index.php on line 143
+[12-Nov-2024 14:13:32 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 58
+[12-Nov-2024 14:13:32 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 58
+[12-Nov-2024 14:13:32 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 59
+[12-Nov-2024 14:13:32 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[12-Nov-2024 14:13:32 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/aqriiatw/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/aqriiatw/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7.0, '39201731417027', NULL, '22618789935', 'null', 'regular', 'YET')
+#2 /home/aqriiatw/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 374
+[12-Nov-2024 14:13:50 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/bvn/index.php on line 121
+[22-Nov-2024 12:53:05 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/bvn/index.php on line 143
+[22-Nov-2024 12:53:07 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/bvn/index.php on line 121
+[22-Nov-2024 12:53:09 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[22-Nov-2024 12:53:09 Africa/Lagos] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'aqriiatw_fulanee'@'localhost' (using password: YES) in /home/aqriiatw/public_html/core/Controllers/BVN.php:62
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Controllers/BVN.php(62): mysqli_connect('localhost', 'aqriiatw_fulane...', Object(SensitiveParameterValue), 'L&Pw@WGyiznE')
+#1 /home/aqriiatw/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#2 {main}
+  thrown in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 62
+[22-Nov-2024 12:55:49 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/bvn/index.php on line 143
+[22-Nov-2024 12:55:52 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[22-Nov-2024 12:55:52 Africa/Lagos] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'aqriiatw_fulanee'@'localhost' (using password: YES) in /home/aqriiatw/public_html/core/Controllers/BVN.php:62
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Controllers/BVN.php(62): mysqli_connect('localhost', 'aqriiatw_fulane...', Object(SensitiveParameterValue), 'L&Pw@WGyiznE')
+#1 /home/aqriiatw/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#2 {main}
+  thrown in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 62
+[25-Nov-2024 18:25:06 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/bvn/index.php on line 143
+[25-Nov-2024 18:25:12 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[25-Nov-2024 18:25:12 Africa/Lagos] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'aqriiatw_fulanee'@'localhost' (using password: YES) in /home/aqriiatw/public_html/core/Controllers/BVN.php:62
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Controllers/BVN.php(62): mysqli_connect('localhost', 'aqriiatw_fulane...', Object(SensitiveParameterValue), 'L&Pw@WGyiznE')
+#1 /home/aqriiatw/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#2 {main}
+  thrown in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 62
+[30-Nov-2024 14:09:51 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/bvn/index.php on line 143
+[30-Nov-2024 14:09:52 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/bvn/index.php on line 131
+[30-Nov-2024 14:09:59 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 58
+[30-Nov-2024 14:09:59 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 58
+[30-Nov-2024 14:09:59 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 59
+[30-Nov-2024 14:09:59 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[30-Nov-2024 14:09:59 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/aqriiatw/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/aqriiatw/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(15.0, '41331732972133', NULL, '08063637935', 'null', 'regular', 'YET')
+#2 /home/aqriiatw/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 374
+[30-Nov-2024 14:10:46 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/bvn/index.php on line 143
+[30-Nov-2024 14:10:54 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 58
+[30-Nov-2024 14:10:54 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 58
+[30-Nov-2024 14:10:54 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/aqriiatw/public_html/core/Controllers/BVN.php on line 59
+[30-Nov-2024 14:10:54 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[30-Nov-2024 14:10:54 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/aqriiatw/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/aqriiatw/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(15.0, '52571732972192', NULL, '08100741191', 'null', 'regular', 'YET')
+#2 /home/aqriiatw/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 374
+[05-Dec-2024 17:35:26 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[05-Dec-2024 17:35:30 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[05-Dec-2024 17:35:30 Africa/Lagos] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'aqriiatw_test'@'localhost' (using password: YES) in /home/quicktel/public_html/core/Controllers/BVN.php on line 62
+[05-Dec-2024 17:35:44 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/quicktel/public_html/core/Controllers/BVN.php:128
+Stack trace:
+#0 /home/quicktel/public_html/core/Controllers/BVN.php(128): mysqli_query(false, 'UPDATE reports ...')
+#1 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#2 {main}
+  thrown in /home/quicktel/public_html/core/Controllers/BVN.php on line 128
+[05-Dec-2024 17:38:07 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quicktel/public_html/core/Models/ApiModel.php:1185) in /home/quicktel/public_html/api/bvn/index.php on line 121
+[05-Dec-2024 18:13:13 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[05-Dec-2024 18:13:17 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[05-Dec-2024 18:13:17 Africa/Lagos] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'aqriiatw_test'@'localhost' (using password: YES) in /home/quicktel/public_html/core/Controllers/BVN.php on line 62
+[05-Dec-2024 18:13:32 Africa/Lagos] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, bool given in /home/quicktel/public_html/core/Controllers/BVN.php:128
+Stack trace:
+#0 /home/quicktel/public_html/core/Controllers/BVN.php(128): mysqli_query(false, 'UPDATE reports ...')
+#1 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#2 {main}
+  thrown in /home/quicktel/public_html/core/Controllers/BVN.php on line 128
+[05-Dec-2024 21:41:22 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[05-Dec-2024 21:41:23 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 21:41:23 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 21:41:23 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 59
+[05-Dec-2024 21:41:23 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[05-Dec-2024 21:41:23 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7, '69001733431254', NULL, '22355118010', 'null', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[05-Dec-2024 21:44:13 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[05-Dec-2024 21:44:15 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 21:44:15 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 21:44:15 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 59
+[05-Dec-2024 21:44:15 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[05-Dec-2024 21:44:15 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7, '98751733431426', NULL, '22355118010', 'null', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[05-Dec-2024 22:06:25 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[05-Dec-2024 22:06:26 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 22:06:26 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 22:06:26 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 59
+[05-Dec-2024 22:06:26 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[05-Dec-2024 22:06:26 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7, '66161733432762', NULL, '22355118010', 'null', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[05-Dec-2024 22:12:57 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[05-Dec-2024 22:12:58 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 22:12:58 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 22:12:58 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 59
+[05-Dec-2024 22:12:58 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[05-Dec-2024 22:12:58 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7, '11721733433148', NULL, '22355118010', 'null', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[05-Dec-2024 22:29:03 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[05-Dec-2024 22:29:04 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 22:29:04 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 22:29:04 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 59
+[05-Dec-2024 22:29:04 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[05-Dec-2024 22:29:04 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7, '26871733434104', NULL, '22355118010', 'null', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[05-Dec-2024 23:03:13 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[05-Dec-2024 23:03:14 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 23:03:14 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[05-Dec-2024 23:03:14 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 59
+[05-Dec-2024 23:03:14 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[05-Dec-2024 23:03:14 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7, '48201733436159', NULL, '22355118010', 'null', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[06-Dec-2024 06:34:50 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[06-Dec-2024 06:34:51 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[06-Dec-2024 06:34:51 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[06-Dec-2024 06:34:51 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 59
+[06-Dec-2024 06:34:51 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[06-Dec-2024 06:34:51 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7, '16691733463265', NULL, '22355118010', 'null', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[06-Dec-2024 12:21:54 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[06-Dec-2024 12:21:55 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[06-Dec-2024 12:21:55 Africa/Lagos] PHP Warning:  Attempt to read property "firstName" on null in /home/quicktel/public_html/core/Controllers/BVN.php on line 58
+[06-Dec-2024 12:21:55 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$data in /home/quicktel/public_html/core/Controllers/BVN.php on line 59
+[06-Dec-2024 12:21:55 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[06-Dec-2024 12:21:55 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'placeholder' cannot be null in /home/quicktel/public_html/core/Models/ApiModel.php:374
+Stack trace:
+#0 /home/quicktel/public_html/core/Models/ApiModel.php(374): PDOStatement->execute()
+#1 /home/quicktel/public_html/core/Controllers/BVN.php(60): ApiModel->recordReport(7, '84371733484066', NULL, '22355118010', 'null', 'regular', 'YET')
+#2 /home/quicktel/public_html/api/bvn/index.php(177): BVN->verifyMyBVN(Object(stdClass), Array)
+#3 {main}
+  thrown in /home/quicktel/public_html/core/Models/ApiModel.php on line 374
+[07-Dec-2024 16:49:39 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/bvn/index.php on line 143
+[07-Dec-2024 16:49:43 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/quicktel/public_html/core/Models/ApiModel.php on line 358
+[07-Dec-2024 16:50:04 Africa/Lagos] PHP Warning:  Undefined variable $profit in /home/quicktel/public_html/api/bvn/index.php on line 185
+[07-Dec-2024 16:50:04 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quicktel/public_html/core/Models/ApiModel.php:1185) in /home/quicktel/public_html/api/bvn/index.php on line 188
+[11-Dec-2024 16:50:06 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/bvn/index.php on line 143
+[11-Dec-2024 16:50:11 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/keytopup/public_html/core/Models/ApiModel.php on line 358
+[11-Dec-2024 16:50:28 Africa/Lagos] PHP Warning:  Undefined variable $profit in /home/keytopup/public_html/api/bvn/index.php on line 185
+[04-Dec-2025 22:55:08 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/bvn/index.php on line 121
+[04-Dec-2025 22:55:29 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/bvn/index.php on line 121

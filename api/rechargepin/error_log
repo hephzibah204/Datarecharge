@@ -1,0 +1,93 @@
+[26-Mar-2024 10:41:43 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 24
+[26-Mar-2024 10:41:43 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 29
+[26-Mar-2024 10:41:43 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 34
+[26-Mar-2024 10:41:43 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 39
+[26-Mar-2024 10:41:43 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 44
+[26-Mar-2024 15:13:55 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 24
+[26-Mar-2024 15:13:55 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 29
+[26-Mar-2024 15:13:55 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 34
+[26-Mar-2024 15:13:55 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 39
+[26-Mar-2024 15:13:55 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/public_html/core/Controllers/RechargeCard.php on line 44
+[02-May-2024 10:06:58 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 24
+[02-May-2024 10:06:58 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 29
+[02-May-2024 10:06:58 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 34
+[02-May-2024 10:06:58 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 39
+[02-May-2024 10:06:58 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 44
+[02-May-2024 10:20:37 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 24
+[02-May-2024 10:20:37 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 29
+[02-May-2024 10:20:37 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 34
+[02-May-2024 10:20:37 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 39
+[02-May-2024 10:20:37 Africa/Lagos] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 44
+[05-May-2024 17:27:35 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[05-May-2024 17:27:35 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[05-May-2024 17:28:04 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[05-May-2024 17:28:04 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 18:45:25 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 18:45:25 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 19:29:34 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 19:29:34 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 19:31:02 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 19:31:02 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 19:31:37 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 19:31:37 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 19:32:27 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[11-May-2024 19:32:27 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[12-May-2024 14:03:42 Africa/Lagos] PHP Warning:  Undefined variable $airtimepinId in /home/nrfmbqnl/Babspay.com.ng/api/rechargepin/index.php on line 97
+[12-May-2024 14:06:02 Africa/Lagos] PHP Warning:  Undefined variable $airtimepinId in /home/nrfmbqnl/Babspay.com.ng/api/rechargepin/index.php on line 97
+[12-May-2024 14:17:39 Africa/Lagos] PHP Warning:  Undefined variable $airtimepinId in /home/nrfmbqnl/Babspay.com.ng/api/rechargepin/index.php on line 97
+[12-May-2024 14:46:01 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[12-May-2024 14:46:01 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[12-May-2024 15:08:18 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[12-May-2024 15:08:18 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[12-May-2024 17:46:54 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[12-May-2024 17:46:54 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[13-May-2024 05:37:41 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[13-May-2024 05:37:41 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/nrfmbqnl/Babspay.com.ng/core/Controllers/RechargeCard.php on line 107
+[15-May-2024 08:31:26 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to undefined method ApiAccess::verifyRecNetworkId() in /home/nrfmbqnl/Babspay.com.ng/api/rechargepin/index.php:113
+Stack trace:
+#0 {main}
+  thrown in /home/nrfmbqnl/Babspay.com.ng/api/rechargepin/index.php on line 113
+[08-Jun-2024 22:36:16 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'serial' cannot be null in /home1/databser/public_html/core/Models/ApiModel.php:363
+Stack trace:
+#0 /home1/databser/public_html/core/Models/ApiModel.php(363): PDOStatement->execute()
+#1 /home1/databser/public_html/core/Controllers/ApiAccess.php(346): ApiModel->saveRechargePin('182', 'AIRTIMEPIN324_2...', 'Datab', 'MTN', '100', '1', NULL, NULL, '*311*', '*310#')
+#2 /home1/databser/public_html/api/rechargepin/index.php(265): ApiAccess->saveRechargePin('182', 'AIRTIMEPIN324_2...', 'Datab', 'MTN', '100', 1, NULL, NULL, '*311*', '*310#')
+#3 {main}
+  thrown in /home1/databser/public_html/core/Models/ApiModel.php on line 363
+[30-Jun-2024 07:40:14 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'serial' cannot be null in /home1/databser/public_html/core/Models/ApiModel.php:363
+Stack trace:
+#0 /home1/databser/public_html/core/Models/ApiModel.php(363): PDOStatement->execute()
+#1 /home1/databser/public_html/core/Controllers/ApiAccess.php(346): ApiModel->saveRechargePin('182', 'AIRTIMEPIN294_7...', 'Databservices ', 'MTN', '200', '1', NULL, NULL, '*311*', '*310#')
+#2 /home1/databser/public_html/api/rechargepin/index.php(265): ApiAccess->saveRechargePin('182', 'AIRTIMEPIN294_7...', 'Databservices ', 'MTN', '200', 1, NULL, NULL, '*311*', '*310#')
+#3 {main}
+  thrown in /home1/databser/public_html/core/Models/ApiModel.php on line 363
+[03-Aug-2024 11:17:44 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/databser/public_html/core/Models/ApiModel.php:1268) in /home1/databser/public_html/api/rechargepin/index.php on line 102
+[03-Sep-2024 22:54:31 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'serial' cannot be null in /home1/databser/public_html/core/Models/ApiModel.php:363
+Stack trace:
+#0 /home1/databser/public_html/core/Models/ApiModel.php(363): PDOStatement->execute()
+#1 /home1/databser/public_html/core/Controllers/ApiAccess.php(346): ApiModel->saveRechargePin('182', 'AIRTIMEPIN134_1...', 'Datab ', 'MTN', '100', '1', NULL, NULL, '*311*Pin#', '*310#')
+#2 /home1/databser/public_html/api/rechargepin/index.php(265): ApiAccess->saveRechargePin('182', 'AIRTIMEPIN134_1...', 'Datab ', 'MTN', '100', 1, NULL, NULL, '*311*Pin#', '*310#')
+#3 {main}
+  thrown in /home1/databser/public_html/core/Models/ApiModel.php on line 363
+[03-Sep-2024 22:56:07 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'serial' cannot be null in /home1/databser/public_html/core/Models/ApiModel.php:363
+Stack trace:
+#0 /home1/databser/public_html/core/Models/ApiModel.php(363): PDOStatement->execute()
+#1 /home1/databser/public_html/core/Controllers/ApiAccess.php(346): ApiModel->saveRechargePin('182', 'AIRTIMEPIN105_8...', 'Datab', 'MTN', '100', '1', NULL, NULL, '*311*Pin#', '*310#')
+#2 /home1/databser/public_html/api/rechargepin/index.php(265): ApiAccess->saveRechargePin('182', 'AIRTIMEPIN105_8...', 'Datab', 'MTN', '100', 1, NULL, NULL, '*311*Pin#', '*310#')
+#3 {main}
+  thrown in /home1/databser/public_html/core/Models/ApiModel.php on line 363
+[03-Sep-2024 22:58:27 Africa/Lagos] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'serial' cannot be null in /home1/databser/public_html/core/Models/ApiModel.php:363
+Stack trace:
+#0 /home1/databser/public_html/core/Models/ApiModel.php(363): PDOStatement->execute()
+#1 /home1/databser/public_html/core/Controllers/ApiAccess.php(346): ApiModel->saveRechargePin('182', 'AIRTIMEPIN132_1...', 'Fg', 'MTN', '100', '1', NULL, NULL, '*311*Pin#', '*310#')
+#2 /home1/databser/public_html/api/rechargepin/index.php(265): ApiAccess->saveRechargePin('182', 'AIRTIMEPIN132_1...', 'Fg', 'MTN', '100', 1, NULL, NULL, '*311*Pin#', '*310#')
+#3 {main}
+  thrown in /home1/databser/public_html/core/Models/ApiModel.php on line 363
+[05-Nov-2024 08:26:29 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home1/databser/bizdataconnects.com.ng/core/Controllers/RechargeCard.php on line 107
+[05-Nov-2024 08:26:29 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home1/databser/bizdataconnects.com.ng/core/Controllers/RechargeCard.php on line 107
+[08-Dec-2024 22:46:01 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home1/vtutelec/new.vtutelecom.ng/core/Controllers/RechargeCard.php on line 107
+[08-Dec-2024 22:46:01 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home1/vtutelec/new.vtutelecom.ng/core/Controllers/RechargeCard.php on line 107
+[10-Dec-2024 21:32:42 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/keytopup/shop.keytopup.com.ng/core/Controllers/RechargeCard.php on line 107
+[10-Dec-2024 21:32:42 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/keytopup/shop.keytopup.com.ng/core/Controllers/RechargeCard.php on line 107
+[10-Dec-2024 21:50:19 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/keytopup/shop.keytopup.com.ng/core/Controllers/RechargeCard.php on line 107
+[10-Dec-2024 21:50:19 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/keytopup/shop.keytopup.com.ng/core/Controllers/RechargeCard.php on line 107

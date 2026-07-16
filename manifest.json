@@ -1,0 +1,14 @@
+{
+  "name": "DataRecharge",
+  "short_name": "DataRecharge",
+  "description": "Cheapest data bundles, airtime recharge & bill payments in Nigeria",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1d3a",
+  "theme_color": "#0b1d3a",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

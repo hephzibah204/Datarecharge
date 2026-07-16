@@ -1,0 +1,9 @@
+[09-Apr-2024 20:16:21 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/eplxbrcj/public_html/core/Controllers/Electricity.php on line 166
+[09-Apr-2024 20:16:21 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$error in /home/eplxbrcj/public_html/core/Controllers/Electricity.php on line 172
+[09-Apr-2024 20:16:21 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in /home/eplxbrcj/public_html/core/Controllers/Electricity.php on line 172
+[09-Apr-2024 20:16:21 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eplxbrcj/public_html/core/Models/ApiModel.php:917) in /home/eplxbrcj/public_html/@@2700/electricity/index.php on line 259
+[09-Apr-2024 20:20:23 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/eplxbrcj/public_html/core/Controllers/Electricity.php on line 166
+[09-Apr-2024 20:20:23 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$error in /home/eplxbrcj/public_html/core/Controllers/Electricity.php on line 172
+[09-Apr-2024 20:20:23 Africa/Lagos] PHP Warning:  Trying to access array offset on value of type null in /home/eplxbrcj/public_html/core/Controllers/Electricity.php on line 172
+[09-Apr-2024 20:20:23 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eplxbrcj/public_html/core/Models/ApiModel.php:917) in /home/eplxbrcj/public_html/@@2700/electricity/index.php on line 259
+[10-Mar-2026 05:03:42 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/electricity/index.php on line 259

@@ -1,0 +1,142 @@
+[19-Sep-2024 17:01:59 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1321) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[19-Sep-2024 17:14:44 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to undefined method ApiModel::recordReport() in /home/vtutele1/public_html/core/Controllers/NIN.php:59
+Stack trace:
+#0 /home/vtutele1/public_html/api/nin/index.php(191): NIN->verifyMyNIN(Object(stdClass), Array)
+#1 {main}
+  thrown in /home/vtutele1/public_html/core/Controllers/NIN.php on line 59
+[19-Sep-2024 17:26:23 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to undefined method ApiModel::recordReport() in /home/vtutele1/public_html/core/Controllers/NIN.php:59
+Stack trace:
+#0 /home/vtutele1/public_html/api/nin/index.php(191): NIN->verifyMyNIN(Object(stdClass), Array)
+#1 {main}
+  thrown in /home/vtutele1/public_html/core/Controllers/NIN.php on line 59
+[19-Sep-2024 17:31:05 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to undefined method ApiModel::recordReport() in /home/vtutele1/public_html/core/Controllers/NIN.php:59
+Stack trace:
+#0 /home/vtutele1/public_html/api/nin/index.php(191): NIN->verifyMyNIN(Object(stdClass), Array)
+#1 {main}
+  thrown in /home/vtutele1/public_html/core/Controllers/NIN.php on line 59
+[19-Sep-2024 17:37:21 Africa/Lagos] PHP Fatal error:  Uncaught Error: Call to undefined method ApiModel::recordReport() in /home/vtutele1/public_html/core/Controllers/NIN.php:59
+Stack trace:
+#0 /home/vtutele1/public_html/api/nin/index.php(191): NIN->verifyMyNIN(Object(stdClass), Array)
+#1 {main}
+  thrown in /home/vtutele1/public_html/core/Controllers/NIN.php on line 59
+[22-Sep-2024 06:12:15 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 202
+[22-Sep-2024 11:24:31 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[29-Sep-2024 00:47:14 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[01-Oct-2024 08:07:22 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[03-Oct-2024 22:29:49 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[19-Oct-2024 03:57:26 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[27-Oct-2024 17:43:19 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[30-Oct-2024 02:21:23 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[30-Oct-2024 08:38:35 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[30-Oct-2024 08:39:20 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[30-Oct-2024 11:28:52 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[30-Oct-2024 13:28:01 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 202
+[30-Oct-2024 13:30:25 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 202
+[31-Oct-2024 18:57:24 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[01-Nov-2024 00:02:38 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[01-Nov-2024 09:14:51 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[01-Nov-2024 10:38:28 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[01-Nov-2024 10:42:03 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[01-Nov-2024 10:42:37 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[01-Nov-2024 12:20:12 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[01-Nov-2024 12:20:49 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[01-Nov-2024 12:29:31 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 202
+[01-Nov-2024 12:33:49 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 207
+[01-Nov-2024 12:34:42 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 202
+[01-Nov-2024 12:44:25 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 202
+[02-Nov-2024 09:42:21 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[02-Nov-2024 11:30:05 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[02-Nov-2024 11:30:05 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vtutele1/public_html/core/Models/ApiModel.php:1401) in /home/vtutele1/public_html/api/nin/index.php on line 133
+[03-Nov-2024 19:31:33 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/vtutelec/public_html/core/Models/ApiModel.php:1401) in /home1/vtutelec/public_html/api/nin/index.php on line 133
+[08-Nov-2024 09:54:53 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[08-Nov-2024 09:54:54 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[08-Nov-2024 09:54:54 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[08-Nov-2024 09:54:54 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 207
+[10-Nov-2024 21:00:45 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 133
+[10-Nov-2024 21:02:17 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[10-Nov-2024 21:02:18 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[10-Nov-2024 21:02:18 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[10-Nov-2024 21:02:18 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 207
+[11-Nov-2024 22:15:04 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 133
+[11-Nov-2024 22:18:18 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[11-Nov-2024 22:18:19 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[11-Nov-2024 22:18:19 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[11-Nov-2024 22:18:19 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 207
+[11-Nov-2024 22:21:03 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[11-Nov-2024 22:21:04 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[11-Nov-2024 22:21:04 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[11-Nov-2024 22:21:04 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 207
+[15-Nov-2024 10:13:12 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 133
+[19-Nov-2024 22:30:30 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 133
+[19-Nov-2024 23:02:19 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 133
+[22-Nov-2024 12:11:30 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[22-Nov-2024 12:11:31 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[22-Nov-2024 12:11:31 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[22-Nov-2024 12:11:31 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 207
+[22-Nov-2024 12:12:07 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[22-Nov-2024 12:12:07 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[22-Nov-2024 12:12:07 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[22-Nov-2024 12:12:07 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 207
+[22-Nov-2024 12:25:46 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[22-Nov-2024 12:25:49 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[22-Nov-2024 12:25:49 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 130
+[22-Nov-2024 12:25:49 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 207
+[22-Nov-2024 12:35:47 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[22-Nov-2024 12:35:49 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[22-Nov-2024 12:35:49 Africa/Lagos] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'aqriiatw_fulanee'@'localhost' (using password: YES) in /home/aqriiatw/public_html/core/Controllers/NIN.php:61
+Stack trace:
+#0 /home/aqriiatw/public_html/core/Controllers/NIN.php(61): mysqli_connect('localhost', 'aqriiatw_fulane...', Object(SensitiveParameterValue), 'L&Pw@WGyiznE')
+#1 /home/aqriiatw/public_html/api/nin/index.php(191): NIN->verifyMyNIN(Object(stdClass), Array)
+#2 {main}
+  thrown in /home/aqriiatw/public_html/core/Controllers/NIN.php on line 61
+[27-Nov-2024 11:25:31 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/aqriiatw/public_html/api/nin/index.php on line 157
+[27-Nov-2024 11:25:34 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/aqriiatw/public_html/core/Models/ApiModel.php on line 358
+[27-Nov-2024 11:26:03 Africa/Lagos] PHP Warning:  Undefined variable $profit in /home/aqriiatw/public_html/api/nin/index.php on line 199
+[27-Nov-2024 11:26:03 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/aqriiatw/public_html/core/Models/ApiModel.php:1185) in /home/aqriiatw/public_html/api/nin/index.php on line 202
+[05-Dec-2024 18:23:38 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/nin/index.php on line 157
+[05-Dec-2024 18:23:39 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/quicktel/public_html/core/Controllers/NIN.php on line 130
+[05-Dec-2024 18:23:39 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/quicktel/public_html/core/Controllers/NIN.php on line 130
+[05-Dec-2024 18:23:39 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quicktel/public_html/core/Models/ApiModel.php:1185) in /home/quicktel/public_html/api/nin/index.php on line 207
+[05-Dec-2024 18:25:38 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/nin/index.php on line 157
+[05-Dec-2024 18:25:39 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/quicktel/public_html/core/Controllers/NIN.php on line 130
+[05-Dec-2024 18:25:39 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/quicktel/public_html/core/Controllers/NIN.php on line 130
+[05-Dec-2024 18:25:39 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quicktel/public_html/core/Models/ApiModel.php:1185) in /home/quicktel/public_html/api/nin/index.php on line 207
+[05-Dec-2024 22:36:31 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/quicktel/public_html/api/nin/index.php on line 157
+[05-Dec-2024 22:36:32 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/quicktel/public_html/core/Controllers/NIN.php on line 130
+[05-Dec-2024 22:36:32 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/quicktel/public_html/core/Controllers/NIN.php on line 130
+[05-Dec-2024 22:36:32 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/quicktel/public_html/core/Models/ApiModel.php:1185) in /home/quicktel/public_html/api/nin/index.php on line 207
+[11-Dec-2024 16:41:55 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/nin/index.php on line 157
+[11-Dec-2024 16:41:59 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/keytopup/public_html/core/Models/ApiModel.php on line 358
+[11-Dec-2024 16:42:36 Africa/Lagos] PHP Warning:  Undefined variable $profit in /home/keytopup/public_html/api/nin/index.php on line 199
+[20-Dec-2024 19:08:48 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/nin/index.php on line 157
+[20-Dec-2024 19:08:52 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/keytopup/public_html/core/Models/ApiModel.php on line 358
+[20-Dec-2024 19:09:21 Africa/Lagos] PHP Warning:  Undefined variable $profit in /home/keytopup/public_html/api/nin/index.php on line 199
+[22-Dec-2024 22:38:33 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/keytopup/public_html/api/nin/index.php on line 157
+[22-Dec-2024 22:38:38 Africa/Lagos] PHP Warning:  Undefined variable $status in /home/keytopup/public_html/core/Models/ApiModel.php on line 358
+[22-Dec-2024 22:39:11 Africa/Lagos] PHP Warning:  Undefined variable $profit in /home/keytopup/public_html/api/nin/index.php on line 199
+[25-Aug-2025 08:15:53 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irvprxtj/public_html/core/Models/ApiModel.php:1185) in /home/irvprxtj/public_html/api/nin/index.php on line 133
+[01-Sep-2025 17:06:25 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irvprxtj/public_html/core/Models/ApiModel.php:1185) in /home/irvprxtj/public_html/api/nin/index.php on line 133
+[03-Sep-2025 19:02:57 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irvprxtj/public_html/core/Models/ApiModel.php:1185) in /home/irvprxtj/public_html/api/nin/index.php on line 133
+[05-Sep-2025 11:10:31 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/irvprxtj/public_html/api/nin/index.php on line 157
+[05-Sep-2025 11:10:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/irvprxtj/public_html/core/Controllers/NIN.php on line 130
+[05-Sep-2025 11:10:33 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/irvprxtj/public_html/core/Controllers/NIN.php on line 130
+[05-Sep-2025 11:10:33 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irvprxtj/public_html/core/Models/ApiModel.php:1185) in /home/irvprxtj/public_html/api/nin/index.php on line 207
+[13-Sep-2025 00:04:55 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/irvprxtj/public_html/core/Models/ApiModel.php:1185) in /home/irvprxtj/public_html/api/nin/index.php on line 133
+[25-Nov-2025 16:05:44 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 133
+[08-Dec-2025 09:14:34 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/xtfphfml/public_html/api/nin/index.php on line 157
+[08-Dec-2025 09:14:36 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/xtfphfml/public_html/core/Controllers/NIN.php on line 130
+[08-Dec-2025 09:14:36 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/xtfphfml/public_html/core/Controllers/NIN.php on line 130
+[08-Dec-2025 09:14:36 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 207
+[08-Dec-2025 09:15:49 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/xtfphfml/public_html/api/nin/index.php on line 157
+[08-Dec-2025 09:15:50 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/xtfphfml/public_html/core/Controllers/NIN.php on line 130
+[08-Dec-2025 09:15:50 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/xtfphfml/public_html/core/Controllers/NIN.php on line 130
+[08-Dec-2025 09:15:50 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 207
+[10-Mar-2026 18:43:15 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 133
+[11-Mar-2026 05:52:34 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 133
+[12-Mar-2026 16:28:53 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 133
+[15-Mar-2026 13:21:45 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 133
+[15-Mar-2026 13:25:26 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 133
+[15-Mar-2026 13:27:22 Africa/Lagos] PHP Warning:  Undefined variable $amount in /home/xtfphfml/public_html/api/nin/index.php on line 157
+[15-Mar-2026 13:27:23 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/xtfphfml/public_html/core/Controllers/NIN.php on line 130
+[15-Mar-2026 13:27:23 Africa/Lagos] PHP Warning:  Undefined property: stdClass::$Status in /home/xtfphfml/public_html/core/Controllers/NIN.php on line 130
+[15-Mar-2026 13:27:23 Africa/Lagos] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/xtfphfml/public_html/core/Models/ApiModel.php:1185) in /home/xtfphfml/public_html/api/nin/index.php on line 207

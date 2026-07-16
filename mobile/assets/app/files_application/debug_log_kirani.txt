@@ -1,0 +1,172 @@
+2025-03-21 09:00:57 - Script started
+2025-03-21 09:00:57 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=, number=07003108950, amount=0
+2025-03-21 09:00:57 - Validation failed: missing required fields or invalid amount
+2025-03-21 09:16:07 - Script started
+2025-03-21 09:16:07 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=, number=07003108950
+2025-03-21 09:16:07 - Validation failed: missing required fields 
+2025-03-21 10:10:32 - Script started
+2025-03-21 10:10:32 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=, number=07003108950
+2025-03-21 10:10:32 - Validation failed: missing required fields 
+2025-03-21 10:15:13 - Script started
+2025-03-21 10:15:13 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=9, number=07003108950
+2025-03-21 10:15:13 - Fetching user details
+2025-03-21 10:15:13 - User found: sId=152, old_balance=3000
+2025-03-21 10:15:13 - Plan not found
+2025-03-21 10:16:51 - Script started
+2025-03-21 10:16:51 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=87, number=07003108950
+2025-03-21 10:16:51 - Fetching user details
+2025-03-21 10:16:51 - User found: sId=152, old_balance=3000
+2025-03-21 10:16:51 - Plan found: selling price = 1100
+2025-03-21 10:16:51 - Fetching API configurations
+2025-03-21 10:31:03 - Script started
+2025-03-21 10:31:03 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=87, number=07003108950
+2025-03-21 10:31:03 - Fetching user details
+2025-03-21 10:31:03 - User found: sId=152, old_balance=3000
+2025-03-21 10:31:03 - Plan found: selling price = 1100
+2025-03-21 10:31:03 - Fetching API configurations
+2025-03-21 10:38:41 - Script started
+2025-03-21 10:38:41 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=87, number=07003108950
+2025-03-21 10:38:41 - Fetching user details
+2025-03-21 10:38:41 - User found: sId=152, old_balance=3000
+2025-03-21 10:38:41 - Plan found: selling price = 1100
+2025-03-21 10:38:41 - Fetching API configurations
+2025-03-21 10:38:41 - API key and link retrieved
+2025-03-21 10:38:41 - Payload prepared: {"service_id":"kirani","plan_id":"87","number":"07003108950"}
+2025-03-21 10:38:41 - Requesting API authentication
+2025-03-21 10:45:20 - Script started
+2025-03-21 10:45:20 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=87, number=07003108950
+2025-03-21 10:45:20 - Fetching user details
+2025-03-21 10:45:20 - User found: sId=152, old_balance=3000
+2025-03-21 10:45:20 - Plan found: selling price = 1100
+2025-03-21 10:45:20 - Fetching API configurations
+2025-03-21 10:45:20 - API key and link retrieved
+2025-03-21 10:45:20 - Payload prepared: {"service_id":"kirani","plan_id":"87","number":"07003108950"}
+2025-03-21 10:45:20 - Requesting API authentication
+2025-03-21 10:45:21 - API authentication successful
+2025-03-21 10:45:21 - Sending API request
+2025-03-21 10:45:22 - API response: {"status":"success","message":"Kirani service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-21 10:45:22 - API response decoded: Array
+(
+    [status] => success
+    [message] => Kirani service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-21 10:45:22 - Transaction status: 0, reference: AD1122334455, new balance: 1900
+2025-03-21 10:45:22 - Wallet updated successfully
+2025-03-21 10:45:22 - Script completed
+2025-03-23 15:23:08 - Script started
+2025-03-23 15:23:08 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=95, number=07003108950
+2025-03-23 15:23:08 - Fetching user details
+2025-03-23 15:23:08 - Invalid token or user not found
+2025-03-23 15:23:53 - Script started
+2025-03-23 15:23:53 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=95, number=07003108950
+2025-03-23 15:23:53 - Fetching user details
+2025-03-23 15:23:53 - Invalid token or user not found
+2025-03-23 15:24:52 - Script started
+2025-03-23 15:24:52 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=95, number=07003108950
+2025-03-23 15:24:52 - Fetching user details
+2025-03-23 15:24:52 - User found: sId=152, old_balance=3000
+2025-03-23 15:24:52 - Plan found: selling price = 9100
+2025-03-23 15:24:52 - Insufficient balance
+2025-03-23 15:25:21 - Script started
+2025-03-23 15:25:21 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=87, number=07003108950
+2025-03-23 15:25:21 - Fetching user details
+2025-03-23 15:25:21 - User found: sId=152, old_balance=3000
+2025-03-23 15:25:21 - Plan found: selling price = 1100
+2025-03-23 15:25:21 - Fetching API configurations
+2025-03-23 15:25:21 - API key and link retrieved
+2025-03-23 15:25:21 - Payload prepared: {"service_id":"kirani","plan_id":"87","number":"07003108950"}
+2025-03-23 15:25:21 - Requesting API authentication
+2025-03-23 15:25:22 - API authentication successful
+2025-03-23 15:25:22 - Sending API request
+2025-03-23 15:25:23 - API response: {"status":"success","message":"Kirani service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 15:25:23 - API response decoded: Array
+(
+    [status] => success
+    [message] => Kirani service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 15:25:23 - Transaction status: 0, reference: AD1122334455, new balance: 1900
+2025-03-23 15:30:32 - Script started
+2025-03-23 15:30:32 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=87, number=07003108950
+2025-03-23 15:30:32 - Fetching user details
+2025-03-23 15:30:32 - User found: sId=152, old_balance=3000
+2025-03-23 15:30:32 - Plan found: selling price = 1100
+2025-03-23 15:30:32 - Fetching API configurations
+2025-03-23 15:30:32 - API key and link retrieved
+2025-03-23 15:30:32 - Payload prepared: {"service_id":"kirani","plan_id":"87","number":"07003108950"}
+2025-03-23 15:30:32 - Requesting API authentication
+2025-03-23 15:34:06 - Script started
+2025-03-23 15:34:06 - Received input: token=9c9d38f936d530ff2bd2bf74f0a7b0a0, plan_id=87, number=07003108950
+2025-03-23 15:34:06 - Fetching user details
+2025-03-23 15:34:06 - User found: sId=152, old_balance=3000
+2025-03-23 15:34:06 - Plan found: selling price = 1100
+2025-03-23 15:34:06 - Fetching API configurations
+2025-03-23 15:34:06 - API key and link retrieved
+2025-03-23 15:34:06 - Payload prepared: {"service_id":"kirani","plan_id":"87","number":"07003108950"}
+2025-03-23 15:34:06 - Requesting API authentication
+2025-03-23 15:34:07 - API authentication successful
+2025-03-23 15:34:07 - Sending API request
+2025-03-23 15:34:08 - API response: {"status":"success","message":"Kirani service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 15:34:08 - API response decoded: Array
+(
+    [status] => success
+    [message] => Kirani service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 15:34:08 - Transaction status: 0, reference: AD1122334455, new balance: 1900
+2025-03-23 15:34:08 - Final transaction reference: KIRANI-67e029f0404d5
+2025-03-23 15:34:08 - Transaction recorded successfully
+2025-03-23 15:34:08 - Wallet updated successfully
+2025-03-23 15:34:08 - Script completed
+2025-03-23 18:03:30 - Script started
+2025-03-23 18:03:30 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=87, number=07003108950
+2025-03-23 18:03:30 - Fetching user details
+2025-03-23 18:03:30 - User found: sId=147, old_balance=1988.5
+2025-03-23 18:03:30 - Plan found: selling price = 1100
+2025-03-23 18:03:30 - Fetching API configurations
+2025-03-23 18:03:30 - API key and link retrieved
+2025-03-23 18:03:30 - Payload prepared: {"service_id":"kirani","plan_id":"87","number":"07003108950"}
+2025-03-23 18:03:30 - Requesting API authentication
+2025-03-23 18:03:31 - API authentication successful
+2025-03-23 18:03:31 - Sending API request
+2025-03-23 18:03:33 - API response: {"status":"success","message":"Kirani service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-23 18:03:33 - API response decoded: Array
+(
+    [status] => success
+    [message] => Kirani service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-23 18:03:33 - Transaction status: 0, reference: AD1122334455, new balance: 888.5
+2025-03-23 18:03:33 - Final transaction reference: KIRANI-67e04cf52dc87
+2025-03-23 18:03:33 - Transaction recorded successfully
+2025-03-23 18:03:33 - Wallet updated successfully
+2025-03-23 18:03:33 - Script completed
+2025-03-24 09:18:32 - Script started
+2025-03-24 09:18:32 - Received input: token=7666eff826f0bc5c01518157933e0634, plan_id=87, number=07003108950
+2025-03-24 09:18:32 - Fetching user details
+2025-03-24 09:18:32 - User found: sId=147, old_balance=1228.5
+2025-03-24 09:18:32 - Plan found: selling price = 1100
+2025-03-24 09:18:32 - Fetching API configurations
+2025-03-24 09:18:32 - API key and link retrieved
+2025-03-24 09:18:32 - Payload prepared: {"service_id":"kirani","plan_id":"87","number":"07003108950"}
+2025-03-24 09:18:32 - Requesting API authentication
+2025-03-24 09:18:33 - API authentication successful
+2025-03-24 09:18:33 - Sending API request
+2025-03-24 09:18:34 - API response: {"status":"success","message":"Kirani service purchase successful","transaction_reference":"AD1122334455"}
+2025-03-24 09:18:34 - API response decoded: Array
+(
+    [status] => success
+    [message] => Kirani service purchase successful
+    [transaction_reference] => AD1122334455
+)
+
+2025-03-24 09:18:34 - Transaction status: 0, reference: AD1122334455, new balance: 128.5
+2025-03-24 09:18:34 - Final transaction reference: KIRANI-67e1236a3b1b4
+2025-03-24 09:18:34 - Transaction recorded successfully
+2025-03-24 09:18:34 - Wallet updated successfully
+2025-03-24 09:18:34 - Script completed
