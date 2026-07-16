@@ -436,10 +436,11 @@
 
     var menuToggle = document.getElementById('menuToggle');
     var navMenu = document.getElementById('navMenu');
-    if (menuToggle && navMenu) {
+    if (menuToggle && navMenu && mainHeader) {
         menuToggle.addEventListener('click', function() {
             var active = navMenu.classList.toggle('active');
             menuToggle.classList.toggle('active');
+            mainHeader.classList.toggle('menu-open', active);
             menuToggle.setAttribute('aria-expanded', active);
             var icon = menuToggle.querySelector('i');
             if (icon) {
@@ -451,6 +452,7 @@
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
                 menuToggle.classList.remove('active');
+                mainHeader.classList.remove('menu-open');
                 menuToggle.setAttribute('aria-expanded', 'false');
                 var icon = menuToggle.querySelector('i');
                 if (icon) icon.className = 'fas fa-bars';
