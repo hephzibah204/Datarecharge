@@ -13,7 +13,7 @@
             }
 
             $nin = $body->phone;
-            $validationType = $body->validation_type ?? 'Modification validation';
+            $validationType = $body->validation_type ?? 'Modification';
 
             $load = json_encode([
                 "nins" => [$nin],

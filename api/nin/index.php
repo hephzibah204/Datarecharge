@@ -133,7 +133,7 @@ function processModificationRequest($body, $result, $ninModel) {
 }
 
 function processIPERequest($trackingIds, $result, $controller) {
-    $fee = 250;
+    $fee = 400;
     $userbalance = (float) $result["balance"];
 
     if ($userbalance < $fee) {
@@ -154,7 +154,7 @@ function processIPERequest($trackingIds, $result, $controller) {
 }
 
 function processVerificationRequest($body, $result, $controller) {
-    $fee = 1000;
+    $fee = 500;
     $userid = (float) $result["userid"];
     $userbalance = (float) $result["balance"];
     $ref = $body->ref ?? 'NIN_' . time();
