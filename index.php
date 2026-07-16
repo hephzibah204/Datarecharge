@@ -27,25 +27,20 @@
 </head>
 <body>
 
-<!-- ===== SPLASH ===== -->
-<div class="app-splash" id="appSplash">
-    <div class="splash-content">
-        <img src="logo1.png" alt="DataRecharge" class="splash-logo">
-        <div class="splash-loader"><span></span></div>
-    </div>
-</div>
-
 <!-- ===== NETWORK STATUS ===== -->
 <div class="network-status" id="networkStatus" role="status" aria-live="polite"></div>
 
-<!-- ===== DESKTOP HEADER ===== -->
-<header class="desktop-header" id="desktopHeader">
+<!-- ===== HEADER ===== -->
+<header class="main-header" id="mainHeader">
     <div class="container">
-        <nav class="desktop-nav">
-            <a href="#home" class="desktop-logo">
+        <nav class="main-nav">
+            <a href="#home" class="main-logo">
                 <img src="logo1.png" alt="DataRecharge">
             </a>
-            <ul class="desktop-menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -55,23 +50,6 @@
                 <li><a href="/login" class="btn btn-sm btn-primary">Login</a></li>
             </ul>
         </nav>
-    </div>
-</header>
-
-<!-- ===== MOBILE APP HEADER ===== -->
-<header class="app-header" id="appHeader">
-    <div class="header-left">
-        <a href="#home" class="header-logo" aria-label="Home">
-            <img src="logo1.png" alt="DataRecharge" fetchpriority="high">
-        </a>
-    </div>
-    <div class="header-right">
-        <button class="header-btn" id="notifBtn" aria-label="Pricing" type="button">
-            <i class="fas fa-tags" aria-hidden="true"></i>
-        </button>
-        <button class="header-btn" id="menuBtn" aria-label="More menu" type="button">
-            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-        </button>
     </div>
 </header>
 
@@ -438,26 +416,6 @@
 
 </main>
 
-<!-- ===== BOTTOM TABS (mobile only) ===== -->
-<nav class="bottom-tabs" id="bottomTabs" aria-label="Main navigation">
-    <button class="tab-btn active" data-tab="home" aria-current="page" type="button"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span></button>
-    <button class="tab-btn" data-tab="services" type="button"><i class="fas fa-th-large" aria-hidden="true"></i><span>Services</span></button>
-    <button class="tab-btn tab-btn--center" data-tab="pricing" type="button"><i class="fas fa-tags" aria-hidden="true"></i><span>Pricing</span></button>
-    <button class="tab-btn" data-tab="more" type="button"><i class="fas fa-ellipsis-h" aria-hidden="true"></i><span>More</span></button>
-</nav>
-
-<!-- ===== INSTALL BANNER ===== -->
-<div class="install-banner" id="installBanner" role="alert">
-    <div class="install-content">
-        <img src="logo1.png" alt="DataRecharge" width="36" height="36" loading="lazy">
-        <div><strong>Install App</strong><small>Get the best experience</small></div>
-    </div>
-    <div class="install-actions">
-        <button class="install-btn" id="installBtn" type="button">Install</button>
-        <button class="install-close" id="installClose" aria-label="Dismiss" type="button"><i class="fas fa-times" aria-hidden="true"></i></button>
-    </div>
-</div>
-
 <!-- ===== SCROLL TOP ===== -->
 <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" type="button"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
 
@@ -467,68 +425,38 @@
     'use strict';
 
     var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var isMobile = window.innerWidth < 1024;
 
-    // --- Splash ---
-    var splash = document.getElementById('appSplash');
-    if (splash) {
-        var d = prefersReduced ? 100 : (isMobile ? 800 : 300);
-        setTimeout(function() {
-            splash.classList.add('fade-out');
-            setTimeout(function() { splash.style.display = 'none'; }, prefersReduced ? 0 : 300);
-        }, d);
-    }
-
-    // --- Desktop header scroll ---
-    var desktopHeader = document.getElementById('desktopHeader');
-    if (desktopHeader) {
+    // --- Header scroll & Hamburger ---
+    var mainHeader = document.getElementById('mainHeader');
+    if (mainHeader) {
         window.addEventListener('scroll', function() {
-            desktopHeader.classList.toggle('scrolled', window.scrollY > 50);
+            mainHeader.classList.toggle('scrolled', window.scrollY > 50);
         }, { passive: true });
     }
 
-    // --- Mobile tab switching ---
-    var tabs = document.querySelectorAll('.tab-btn');
-    var sections = {
-        home: document.getElementById('page-home'),
-        services: document.getElementById('page-services'),
-        pricing: document.getElementById('page-pricing'),
-        more: document.getElementById('page-more')
-    };
-    var appHeader = document.getElementById('appHeader');
-
-    if (tabs.length) {
-        function activateTab(tabId) {
-            tabs.forEach(function(t) { t.classList.remove('active'); t.removeAttribute('aria-current'); });
-            var activeTab = document.querySelector('.tab-btn[data-tab="' + tabId + '"]');
-            if (activeTab) { activeTab.classList.add('active'); activeTab.setAttribute('aria-current', 'page'); }
-            Object.keys(sections).forEach(function(k) {
-                sections[k].classList.toggle('active', k === tabId);
-            });
-            if (appHeader) appHeader.classList.toggle('header-shadow', tabId !== 'home');
-            window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
-        }
-        tabs.forEach(function(tab) {
-            tab.addEventListener('click', function() { activateTab(this.dataset.tab); });
+    var menuToggle = document.getElementById('menuToggle');
+    var navMenu = document.getElementById('navMenu');
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function() {
+            var active = navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', active);
+            var icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.className = active ? 'fas fa-times' : 'fas fa-bars';
+            }
         });
-        activateTab('home');
-    }
 
-    // --- On desktop, show all sections ---
-    function handleResize() {
-        var mobile = window.innerWidth < 1024;
-        if (!mobile && sections.home) {
-            Object.keys(sections).forEach(function(k) { sections[k].classList.add('active'); });
-            if (document.querySelector('.bottom-tabs')) document.querySelector('.bottom-tabs').style.display = 'none';
-        } else if (mobile && sections.home) {
-            Object.keys(sections).forEach(function(k) { sections[k].classList.remove('active'); });
-            if (document.querySelector('.bottom-tabs')) document.querySelector('.bottom-tabs').style.display = '';
-            var activeTab = document.querySelector('.tab-btn.active') || document.querySelector('.tab-btn[data-tab="home"]');
-            if (activeTab) activateTab(activeTab.dataset.tab);
-        }
+        navMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                var icon = menuToggle.querySelector('i');
+                if (icon) icon.className = 'fas fa-bars';
+            });
+        });
     }
-    handleResize();
-    window.addEventListener('resize', handleResize);
 
     // --- Scroll services dots ---
     function initDots(containerId, trackId, dotsId) {
@@ -622,24 +550,9 @@
         });
     });
 
-    // --- Install banner ---
-    var banner = document.getElementById('installBanner');
-    var close = document.getElementById('installClose');
-    if (banner && close) {
-        if (localStorage.getItem('installBannerDismissed')) { banner.style.display = 'none'; }
-        close.addEventListener('click', function() { banner.style.display = 'none'; localStorage.setItem('installBannerDismissed', 'true'); });
-        setTimeout(function() { if (banner.style.display !== 'none') banner.style.display = 'none'; }, 10000);
-    }
-
     // --- Scroll top ---
     var scrollTop = document.getElementById('scrollTop');
     window.addEventListener('scroll', function() { if (scrollTop) scrollTop.classList.toggle('visible', window.scrollY > 400); }, { passive: true });
-
-    // --- Menu buttons ---
-    var menuBtn = document.getElementById('menuBtn');
-    var notifBtn = document.getElementById('notifBtn');
-    if (menuBtn) menuBtn.addEventListener('click', function() { var t = document.querySelector('.tab-btn[data-tab="more"]'); if (t) t.click(); });
-    if (notifBtn) notifBtn.addEventListener('click', function() { var t = document.querySelector('.tab-btn[data-tab="pricing"]'); if (t) t.click(); });
 
     // --- Network status ---
     var statusEl = document.getElementById('networkStatus');
