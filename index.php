@@ -46,6 +46,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#faq">FAQ</a></li>
+                <li id="installMenuItem" style="display: none;"><a href="#" id="pwaInstallBtn" class="btn btn-sm btn-outline"><i class="fas fa-download"></i> Install App</a></li>
                 <li><a href="/signup" class="btn btn-sm btn-outline">Register</a></li>
                 <li><a href="/login" class="btn btn-sm btn-primary">Login</a></li>
             </ul>
@@ -567,6 +568,34 @@
     }
     window.addEventListener('online', function() { showNet('Back online', 'online'); });
     window.addEventListener('offline', function() { showNet('No internet connection', 'offline'); });
+
+    // --- PWA Installation Prompt ---
+    var deferredPrompt;
+    var installMenuItem = document.getElementById('installMenuItem');
+    var pwaInstallBtn = document.getElementById('pwaInstallBtn');
+
+    window.addEventListener('beforeinstallprompt', function(e) {
+        e.preventDefault();
+        deferredPrompt = e;
+        if (installMenuItem) installMenuItem.style.display = 'block';
+    });
+
+    if (pwaInstallBtn) {
+        pwaInstallBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (!deferredPrompt) return;
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(function(choiceResult) {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted PWA installation');
+                } else {
+                    console.log('User dismissed PWA installation');
+                }
+                deferredPrompt = null;
+                if (installMenuItem) installMenuItem.style.display = 'none';
+            });
+        });
+    }
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js').catch(function() {});
