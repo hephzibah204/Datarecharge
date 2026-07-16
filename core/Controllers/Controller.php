@@ -110,10 +110,12 @@
 		}
 
 		public function getConfigValue($list,$name){
-
+			$envVal = getenv($name);
+			if ($envVal !== false && $envVal !== '') return $envVal;
 			foreach($list AS $item){
 				if($item->name == $name){return $item->value;}
 			}
+			return null;
 		}
 
 

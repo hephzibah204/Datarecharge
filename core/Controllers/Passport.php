@@ -4,8 +4,8 @@ class Passport extends ApiAccess{
 
     public function verifyMyPassport($body, $networkDetails){
         $details = $this->model->getApiDetails();
-        $apiUrl = $this->getConfigValue($details, 'passportProvider') ?: 'https://api.aspget.com/passport/';
-        $apiKey = $this->getConfigValue($details, 'passportApi') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7';
+        $apiUrl = $this->getConfigValue($details, 'passportProvider') ?: (getenv('ASPGET_PASSPORT_URL') ?: 'https://api.aspget.com/passport/');
+        $apiKey = $this->getConfigValue($details, 'passportApi') ?: (getenv('ASPGET_API_KEY') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7');
         $status = $this->getConfigValue($details, 'passportStatus');
 
         if ($status === 'Off') {

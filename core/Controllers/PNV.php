@@ -21,7 +21,7 @@
 				));
             $curl = curl_init();
             curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://api.aspget.com/pnv/',
+            CURLOPT_URL => getenv('ASPGET_PNV_URL') ?: 'https://api.aspget.com/pnv/',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -33,7 +33,7 @@
              
             CURLOPT_HTTPHEADER => array(
                 'Content-Type: application/json',
-                "Authorization: Bearer lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7"
+                "Authorization: Bearer " . (getenv('ASPGET_API_KEY') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7')
             ),
             ));
 

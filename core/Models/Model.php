@@ -139,11 +139,14 @@
     }
 }
 
-        //Get Api Config Values
+        //Get Api Config Values (env overrides DB)
         public function getConfigValue($list,$name){
+			$envVal = getenv($name);
+			if ($envVal !== false && $envVal !== '') return $envVal;
 			foreach($list AS $item){
 				if($item->name == $name){return $item->value;}
 			}
+			return null;
 		}
 
         //Get API Setting

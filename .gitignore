@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+error_log
+nin_failed.txt
+pnv.txt
+airtime_*.txt
+bvnfailed.txt

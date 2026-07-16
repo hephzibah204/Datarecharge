@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/../../env.php';
+
 spl_autoload_register(function($class_name){ 
 		if(file_exists('../../core/Models/'.$class_name.'.php')){
 			require_once '../../core/Models/'.$class_name.'.php';

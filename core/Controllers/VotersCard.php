@@ -4,8 +4,8 @@ class VotersCard extends ApiAccess{
 
     public function verifyMyVoterCard($body, $networkDetails){
         $details = $this->model->getApiDetails();
-        $apiUrl = $this->getConfigValue($details, 'vinProvider') ?: 'https://api.aspget.com/vin/';
-        $apiKey = $this->getConfigValue($details, 'vinApi') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7';
+        $apiUrl = $this->getConfigValue($details, 'vinProvider') ?: (getenv('ASPGET_VIN_URL') ?: 'https://api.aspget.com/vin/');
+        $apiKey = $this->getConfigValue($details, 'vinApi') ?: (getenv('ASPGET_API_KEY') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7');
         $status = $this->getConfigValue($details, 'vinStatus');
 
         if ($status === 'Off') {

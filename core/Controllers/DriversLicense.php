@@ -4,8 +4,8 @@ class DriversLicense extends ApiAccess{
 
     public function verifyMyLicense($body, $networkDetails){
         $details = $this->model->getApiDetails();
-        $apiUrl = $this->getConfigValue($details, 'dlProvider') ?: 'https://api.aspget.com/drivers-license/';
-        $apiKey = $this->getConfigValue($details, 'dlApi') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7';
+        $apiUrl = $this->getConfigValue($details, 'dlProvider') ?: (getenv('ASPGET_DL_URL') ?: 'https://api.aspget.com/drivers-license/');
+        $apiKey = $this->getConfigValue($details, 'dlApi') ?: (getenv('ASPGET_API_KEY') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7');
         $status = $this->getConfigValue($details, 'dlStatus');
 
         if ($status === 'Off') {

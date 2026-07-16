@@ -4,8 +4,8 @@ class CAC extends ApiAccess{
 
     public function verifyMyCAC($body, $networkDetails){
         $details = $this->model->getApiDetails();
-        $apiUrl = $this->getConfigValue($details, 'cacProvider') ?: 'https://api.aspget.com/cac/';
-        $apiKey = $this->getConfigValue($details, 'cacApi') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7';
+        $apiUrl = $this->getConfigValue($details, 'cacProvider') ?: (getenv('ASPGET_CAC_URL') ?: 'https://api.aspget.com/cac/');
+        $apiKey = $this->getConfigValue($details, 'cacApi') ?: (getenv('ASPGET_API_KEY') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7');
         $status = $this->getConfigValue($details, 'cacStatus');
 
         if ($status === 'Off') {

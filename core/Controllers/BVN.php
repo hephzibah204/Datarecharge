@@ -51,7 +51,7 @@ class BVN extends ApiAccess{
         $load = json_encode(["bvn" => $bvn, "consent" => true]);
         $curl = curl_init();
         curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://api.aspget.com/bvn/',
+            CURLOPT_URL => getenv('ASPGET_BVN_URL') ?: 'https://api.aspget.com/bvn/',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,
@@ -62,7 +62,7 @@ class BVN extends ApiAccess{
             CURLOPT_POSTFIELDS => $load,
             CURLOPT_HTTPHEADER => array(
                 'Content-Type: application/json',
-                "Authorization: Bearer lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7"
+                "Authorization: Bearer " . (getenv('ASPGET_API_KEY') ?: 'lv_aspget_gadrkmobcew897u1hp1n684s5z61v3q7')
             ),
         ));
 

@@ -10,11 +10,11 @@ class ProviderAPI {
     }
 
     private function connect($dbConfig) {
-        $host = $dbConfig['host'] ?? 'localhost';
-        $port = $dbConfig['port'] ?? '3306';
-        $dbname = $dbConfig['database'] ?? 'vnplanners';
-        $user = $dbConfig['username'] ?? 'root';
-        $pass = $dbConfig['password'] ?? '';
+        $host = $dbConfig['host'] ?? getenv('DB_HOST') ?: 'localhost';
+        $port = $dbConfig['port'] ?? getenv('DB_PORT') ?: '3306';
+        $dbname = $dbConfig['database'] ?? getenv('DB_NAME') ?: 'vnplanners';
+        $user = $dbConfig['username'] ?? getenv('DB_USER') ?: 'root';
+        $pass = $dbConfig['password'] ?? getenv('DB_PASS') ?: '';
 
         try {
             $dsn = "mysql:host=$host;port=$port;dbname=$dbname;"
