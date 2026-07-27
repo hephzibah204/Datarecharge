@@ -65,10 +65,10 @@
 	          return (object) $data; 
 	      	}
 	      
-	      	//Insert And Register Member
+	    	//Insert And Register Member
 	      	else{
 			   
-				$hash=substr(sha1(md5($password)), 3, 10);
+				$hash = Model::hashPassword($password);
 				$apiKey = substr(str_shuffle("0123456789ABCDEFGHIJklmnopqrstvwxyzAbAcAdAeAfAgAhBaBbBcBdC1C23C3C4C5C6C7C8C9xix2x3"), 0, 60).time();
 				$varCode=mt_rand(2000,9000);
 
@@ -179,14 +179,24 @@
 			 
 			//Verify Registration Details
 			$dbh=$this->connect();
-			$hash=substr(sha1(md5($key)), 3, 10);
-	    	$c="SELECT sId,sFname,sLname,sEmail,sPass,sPhone,sState,sType,sRegStatus FROM subscribers WHERE sPhone=:ph AND sPass=:p";
-	    	$queryC = $dbh->prepare($c);
-	    	$queryC->bindParam(':ph',$phone,PDO::PARAM_STR);
-	     	$queryC->bindParam(':p',$hash,PDO::PARAM_STR);
-	     	$queryC->execute();
-	      	$result=$queryC->fetch(PDO::FETCH_OBJ);
-	      	if($result){
+			
+			$c="SELECT sId,sFname,sLname,sEmail,sPass,sPhone,sState,sType,sRegStatus FROM subscribers WHERE sPhone=:ph";
+			$queryC = $dbh->prepare($c);
+			$queryC->bindParam(':ph',$phone,PDO::PARAM_STR);
+			$queryC->execute();
+			$result=$queryC->fetch(PDO::FETCH_OBJ);
+			
+			if($result && Model::verifyPassword($key, $result->sPass)){
+
+				// Re-hash if old style password
+				if (password_get_info($result->sPass)['algo'] === 0) {
+					$newHash = Model::hashPassword($key);
+					$sqlUpdate = "UPDATE subscribers SET sPass=:p WHERE sId=:id";
+					$queryU = $dbh->prepare($sqlUpdate);
+					$queryU->bindParam(':p', $newHash, PDO::PARAM_STR);
+					$queryU->bindParam(':id', $result->sId, PDO::PARAM_INT);
+					$queryU->execute();
+				}
 
 				if($result->sRegStatus == 1){return (object) ["status" => "fail", "msg" => "Account Blocked, Please Contact Customer Support For Additional Information"];}
 				

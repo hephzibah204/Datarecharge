@@ -31,8 +31,11 @@
                         <label class="color-theme opacity-80 font-700 font-12">Amount</label>
                         <input type="text" value="â‚¦5,000" class="round-small" readonly>
                     </div>
+                    <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                        <label class="color-theme opacity-80 font-700 font-12">Transaction PIN</label>
+                        <input type="number" name="transkey" placeholder="Enter Transaction PIN" class="round-small" required>
+                    </div>
                     <input name="transref" type="hidden" value="<?php echo $transRef; ?>">
-                    <input name="transkey" id="transkey" type="hidden">
                     <input name="modification_type_code" type="hidden" value="name">
                     <div class="form-button">
                         <button type="submit" name="submit-nin-modification" class="btn btn-info btn-lg btn-block">

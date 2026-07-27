@@ -6,5 +6,7 @@
     $color = $data->sitecolor;
     $name = $data->sitename;
 
+    $allowedDesigns = ['1', '2', '3']; // Add valid designs here
+    $design = in_array((string)$design, $allowedDesigns) ? $design : '1';
     include("register".$design.".php");
 ?>

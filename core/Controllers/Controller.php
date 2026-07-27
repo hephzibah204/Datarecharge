@@ -277,6 +277,9 @@
 		}
 
 		public function setDetails(){
+            if(property_exists($this, 'model') && !empty($this->model) && (empty($this->loginAccount) || !is_object($this->loginAccount))){
+                $this->loginAccount = $this->model->getProfileInfo($this->userId);
+            }
 		}
 
 

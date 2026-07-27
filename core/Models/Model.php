@@ -42,8 +42,8 @@
                             case 'DB_DRIVER': self::$driver = $value ?: 'mysql'; break;
                             case 'DB_HOST': self::$host = $value ?: 'localhost'; break;
                             case 'DB_NAME': self::$dbName = $value ?: 'xtfphfml_data'; break;
-                            case 'DB_USERNAME': self::$username = $value ?: 'xtfphfml_data'; break;
-                            case 'DB_PASSWORD': self::$password = $value ?: 'Anuoluwapo@'; break;
+                            case 'DB_USERNAME': case 'DB_USER': self::$username = $value ?: 'xtfphfml_data'; break;
+                            case 'DB_PASSWORD': case 'DB_PASS': self::$password = $value ?: 'Anuoluwapo@'; break;
                         }
                     }
                 }
@@ -65,7 +65,22 @@
             return $pdo;
         }
 
-		public function connect(){
+        // Secure Password Hashing
+        public static function hashPassword($password) {
+            return password_hash($password, PASSWORD_DEFAULT);
+        }
+
+        public static function verifyPassword($password, $hash) {
+            // Check if it's already a modern password hash
+            if (password_get_info($hash)['algo'] !== 0) {
+                return password_verify($password, $hash);
+            }
+            // Check against old legacy hash
+            $oldHash = substr(sha1(md5($password)), 3, 10);
+            return $oldHash === $hash;
+        }
+        
+        public function connect(){
 			return $this->dbh;
 		}
 

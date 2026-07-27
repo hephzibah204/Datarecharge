@@ -24,6 +24,8 @@
     $color = $data3->sitecolor;
     $name = $data3->sitename;
 
+    $allowedDesigns = ['1', '2', '3', '4', '5', '6']; // Add valid designs here
+    $design = in_array((string)$design, $allowedDesigns) ? $design : '1';
     include("homepages/homepage".$design.".php");
 
 ?>
