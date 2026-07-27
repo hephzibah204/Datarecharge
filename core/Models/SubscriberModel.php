@@ -190,6 +190,27 @@
 		//Get Airtime Discount
 		public function getAirtimeDiscount(){
 			$dbh=$this->connect();
+			try {
+				$sql="SELECT pp.network_id AS aNetwork,
+					CASE
+						WHEN pp.service_type LIKE '%vtu%' THEN 'VTU'
+						WHEN pp.service_type LIKE '%share%' THEN 'Share And Sell'
+						WHEN pp.service_type LIKE '%momo%' THEN 'Momo'
+						ELSE 'VTU'
+					END AS aType,
+					(100.0 - pp.base_fee) AS aUserDiscount,
+					(100.0 - COALESCE(po_a.override_fee, pp.base_fee)) AS aAgentDiscount,
+					(100.0 - COALESCE(po_v.override_fee, pp.base_fee)) AS aVendorDiscount
+				FROM providers p
+				JOIN provider_pricing pp ON pp.provider_id = p.id
+				LEFT JOIN price_overrides po_a ON po_a.provider_id = p.id AND po_a.service_type = pp.service_type AND po_a.user_type='agent'
+				LEFT JOIN price_overrides po_v ON po_v.provider_id = p.id AND po_v.service_type = pp.service_type AND po_v.user_type='vendor'
+				WHERE p.type='airtime' AND p.is_active=1 AND pp.is_active=1 AND pp.is_percentage=1";
+				$query=$dbh->prepare($sql);
+				$query->execute();
+				$results=$query->fetchAll(PDO::FETCH_OBJ);
+				if(count($results)>0){return $results;}
+			} catch(Exception $e){}
 			$sql = "SELECT * FROM airtime a, networkid b WHERE a.aNetwork=b.nId";
             $query = $dbh->prepare($sql);
             $query->execute();
@@ -231,12 +252,38 @@
 		//Get All Data Plans
 		public function getDataPlans(){
 			$dbh=$this->connect();
+			try {
+				$sql="SELECT pp.id AS pId,pp.plan_name AS name,
+					COALESCE(pp.cost_price,pp.base_fee) AS price,
+					pp.base_fee AS userprice,
+					COALESCE(po_a.override_fee,pp.base_fee) AS agentprice,
+					COALESCE(po_v.override_fee,pp.base_fee) AS vendorprice,
+					COALESCE(pp.network_id,0) AS datanetwork,
+					CASE
+						WHEN pp.service_type LIKE '%sme%' OR pp.service_type LIKE '%corp%' THEN 'SME'
+						WHEN pp.service_type LIKE '%gift%' THEN 'Gifting'
+						WHEN pp.service_type LIKE '%awoof%' THEN 'Awoof'
+						WHEN pp.service_type LIKE '%coupon%' THEN 'Coupon'
+						WHEN pp.service_type LIKE '%pin%' THEN 'Data Pin'
+						ELSE 'SME'
+					END AS type,
+					COALESCE(pp.plan_duration,'30') AS day
+				FROM providers p
+				JOIN provider_pricing pp ON pp.provider_id = p.id
+				LEFT JOIN price_overrides po_a ON po_a.provider_id = p.id AND po_a.service_type = pp.service_type AND po_a.user_type='agent'
+				LEFT JOIN price_overrides po_v ON po_v.provider_id = p.id AND po_v.service_type = pp.service_type AND po_v.user_type='vendor'
+				WHERE p.type='data' AND p.is_active=1 AND pp.is_active=1 AND (pp.is_percentage IS NULL OR pp.is_percentage=0)
+				ORDER BY pp.id ASC";
+				$query=$dbh->prepare($sql);
+				$query->execute();
+				$results=$query->fetchAll(PDO::FETCH_OBJ);
+				if(count($results)>0){return $results;}
+			} catch(Exception $e){}
 
 			$networks=$this->getNetworks();
-			$status = $networks[0]->manualOrderStatus;
+			$status = !empty($networks) && isset($networks[0]->manualOrderStatus) ? $networks[0]->manualOrderStatus : '';
 
 			$sql = "SELECT * FROM dataplans a, networkid b WHERE a.datanetwork = b.nId ORDER BY a.pId ASC";
-
 			if(!empty($status)){
 				if($status == "Off" || $status == "off"){
 					$sql = "SELECT * FROM dataplans a, networkid b WHERE a.datanetwork = b.nId AND a.name NOT LIKE '%(Manual)%' ORDER BY a.pId ASC";
@@ -623,6 +670,27 @@
 		//Get Cable Plans
 		public function getCablePlans(){
 			$dbh=$this->connect();
+			try {
+				$sql="SELECT pp.id AS cpId,
+					COALESCE(pp.plan_name,'Plan') AS name,
+					COALESCE(pp.cost_price,pp.base_fee) AS price,
+					pp.base_fee AS userprice,
+					COALESCE(po_a.override_fee,pp.base_fee) AS agentprice,
+					COALESCE(po_v.override_fee,pp.base_fee) AS vendorprice,
+					COALESCE(pp.network_id,0) AS cableprovider,
+					COALESCE(pp.plan_duration,'30') AS day
+				FROM providers p
+				JOIN provider_pricing pp ON pp.provider_id = p.id
+				LEFT JOIN price_overrides po_a ON po_a.provider_id = p.id AND po_a.service_type = pp.service_type AND po_a.user_type='agent'
+				LEFT JOIN price_overrides po_v ON po_v.provider_id = p.id AND po_v.service_type = pp.service_type AND po_v.user_type='vendor'
+				WHERE p.type='cabletv' AND p.is_active=1 AND pp.is_active=1
+				ORDER BY pp.id ASC";
+				$query=$dbh->prepare($sql);
+				$query->execute();
+				$results=$query->fetchAll(PDO::FETCH_OBJ);
+				if(count($results)>0){return $results;}
+			} catch(Exception $e){}
+
 			$sql = "SELECT * FROM cableplans a, cableid b WHERE a.cableprovider=b.cableid";
             $query = $dbh->prepare($sql);
             $query->execute();
