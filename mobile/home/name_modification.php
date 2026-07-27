@@ -36,6 +36,7 @@
                         <input type="number" name="transkey" placeholder="Enter Transaction PIN" class="round-small" required>
                     </div>
                     <input name="transref" type="hidden" value="<?php echo $transRef; ?>">
+                    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token'] ?? ''; ?>">
                     <input name="modification_type_code" type="hidden" value="name">
                     <div class="form-button">
                         <button type="submit" name="submit-nin-modification" class="btn btn-info btn-lg btn-block">

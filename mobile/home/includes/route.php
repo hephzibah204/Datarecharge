@@ -194,7 +194,11 @@
 
         //Submit NIN Modification Request
         if(isset($_POST["submit-nin-modification"])){
-            $msg=$controller->submitNINModification();
+            if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+                $msg = $controller->createPopMessage("Error!!", "CSRF Token Invalid. Please refresh the page and try again.", "red");
+            } else {
+                $msg=$controller->submitNINModification();
+            }
         }
         
         //Verify NIN

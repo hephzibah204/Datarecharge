@@ -19,11 +19,12 @@ class AdminModel extends Model{
 			if($queryC->fetch()){return 2;}
 
 			//If Not Exist, Create New User
+            $hashedKey = Model::hashPassword($key);
 			$sql="INSERT INTO  sysusers(sysName,sysUsername,sysToken,sysRole) VALUES(:name,:username,:key,:role)";
             $query = $dbh->prepare($sql);
             $query->bindParam(':name',$name,PDO::PARAM_STR);
             $query->bindParam(':username',$username,PDO::PARAM_STR);
-            $query->bindParam(':key',$key,PDO::PARAM_STR);
+            $query->bindParam(':key',$hashedKey,PDO::PARAM_STR);
             $query->bindParam(':role',$role,PDO::PARAM_STR);
             $query->execute();
             $lastInsertId = $dbh->lastInsertId();
@@ -72,17 +73,17 @@ class AdminModel extends Model{
 
 			if($newKey == ""){$newKey=$oldKey;}
 
-			$c="SELECT sysToken FROM sysusers WHERE sysToken=:p AND sysId=$id";
+			$c="SELECT sysToken FROM sysusers WHERE sysId=$id";
 	    	$queryC = $dbh->prepare($c);
-	    	$queryC->bindParam(':p',$oldKey,PDO::PARAM_STR);
 	     	$queryC->execute();
 	      	$result=$queryC->fetch(PDO::FETCH_ASSOC);
 
-	      	if($result){
+	      	if($result && Model::verifyPassword($oldKey, $result['sysToken'])){
 	          
+	          $newHash = Model::hashPassword($newKey);
 	          $sql="UPDATE sysusers SET sysToken=:p,sysName=:name WHERE sysId=$id";
 			  $query = $dbh->prepare($sql);
-			  $query->bindParam(':p',$newKey,PDO::PARAM_STR);
+			  $query->bindParam(':p',$newHash,PDO::PARAM_STR);
 			  $query->bindParam(':name',$name,PDO::PARAM_STR);
 			  $query->execute();
 			  $_SESSION["sysName"]=$name;
@@ -101,20 +102,18 @@ class AdminModel extends Model{
 
 			if($newpin == ""){$newpin=$loginpin;}
 
-			$newpin=substr(sha1(md5($newpin)), 3, 10);
-			$loginpin=substr(sha1(md5($loginpin)), 3, 10);
+			// Get current PIN hash
+			$query = $dbh->prepare("SELECT sysPinToken FROM sysusers WHERE sysId = :id");
+			$query->bindParam(':id', $id, PDO::PARAM_INT);
+			$query->execute();
+			$result = $query->fetch(PDO::FETCH_ASSOC);
 
-			$c="SELECT sysPinToken FROM sysusers WHERE sysPinToken=:p AND sysId=$id";
-	    	$queryC = $dbh->prepare($c);
-	    	$queryC->bindParam(':p',$loginpin,PDO::PARAM_STR);
-	     	$queryC->execute();
-	      	$result=$queryC->fetch(PDO::FETCH_ASSOC);
-
-	      	if($result){
+			if($result && Model::verifyPassword($loginpin, $result['sysPinToken'])){
 	          
+	          $newHash = Model::hashPassword($newpin);
 	          $sql="UPDATE sysusers SET sysPinToken=:p,sysPinStatus=:sta WHERE sysId=$id";
 			  $query = $dbh->prepare($sql);
-			  $query->bindParam(':p',$newpin,PDO::PARAM_STR);
+			  $query->bindParam(':p',$newHash,PDO::PARAM_STR);
 			  $query->bindParam(':sta',$loginstatus,PDO::PARAM_STR);
 			  $query->execute();
 			  return 0;
