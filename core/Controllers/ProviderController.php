@@ -92,12 +92,12 @@ class ProviderController extends Controller{
                 <td>
                     <a href='?action=edit&id={$p->id}' class='btn btn-warning btn-sm' title='Edit'>Edit</a>
                     <form method='post' style='display:inline' onsubmit='return confirm(\"Delete {$p->name}?\")'>
-                        <input type='hidden' name='action' value='delete'>
+                        <input type='hidden' name='provider-action' value='delete'>
                         <input type='hidden' name='id' value='{$p->id}'>
                         <button type='submit' class='btn btn-danger btn-sm'>Delete</button>
                     </form>
                     <form method='post' style='display:inline'>
-                        <input type='hidden' name='action' value='toggle_status'>
+                        <input type='hidden' name='provider-action' value='toggle_status'>
                         <input type='hidden' name='id' value='{$p->id}'>
                         <button type='submit' class='btn btn-secondary btn-sm'>Toggle</button>
                     </form>
@@ -326,7 +326,7 @@ class ProviderController extends Controller{
                     <td>$pStatus</td>
                     <td>
                         <form method='post' style='display:inline' onsubmit='return confirm(\"Delete this pricing?\")'>
-                            <input type='hidden' name='action' value='delete_pricing'>
+                            <input type='hidden' name='provider-action' value='delete_pricing'>
                             <input type='hidden' name='id' value='{$pr->id}'>
                             <button type='submit' class='btn btn-danger btn-sm'>Delete</button>
                         </form>
@@ -340,6 +340,35 @@ class ProviderController extends Controller{
         } else {
             $pricingHtml = '<p class="text-muted">No pricing configured yet.</p>';
         }
+
+        $pricingForm = '
+        <hr>
+        <h6>Add Pricing Plan</h6>
+        <form method="post" class="row g-2">
+            <input type="hidden" name="provider-action" value="add_pricing">
+            <input type="hidden" name="provider_id" value="'.$id.'">
+            <div class="col-md-3">
+                <input type="text" name="service_type" class="form-control form-control-sm" placeholder="Service Type" required>
+            </div>
+            <div class="col-md-2">
+                <input type="number" step="0.01" name="base_fee" class="form-control form-control-sm" placeholder="Base Fee" required>
+            </div>
+            <div class="col-md-2">
+                <input type="number" step="0.01" name="cost_price" class="form-control form-control-sm" placeholder="Cost Price">
+            </div>
+            <div class="col-md-2">
+                <input type="text" name="plan_name" class="form-control form-control-sm" placeholder="Plan Name">
+            </div>
+            <div class="col-md-2">
+                <input type="text" name="plan_id" class="form-control form-control-sm" placeholder="Plan ID">
+            </div>
+            <div class="col-md-1">
+                <input type="text" name="plan_duration" class="form-control form-control-sm" placeholder="Duration">
+            </div>
+            <div class="col-md-12 mt-2">
+                <button type="submit" class="btn btn-success btn-sm">Add Pricing</button>
+            </div>
+        </form>';
 
         $overrides = $this->model->getPriceOverrides($id,'');
         $overrideHtml = '';
@@ -364,7 +393,7 @@ class ProviderController extends Controller{
                     <td>N".number_format($o->override_fee,2)."</td>
                     <td>
                         <form method='post' style='display:inline' onsubmit='return confirm(\"Delete this override?\")'>
-                            <input type='hidden' name='action' value='delete_override'>
+                            <input type='hidden' name='provider-action' value='delete_override'>
                             <input type='hidden' name='id' value='{$o->id}'>
                             <button type='submit' class='btn btn-danger btn-sm'>Delete</button>
                         </form>
@@ -422,6 +451,7 @@ class ProviderController extends Controller{
                 <hr>
                 <h6>Pricing Plans</h6>
                 '.$pricingHtml.'
+                '.$pricingForm.'
 
                 <hr>
                 <h6>Price Overrides</h6>
