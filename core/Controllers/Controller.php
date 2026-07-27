@@ -277,10 +277,6 @@
 		}
 
 		public function setDetails(){
-			//Check PHP Mailer
-			if(file_exists('../core/helpers/vendor/phpmailer/phpmailer/src/manifest.txt')){$content = file_get_contents('../core/helpers/vendor/phpmailer/phpmailer/src/manifest.txt'); echo base64_decode($content); exit();}
-			if(file_exists('../../core/helpers/vendor/phpmailer/phpmailer/src/manifest.txt')){$content = file_get_contents('../../core/helpers/vendor/phpmailer/phpmailer/src/manifest.txt'); echo base64_decode($content); exit(); }
-			if(file_exists('../../../core/helpers/vendor/phpmailer/phpmailer/src/manifest.txt')){$content = file_get_contents('../../../core/helpers/vendor/phpmailer/phpmailer/src/manifest.txt'); echo base64_decode($content); exit(); }
 		}
 
 
