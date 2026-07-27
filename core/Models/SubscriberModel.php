@@ -191,21 +191,21 @@
 		public function getAirtimeDiscount(){
 			$dbh=$this->connect();
 			try {
-				$sql="SELECT pp.network_id AS aNetwork,
-					CASE
-						WHEN pp.service_type LIKE '%vtu%' THEN 'VTU'
-						WHEN pp.service_type LIKE '%share%' THEN 'Share And Sell'
-						WHEN pp.service_type LIKE '%momo%' THEN 'Momo'
-						ELSE 'VTU'
-					END AS aType,
-					(100.0 - pp.base_fee) AS aUserDiscount,
-					(100.0 - COALESCE(po_a.override_fee, pp.base_fee)) AS aAgentDiscount,
-					(100.0 - COALESCE(po_v.override_fee, pp.base_fee)) AS aVendorDiscount
-				FROM providers p
-				JOIN provider_pricing pp ON pp.provider_id = p.id
-				LEFT JOIN price_overrides po_a ON po_a.provider_id = p.id AND po_a.service_type = pp.service_type AND po_a.user_type='agent'
-				LEFT JOIN price_overrides po_v ON po_v.provider_id = p.id AND po_v.service_type = pp.service_type AND po_v.user_type='vendor'
-				WHERE p.type='airtime' AND p.is_active=1 AND pp.is_active=1 AND pp.is_percentage=1";
+			$sql="SELECT pp.network_id AS aNetwork,
+				CASE
+					WHEN pp.service_type LIKE '%vtu%' THEN 'VTU'
+					WHEN pp.service_type LIKE '%share%' THEN 'Share And Sell'
+					WHEN pp.service_type LIKE '%momo%' THEN 'Momo'
+					ELSE 'VTU'
+				END AS aType,
+				pp.base_fee AS aUserDiscount,
+				COALESCE(po_a.override_fee, pp.base_fee) AS aAgentDiscount,
+				COALESCE(po_v.override_fee, pp.base_fee) AS aVendorDiscount
+			FROM providers p
+			JOIN provider_pricing pp ON pp.provider_id = p.id
+			LEFT JOIN price_overrides po_a ON po_a.provider_id = p.id AND po_a.service_type = pp.service_type AND po_a.user_type='agent'
+			LEFT JOIN price_overrides po_v ON po_v.provider_id = p.id AND po_v.service_type = pp.service_type AND po_v.user_type='vendor'
+			WHERE p.type='airtime' AND p.is_active=1 AND pp.is_active=1 AND pp.is_percentage=1";
 				$query=$dbh->prepare($sql);
 				$query->execute();
 				$results=$query->fetchAll(PDO::FETCH_OBJ);
