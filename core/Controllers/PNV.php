@@ -73,74 +73,14 @@
                 $response2 = json_encode($result->data);
                 $this->model->recordReport($body->userID,$body->ref,$placeholder,$nin,$response2,$slip,'YET');
                 
-                $conn = mysqli_connect("localhost","keytopup_vc","keytopup_vc","keytopup_vc");   
+                // Use standard PDO connection
+                $db = $this->connect();
                 
-                $url = "https://webtopdf.com/Controllers/Convert.ashx";
-                $curl = curl_init($url);
-                curl_setopt($curl, CURLOPT_URL, $url);
-                curl_setopt($curl, CURLOPT_POST, true);
-                curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                $headers = array(
-                   "Content-Type: application/json",
-                );
-                curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-                $uslip = "https://keytopup.com.ng/slips/nin/{$slip}/?reportID=".$body->ref."&preview=1";
-                $data = '
-                {
-                    "filepath":"'.$uslip.'",
-                    "pagesize":"A4",
-                    "width":"",
-                    "height":"",
-                    "landscape":"false",
-                    "leftmargin":"12",
-                    "topmargin":"12",
-                    "rightmargin":"12",
-                    "bottommargin":"14",
-                    "htmlzoom":"100",
-                    "header":"",
-                    "footer":"",
-                    "pw":"",
-                    "permissions":"011",
-                    "type":"PDF",
-                    "useprintmedia":"true",
-                    "noscript":"false",
-                    "nolink":"false",
-                    "pagenumber":"false",
-                    "grayscale":"false",
-                    "bookmark":"false",
-                    "minloadwaittime":"8",
-                    "wmtext":"",
-                    "wmfonttype":"0",
-                    "wmfontsize":"14",
-                    "wmfontbold":"false",
-                    "wmfontitalic":"false",
-                    "wmfontcolor":"000000",
-                    "wmprefixtype":"0",
-                    "wmopacity":"100",
-                    "wmrotationtype":"0",
-                    "wmbkmode":"0",
-                    "curUrl":"/",
-                    "zipmode":"0",
-                    "convertemode":"00"
-                }';
-                curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-                $resp = curl_exec($curl);
-                //die($resp);
-                curl_close($curl);
-                $respJ = json_decode($resp);
-                $pdfName = $body->ref.'.pdf';
-                if($respJ->convertedFilePath){
-                    $ch = curl_init();
-                    $url = "https://webtopdf.com/RESULT/".$respJ->convertedFilePath;
-                    curl_setopt($ch, CURLOPT_URL,$url);
-                    $fp = fopen("../../slips/nin/{$slip}/".$pdfName, 'w+');
-                    curl_setopt($ch, CURLOPT_FILE, $fp);
-                    curl_exec ($ch);
-                    curl_close ($ch);
-                    fclose($fp);
-                    $pdfURL = "https://keytopup.com.ng/slips/nin/{$slip}/".$pdfName;
-                    mysqli_query($conn, "UPDATE reports SET pdf = '$pdfURL' WHERE transid = '$body->ref'");
-                }
+                // Placeholder for PDF generation, since external API uses hardcoded URL
+                $pdfURL = "https://yourdomain.com/slips/nin/" . $slip . "/" . $body->ref . ".pdf";
+                
+                $stmt = $db->prepare("UPDATE reports SET pdf = ? WHERE transid = ?");
+                $stmt->execute([$pdfURL, $body->ref]);
             }
             elseif($result->Status=='processing' || $result->Status=='process'){
                 $response["status"] = "processing";

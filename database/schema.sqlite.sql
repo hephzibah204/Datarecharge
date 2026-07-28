@@ -339,6 +339,18 @@ CREATE TABLE IF NOT EXISTS `nin_requests` (
 );
 
 -- -----------------------------------------------------------
+-- 12.5. KYC REQUESTS TABLE
+-- -----------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kyc_requests` (
+    `id` INTEGER PRIMARY KEY AUTOINCREMENT,
+    `sId` INTEGER NOT NULL,
+    `verification_type` TEXT NOT NULL, 
+    `verification_number` TEXT NOT NULL,
+    `status` TEXT DEFAULT 'pending',
+    `created_at` TEXT DEFAULT (datetime('now','localtime'))
+);
+
+-- -----------------------------------------------------------
 -- 13. NIN PRICE TABLE (slip pricing for mobile app)
 -- -----------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `nin_price` (
