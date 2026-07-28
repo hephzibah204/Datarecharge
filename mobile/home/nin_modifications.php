@@ -139,7 +139,7 @@
         <div class="content mb-0 pb-3">
             <h3 class="font-600 mb-3">Modification Request History</h3>
             <?php 
-            $modifications = $data[0] ?? []; 
+            $modifications = $data ?? []; 
             if (empty($modifications)): 
             ?>
                 <div class="text-center py-3">
