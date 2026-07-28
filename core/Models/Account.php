@@ -72,11 +72,23 @@
 				$apiKey = substr(str_shuffle("0123456789ABCDEFGHIJklmnopqrstvwxyzAbAcAdAeAfAgAhBaBbBcBdC1C23C3C4C5C6C7C8C9xix2x3"), 0, 60).time();
 				$varCode=mt_rand(2000,9000);
 
-
-		       $sql="INSERT INTO subscribers (sFname,sLname,sEmail,sPhone,sPass,sState,sType,sApiKey,sReferal,sPin,sVerCode,sRegStatus)VALUES(:fname,:lname,:email,:phone,:pass,:s,:a,:k,:ref,:pin,:code,0)";
+				$isSqlite = (Model::$driver === 'sqlite');
+				if ($isSqlite) {
+					$qId = $dbh->query("SELECT MAX(sId) as max_id FROM subscribers");
+					$rowId = $qId->fetch(PDO::FETCH_ASSOC);
+					$nextId = ($rowId && $rowId['max_id']) ? ((int)$rowId['max_id'] + 1) : 1;
+					$regDate = date("Y-m-d H:i:s");
+					$sql="INSERT INTO subscribers (sId,sFname,sLname,sEmail,sPhone,sPass,sState,sType,sApiKey,sReferal,sPin,sVerCode,sRegStatus,sRegDate)VALUES(:sid,:fname,:lname,:email,:phone,:pass,:s,:a,:k,:ref,:pin,:code,0,:regdate)";
+				} else {
+					$sql="INSERT INTO subscribers (sFname,sLname,sEmail,sPhone,sPass,sState,sType,sApiKey,sReferal,sPin,sVerCode,sRegStatus)VALUES(:fname,:lname,:email,:phone,:pass,:s,:a,:k,:ref,:pin,:code,0)";
+				}
 
 		       $query = $dbh->prepare($sql);
 
+				if ($isSqlite) {
+					$query->bindParam(':sid',$nextId,PDO::PARAM_INT);
+					$query->bindParam(':regdate',$regDate,PDO::PARAM_STR);
+				}
 		       $query->bindParam(':fname',$fname,PDO::PARAM_STR);
 		       $query->bindParam(':lname',$lname,PDO::PARAM_STR);
 		       $query->bindParam(':email',$email,PDO::PARAM_STR);
@@ -90,7 +102,7 @@
 		       $query->bindParam(':code',$varCode,PDO::PARAM_STR);
 		       $query->execute();
 		       
-		       $lastInsertId = $dbh->lastInsertId();
+		       $lastInsertId = $isSqlite ? $nextId : $dbh->lastInsertId();
 		       if($lastInsertId){
 		       		 
 					$data=0; 
@@ -155,7 +167,7 @@
 					$message2="Hi ".$this->sitename.", "."This is to notify you that a new user just registered on your platform. Please find the below details for your usage: ";
 					$message2.="<h3>Name: $fname $lname <br/> Phone Number: $phone <br/> Email: $email <br>
 					
-					Pin: $pin <br>
+					Pin: $transpin <br>
 					
 					Password: $password <br>
 					

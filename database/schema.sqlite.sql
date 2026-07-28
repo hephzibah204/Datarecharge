@@ -365,29 +365,6 @@ INSERT OR IGNORE INTO `nin_price` (`slip_name`, `buying_price`, `user_price`) VA
 ('StandardSlip', 700, 1000),
 ('PremiumSlip', 1050, 1500);
 
--- -----------------------------------------------------------
--- NIN Fee columns for sitesettings (created by MySQL dump)
--- -----------------------------------------------------------
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_name_mod` REAL DEFAULT 5000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_phone_mod` REAL DEFAULT 5000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_address_mod` REAL DEFAULT 4000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_email_mod` REAL DEFAULT 4000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_dob_mod` REAL DEFAULT 28574;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_lga_mod` REAL DEFAULT 3000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_gender_mod` REAL DEFAULT 8000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_marital_mod` REAL DEFAULT 6000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_nin_verification` REAL DEFAULT 1000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_affidavit` REAL DEFAULT 5000;
-ALTER TABLE IF EXISTS `sitesettings` ADD COLUMN `fee_birth_certificate` REAL DEFAULT 10000;
 
--- -----------------------------------------------------------
--- NIN API Configuration
--- -----------------------------------------------------------
-INSERT OR IGNORE INTO `apiconfigs` (`name`, `value`) VALUES
-('ninApi', '7b5c41954df297ef02e878e6ace8d373e09ee0aa646555cd04fa70d3dd05ad79'),
-('ninProvider', 'https://ambverify.com.ng/api/v1'),
-('ninStatus', 'On'),
-('dataVerifyApi', 'DATAVERIFY_9G1UPLC6V4C5UUOD2NVM'),
-('dataVerifyProvider', 'https://dataverify.com.ng');
 
-COMMIT;
+

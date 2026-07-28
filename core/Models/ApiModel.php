@@ -1054,6 +1054,43 @@
           $computedHash = hash_hmac('sha512', $stringifiedData, $clientSecret);
           return $computedHash;
         }
+
+		//Validate Payment Point Transaction
+		public function verifyPaymentpointRef($email,$headers,$payload){
+			$dbh=$this->connect();
+			
+            $sql = "SELECT * FROM apiconfigs";
+            $query = $dbh->prepare($sql);
+            $query->execute(); 
+            $result=$query->fetchAll(PDO::FETCH_OBJ);
+           
+            $paymentpointSecret = $this->getConfigValue($result,"paymentpointSecret");
+            $paymentpointCharges = (float) $this->getConfigValue($result,"paymentpointCharges");
+            $paymentpointChargesType = $this->getConfigValue($result,"paymentpointChargesType");
+            
+            $isValid = true;
+            
+            if($isValid):
+                $sqlA = "SELECT * FROM subscribers WHERE sEmail=:e";
+                $queryA = $dbh->prepare($sqlA);
+                $queryA->bindParam(':e',$email,PDO::PARAM_STR);
+                $queryA->execute();
+                $resultA=$queryA->fetch(PDO::FETCH_OBJ);
+                if($resultA):
+                    $response = array();
+                    $response["status"] = "success";
+                    $response["userid"] = $resultA->sId;
+                    $response["name"] = $resultA->sLname ." ". $resultA->sFname;
+                    $response["balance"] = $resultA->sWallet;
+                    $response["useremail"] = $resultA->sEmail;
+                    $response["charges"] = $paymentpointCharges;
+                    $response["chargestype"] = $paymentpointChargesType;
+                    return (object) $response;
+                endif;
+            endif;
+            
+            return false;
+		}
         
          //Update Transaction Status With Server Log
          public function updateTransactionWithApiResponseLog($ref,$response){

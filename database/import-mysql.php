@@ -42,6 +42,27 @@ echo "Phase 2: Parsing MySQL dump...\n";
 $lines = file($sqlFile, FILE_IGNORE_NEW_LINES);
 if ($lines === false) die("[ERROR] Could not read MySQL dump\n");
 
+$primaryKeys = [];
+$autoIncrements = [];
+$currentAlterTable = null;
+foreach ($lines as $line) {
+    $trimmed = trim($line);
+    if (preg_match('/ALTER\s+TABLE\s+`?(\w+)`?/i', $trimmed, $m)) {
+        $currentAlterTable = $m[1];
+    }
+    if ($currentAlterTable) {
+        if (preg_match('/ADD\s+PRIMARY\s+KEY\s*\(\s*`?(\w+)`?\s*\)/i', $trimmed, $m)) {
+            $primaryKeys[$currentAlterTable] = $m[1];
+        }
+        if (preg_match('/MODIFY\s+`?(\w+)`?[^,]*AUTO_INCREMENT/i', $trimmed, $m)) {
+            $autoIncrements[$currentAlterTable] = $m[1];
+        }
+        if (str_ends_with($trimmed, ';')) {
+            $currentAlterTable = null;
+        }
+    }
+}
+
 $extracted = [];
 $buffer = '';
 $skipBlock = false;  // inside a trigger/procedure/view we're skipping
@@ -113,6 +134,9 @@ echo "  Extracted " . count($extracted) . " raw statements\n";
 // ------------------------------------------------------------------
 echo "Phase 3: Converting MySQL syntax to SQLite...\n";
 
+if ($pdo->inTransaction()) {
+    $pdo->rollBack();
+}
 $pdo->beginTransaction();
 $executed = 0;
 $skipped = 0;
@@ -133,7 +157,7 @@ foreach ($extracted as $raw) {
                 continue;
             }
         }
-        $sql = convertCreateTable($sql);
+        $sql = convertCreateTable($sql, $tbl, $primaryKeys, $autoIncrements);
     }
 
     // Detect INSERT
@@ -171,6 +195,31 @@ foreach ($ninConfigs as $cfg) {
 echo "  NIN API config seeded: " . count($ninConfigs) . " rows\n";
 
 // ------------------------------------------------------------------
+// PHASE 5: Add sitesettings fee columns if not exist
+// ------------------------------------------------------------------
+$feeCols = [
+    'fee_name_mod' => 5000,
+    'fee_phone_mod' => 5000,
+    'fee_address_mod' => 4000,
+    'fee_email_mod' => 4000,
+    'fee_dob_mod' => 28574,
+    'fee_lga_mod' => 3000,
+    'fee_gender_mod' => 8000,
+    'fee_marital_mod' => 6000,
+    'fee_nin_verification' => 1000,
+    'fee_affidavit' => 5000,
+    'fee_birth_certificate' => 10000
+];
+foreach ($feeCols as $col => $default) {
+    try {
+        $pdo->exec("ALTER TABLE sitesettings ADD COLUMN `$col` REAL DEFAULT $default");
+    } catch (Exception $e) {
+        // Column probably already exists or table is missing
+    }
+}
+echo "  Site settings fee columns checked/added.\n";
+
+// ------------------------------------------------------------------
 // SUMMARY
 // ------------------------------------------------------------------
 echo "\n[DONE] Import completed.\n";
@@ -190,7 +239,7 @@ foreach ($tables as $t) {
 // ------------------------------------------------------------------
 // HELPERS
 // ------------------------------------------------------------------
-function convertCreateTable($sql) {
+function convertCreateTable($sql, $tbl = null, $primaryKeys = [], $autoIncrements = []) {
     // Remove ENGINE=InnoDB and everything after on the same line
     $sql = preg_replace('/\s+ENGINE\s*=\s*\w+.*$/i', '', $sql);
     // Remove DEFAULT CHARSET
@@ -201,6 +250,20 @@ function convertCreateTable($sql) {
     $sql = preg_replace('/\s+COLLATE\s+\w+/i', '', $sql);
     // Remove COLLATE = ...
     $sql = preg_replace('/\s+COLLATE\s*=\s*\w+/i', '', $sql);
+    
+    // 1. Rewrite the pre-parsed primary key for this table to INTEGER PRIMARY KEY AUTOINCREMENT
+    if ($tbl && isset($primaryKeys[$tbl])) {
+        $pkCol = $primaryKeys[$tbl];
+        $sql = preg_replace('/`' . $pkCol . '`\s+(?:tinyint|smallint|mediumint|bigint|int)(?:\([^)]*\))?(\s+NOT\s+NULL)?(\s+DEFAULT\s+\'[^\']*\')?/i', '`' . $pkCol . '` INTEGER PRIMARY KEY AUTOINCREMENT', $sql);
+        $sql = preg_replace('/,\s*PRIMARY\s+KEY\s*\(\s*`?' . $pkCol . '`?\s*\)/i', '', $sql);
+    }
+    
+    // 2. Fallback: Parse inline primary key constraints if defined inside the CREATE TABLE statement itself
+    if (preg_match('/PRIMARY\s+KEY\s*\(\s*`?(\w+)`?\s*\)/i', $sql, $pkMatches)) {
+        $pkCol = $pkMatches[1];
+        $sql = preg_replace('/`' . $pkCol . '`\s+(?:tinyint|smallint|mediumint|bigint|int)(?:\([^)]*\))?(\s+NOT\s+NULL)?(\s+AUTO_INCREMENT)?/i', '`' . $pkCol . '` INTEGER PRIMARY KEY AUTOINCREMENT', $sql);
+        $sql = preg_replace('/,\s*PRIMARY\s+KEY\s*\(\s*`?' . $pkCol . '`?\s*\)/i', '', $sql);
+    }
     // Remove AUTO_INCREMENT
     $sql = preg_replace('/\s+AUTO_INCREMENT/i', '', $sql);
     // Remove unsigned

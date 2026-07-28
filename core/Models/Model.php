@@ -38,6 +38,9 @@
                         list($key, $value) = explode('=', $line, 2);
                         $key = trim($key);
                         $value = trim($value);
+                        putenv("$key=$value");
+                        $_ENV[$key] = $value;
+                        $_SERVER[$key] = $value;
                         switch($key){
                             case 'DB_DRIVER': self::$driver = $value ?: 'mysql'; break;
                             case 'DB_HOST': self::$host = $value ?: 'localhost'; break;
@@ -94,7 +97,7 @@
                 //Server settings
                 //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                    //Enable verbose debug output
                 $mail->isSMTP();                                            //Send using SMTP
-                $mail->Host       = $_SERVER['SERVER_NAME'];                //Set the SMTP server to send through
+                $mail->Host       = $_SERVER['SERVER_NAME'] ?? $_SERVER['HTTP_HOST'] ?? 'localhost';                //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
                 $mail->Username   = $this->emailUsername;                   //SMTP username
                 $mail->Password   = $this->emailPassword;                   //SMTP password

@@ -81,6 +81,16 @@ class NINModification extends Model {
             'nin_verification' => $settings->fee_nin_verification ?? 1000,
             'affidavit' => $settings->fee_affidavit ?? 5000,
             'birth_certificate' => $settings->fee_birth_certificate ?? 10000,
+            'new_enrollment' => 10000,
+            'child_enrollment' => 8000,
+            'validation_bulk' => 2000,
+            'ipe_bulk' => 3000,
+            'bvn_generated_nin' => 5000,
+            'suspended_nin' => 15000,
+            'dob_above_10' => 12000,
+            'delinking' => 6000,
+            'bvn_retrieval' => 4000,
+            'email_retrieved' => 4500,
         ];
         return (float)($fees[$type] ?? 5000);
     }

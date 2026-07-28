@@ -83,7 +83,24 @@ class NINModificationController extends AdminController {
         $html .= '<tr><th>Created</th><td>' . htmlspecialchars($request->date_created ?? '') . '</td></tr>';
         $html .= '<tr><th>Reviewed By</th><td>' . htmlspecialchars($request->reviewed_by ?? 'Not reviewed') . '</td></tr>';
         $html .= '<tr><th>Reviewed Date</th><td>' . htmlspecialchars($request->date_reviewed ?? 'Not reviewed') . '</td></tr>';
+        if (!empty($request->result_document)) {
+            $html .= '<tr><th>Completed Report</th><td><a href="' . htmlspecialchars($request->result_document) . '" download class="btn btn-success btn-xs">Download Report</a></td></tr>';
+        }
         $html .= '</table></div>';
+
+        $documents = json_decode($request->documents ?? '[]');
+        if (!empty($documents)) {
+            $html .= '<div class="col-md-6"><h4>Uploaded Documents</h4><hr><ul class="list-group">';
+            foreach ($documents as $doc) {
+                $docType = htmlspecialchars($doc->type ?? 'Document');
+                $docPath = htmlspecialchars($doc->path ?? '');
+                $html .= '<li class="list-group-item" style="overflow: hidden;">';
+                $html .= '<span><strong>' . ucwords(str_replace('_', ' ', $docType)) . ':</strong></span>';
+                $html .= ' <a href="' . $docPath . '" target="_blank" class="btn btn-info btn-xs pull-right">View / Download</a>';
+                $html .= '</li>';
+            }
+            $html .= '</ul></div>';
+        }
         $html .= '</div>';
         
         return $html;
