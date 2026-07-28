@@ -54,18 +54,22 @@
         }
 
         public function connectDb(){
-            if(self::$driver === 'sqlite'){
-                $dbPath = __DIR__ . '/../../' . self::$dbName;
-                $dir = dirname($dbPath);
-                if(!is_dir($dir)){mkdir($dir, 0777, true);}
-                $pdo = new PDO("sqlite:$dbPath");
+            try {
+                if(self::$driver === 'sqlite'){
+                    $dbPath = __DIR__ . '/../../' . self::$dbName;
+                    $dir = dirname($dbPath);
+                    if(!is_dir($dir)){mkdir($dir, 0777, true);}
+                    $pdo = new PDO("sqlite:$dbPath");
+                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    $pdo->exec("PRAGMA foreign_keys = ON");
+                    return $pdo;
+                }
+                $pdo = new PDO("mysql:host=".self::$host.";dbname=".self::$dbName,self::$username,self::$password);
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $pdo->exec("PRAGMA foreign_keys = ON");
                 return $pdo;
+            } catch (PDOException $e) {
+                die("Database Connection Error: " . $e->getMessage());
             }
-            $pdo = new PDO("mysql:host=".self::$host.";dbname=".self::$dbName,self::$username,self::$password);
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $pdo;
         }
 
         // Secure Password Hashing
