@@ -8,25 +8,64 @@
     </div>
     <div class="card card-style">
         <div class="content">
-            <form method="post" action="phone_modification">
+            <form method="post" enctype="multipart/form-data">
                 <fieldset>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
-                        <label class="color-theme opacity-80 font-700 font-12">New Phone Number</label>
-                        <input type="tel" name="new_value" placeholder="Enter new phone number" class="round-small" required>
+                        <label class="color-theme opacity-80 font-700 font-12">NIN</label>
+                        <input type="number" name="nin" placeholder="Enter 11-digit NIN" class="round-small" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                                <label class="color-theme opacity-80 font-700 font-12">Surname</label>
+                                <input type="text" name="surname" placeholder="Surname" class="round-small" required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                                <label class="color-theme opacity-80 font-700 font-12">First Name</label>
+                                <input type="text" name="first_name" placeholder="First Name" class="round-small" required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                                <label class="color-theme opacity-80 font-700 font-12">Middle Name</label>
+                                <input type="text" name="middle_name" placeholder="Middle Name" class="round-small">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                                <label class="color-theme opacity-80 font-700 font-12">Old Phone Number</label>
+                                <input type="tel" name="old_phone" placeholder="Enter old phone number" class="round-small" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                                <label class="color-theme opacity-80 font-700 font-12">New Phone Number</label>
+                                <input type="tel" name="new_phone" placeholder="Enter new phone number" class="round-small" required>
+                            </div>
+                        </div>
                     </div>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
                         <label class="color-theme opacity-80 font-700 font-12">Reason for Change</label>
                         <textarea name="reason" placeholder="Explain why you need this change" class="round-small" rows="3" required></textarea>
                     </div>
+                    <div class="mb-4">
+                        <label class="color-theme opacity-80 font-700 font-12 d-block mb-1">Clear/Bright Passport Photograph</label>
+                        <input type="file" name="passport_photo" class="form-control" accept="image/*" required>
+                    </div>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
                         <label class="color-theme opacity-80 font-700 font-12">Amount</label>
-                        <input type="text" value="â‚¦5,000" class="round-small" readonly>
+                        <input type="text" value="₦5,000" class="round-small" readonly>
                     </div>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
                         <label class="color-theme opacity-80 font-700 font-12">Transaction PIN</label>
                         <input type="number" name="transkey" placeholder="Enter Transaction PIN" class="round-small" required>
                     </div>
                     <input name="transref" type="hidden" value="<?php echo $transRef; ?>">
+                    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token'] ?? ''; ?>">
                     <input name="modification_type_code" type="hidden" value="phone">
                     <div class="form-button">
                         <button type="submit" name="submit-nin-modification" class="btn btn-info btn-lg btn-block">

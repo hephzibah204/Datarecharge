@@ -207,18 +207,19 @@ class AdminModel extends Model{
 			$dbh=self::connect();
 			$sql="UPDATE sitesettings SET fee_name_mod=:fnm,fee_phone_mod=:fpm,fee_address_mod=:fam,fee_email_mod=:fem,fee_dob_mod=:fdm,fee_lga_mod=:flm,fee_gender_mod=:fgm,fee_marital_mod=:fmm,fee_nin_verification=:fnv,fee_affidavit=:fa2,fee_birth_certificate=:fbc WHERE sId=1";
 			$query=$dbh->prepare($sql);
-			$query->bindParam(':fnm',$fee_name_mod,PDO::PARAM_STR);
-			$query->bindParam(':fpm',$fee_phone_mod,PDO::PARAM_STR);
-			$query->bindParam(':fam',$fee_address_mod,PDO::PARAM_STR);
-			$query->bindParam(':fem',$fee_email_mod,PDO::PARAM_STR);
-			$query->bindParam(':fdm',$fee_dob_mod,PDO::PARAM_STR);
-			$query->bindParam(':flm',$fee_lga_mod,PDO::PARAM_STR);
-			$query->bindParam(':fgm',$fee_gender_mod,PDO::PARAM_STR);
-			$query->bindParam(':fmm',$fee_marital_mod,PDO::PARAM_STR);
-			$query->bindParam(':fnv',$fee_nin_verification,PDO::PARAM_STR);
-			$query->bindParam(':fa2',$fee_affidavit,PDO::PARAM_STR);
-			$query->bindParam(':fbc',$fee_birth_certificate,PDO::PARAM_STR);
-			$query->execute();
+			$query->execute([
+				':fnm' => $fee_name_mod,
+				':fpm' => $fee_phone_mod,
+				':fam' => $fee_address_mod,
+				':fem' => $fee_email_mod,
+				':fdm' => $fee_dob_mod,
+				':flm' => $fee_lga_mod,
+				':fgm' => $fee_gender_mod,
+				':fmm' => $fee_marital_mod,
+				':fnv' => $fee_nin_verification,
+				':fa2' => $fee_affidavit,
+				':fbc' => $fee_birth_certificate
+			]);
 			return 0;
 		}
 
@@ -237,11 +238,12 @@ class AdminModel extends Model{
 			foreach($id as $i => $val){
 				$sql="UPDATE nin_price SET slip_name=:sn,buying_price=:bp,user_price=:up WHERE id=:id";
 				$query=$dbh->prepare($sql);
-				$query->bindParam(':sn',$slip_name[$i],PDO::PARAM_STR);
-				$query->bindParam(':bp',$buying_price[$i],PDO::PARAM_STR);
-				$query->bindParam(':up',$user_price[$i],PDO::PARAM_STR);
-				$query->bindParam(':id',$id[$i],PDO::PARAM_INT);
-				$query->execute();
+				$query->execute([
+					':sn' => $slip_name[$i],
+					':bp' => $buying_price[$i],
+					':up' => $user_price[$i],
+					':id' => $id[$i]
+				]);
 			}
 			return 0;
 		}

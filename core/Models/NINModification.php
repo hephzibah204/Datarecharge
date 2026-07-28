@@ -49,8 +49,9 @@ class NINModification extends Model {
     }
 
     private function createModificationRecord($userId, $ref, $body, $fee, $documents, $date) {
-        $type = $body->modification_type ?? $body->verification_type;
-        $sql = "INSERT INTO nin_requests (sId,ref,type,new_value,reason,fee,status,date_created,documents) VALUES (:user,:ref,:type,:value,:reason,:fee,'pending',:date,:docs)";
+        $type = $body->modification_type ?? $body->verification_type ?? '';
+        $table = ($type === 'nin_verification') ? 'nin_requests' : 'nin_modifications';
+        $sql = "INSERT INTO $table (sId,ref,type,new_value,reason,fee,status,date_created,documents) VALUES (:user,:ref,:type,:value,:reason,:fee,'pending',:date,:docs)";
         $query = $this->connect()->prepare($sql);
         $docData = json_encode($documents);
         $query->execute([

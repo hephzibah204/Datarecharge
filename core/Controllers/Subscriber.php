@@ -246,49 +246,81 @@ class Subscriber extends Controller {
 			}
 		}
 		
-		//Submit NIN Modification Request
+		        //Submit NIN Modification Request
         public function submitNINModification(){
             extract($_POST);
             $this->setDetails();
-            $host = $this->siteurl."/api/nin/";
             $transkey = strip_tags($transkey);
             $check = $this->model->verifyTransactionPin($this->userId, $transkey);
-            $load = json_encode([
-                "phone" => $this->loginAccount->sPhone ?? '',
-                "ref" => $transref,
-                "network" => "nin_modification",
-                "modification_type" => $modification_type_code ?? '',
-                "new_value" => $new_value ?? '',
-                "reason" => $reason ?? '',
-                "consent" => true
-            ]);
 
             if (is_object($check)) {
-                $curl = curl_init();
-                curl_setopt_array($curl, [
-                    CURLOPT_URL => $host,
-                    CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_ENCODING => '',
-                    CURLOPT_MAXREDIRS => 10,
-                    CURLOPT_TIMEOUT => 0,
-                    CURLOPT_FOLLOWLOCATION => true,
-                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                    CURLOPT_CUSTOMREQUEST => 'POST',
-                    CURLOPT_POSTFIELDS => $load,
-                    CURLOPT_HTTPHEADER => [
-                        "Content-Type: application/json",
-                        "Token: Token $check->sApiKey"
-                    ],
-                ]);
+                if (!class_exists('NINModification')) {
+                    require_once __DIR__ . '/../Models/NINModification.php';
+                }
+                $ninModel = new NINModification();
+                $modificationType = $modification_type_code ?? '';
+                $fee = $ninModel->getModificationFee($modificationType);
 
-                $exereq = curl_exec($curl);
-                $result = json_decode($exereq);
-                curl_close($curl);
+                $user = $this->model->getUserById($this->userId);
+                $userbalance = (float)($user->sWallet ?? 0);
 
-                if ($result->status == "success") {
-                    return $this->createPopMessage("Success!!", "NIN modification request submitted. Ref: {$result->ref}", "green");
+                if ($userbalance < $fee) {
+                    return $this->createPopMessage("Error!!", "Insufficient balance. Required: N" . number_format($fee, 2), "red");
+                }
+
+                // Process uploaded files
+                $documents = [];
+                if (isset($_FILES) && !empty($_FILES)) {
+                    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . "/assets/userImage/";
+                    if (!is_dir($uploadDir)) {
+                        mkdir($uploadDir, 0777, true);
+                    }
+                    foreach ($_FILES as $key => $file) {
+                        if (!empty($file['name']) && $file['error'] == UPLOAD_ERR_OK) {
+                            $filename = time() . "_" . preg_replace("/[^a-zA-Z0-9\._-]/", "", $file['name']);
+                            $destination = $uploadDir . $filename;
+                            if (move_uploaded_file($file['tmp_name'], $destination)) {
+                                $documents[] = [
+                                    'type' => $key,
+                                    'path' => "/assets/userImage/" . $filename,
+                                    'verified' => false
+                                ];
+                            }
+                        }
+                    }
+                }
+
+                // Normalize fields to store in new_value or serialize them to JSON/detailed fields
+                // Let's create a combined values array of all form POST data for reference
+                $allValues = $_POST;
+                unset($allValues['transkey'], $allValues['transref'], $allValues['csrf_token'], $allValues['submit-nin-modification']);
+                
+                // If it's name mod, new_value is Surname + First + Middle
+                if ($modificationType === 'name') {
+                    $newVal = trim(($surname ?? '') . ' ' . ($first_name ?? '') . ' ' . ($middle_name ?? ''));
+                } elseif ($modificationType === 'dob') {
+                    $newVal = $dob_new ?? '';
+                } elseif ($modificationType === 'phone') {
+                    $newVal = $new_phone ?? '';
+                } elseif ($modificationType === 'address') {
+                    $newVal = $new_address ?? '';
                 } else {
-                    return $this->createPopMessage("Error!!", $result->msg ?? "Request failed", "red");
+                    $newVal = $new_value ?? '';
+                }
+
+                $bodyObj = (object)[
+                    'modification_type' => $modificationType,
+                    'new_value' => $newVal,
+                    'reason' => $reason ?? '',
+                    'form_data' => json_encode($allValues)
+                ];
+
+                $requestResult = $ninModel->createNINModificationRequest($this->userId, $bodyObj, $fee, $documents);
+
+                if ($requestResult['status'] == "success") {
+                    return $this->createPopMessage("Success!!", "NIN modification request submitted. Ref: {$requestResult['ref']}", "green");
+                } else {
+                    return $this->createPopMessage("Error!!", $requestResult['msg'] ?? "Request failed", "red");
                 }
             } else {
                 return $this->createPopMessage("Error!!", "Incorrect Pin, Please Try Again.", "red");
@@ -1252,15 +1284,49 @@ public function purchaseAirtime(){
 
 		
 
-		//Initialize Paystack Payment
-		public function fundWithPaystack(){
-			extract($_POST);
-			$email=strip_tags($email);
-			$amount=strip_tags($amount);
-			$data=$this->model->initializePayStack($this->siteurl,$email,$amount);
-			if($data["status"] == 'success'){$link = $data["msg"]; header("Location: $link"); exit();}
-			return $this->createPopMessage("Opps!!",$data["msg"],"red"); 
-		}
+    // Initialize Payment
+    public function fundWallet(){
+        extract($_POST);
+        $gateway = $gateway ?? 'paystack';
+        
+        switch($gateway){
+            case 'paystack':
+                return $this->fundWithPaystack();
+            case 'payvessel':
+                return $this->fundWithPayvessel();
+            case 'monnify':
+                return $this->fundWithMonnify();
+            case 'paymentpoint':
+                return $this->fundWithPaymentPoint();
+            default:
+                return $this->createPopMessage("Error!!", "Invalid Payment Gateway Selected.", "red");
+        }
+    }
+
+    // Initialize Paystack Payment
+    public function fundWithPaystack(){
+        extract($_POST);
+        $email=strip_tags($email);
+        $amount=strip_tags($amount);
+        $data=$this->model->initializePayStack($this->siteurl,$email,$amount);
+        if($data["status"] == 'success'){$link = $data["msg"]; header("Location: $link"); exit();}
+        return $this->createPopMessage("Opps!!",$data["msg"],"red"); 
+    }
+
+    // Placeholder for Payvessel
+    public function fundWithPayvessel(){
+        return $this->createPopMessage("Info!!", "Payvessel integration is coming soon.", "blue");
+    }
+
+    // Placeholder for Monnify
+    public function fundWithMonnify(){
+        return $this->createPopMessage("Info!!", "Monnify integration is coming soon.", "blue");
+    }
+
+    // Placeholder for Payment Point
+    public function fundWithPaymentPoint(){
+        return $this->createPopMessage("Info!!", "Payment Point integration is coming soon.", "blue");
+    }
 		//Get All Transasactions
     function TotalTransactions(){
           $data = $this->model->TotalTransactions($this->userId);
@@ -1562,8 +1628,6 @@ public function purchaseAirtime(){
 		// Payvessel ACCOUNCT MANAGEMENT
 		//----------------------------------------------------------------------------------------------------------------
 		
-		//Generate Payvessel Account
-		
 		public function generatePayvesselAccount(){
 		     extract($_POST);
 		     $data = $this->model->generatePayvesselAccount($this->userId,$bvn);
@@ -1571,6 +1635,15 @@ public function purchaseAirtime(){
 		    if ($data == 0) {
           return $this->createPopMessage("Success!!","Details Verified Successfully","green"); }
           else { return $this->createPopMessage("Failed!", "Unable To Verify Your Details. Please Try Again later", "green"); }
+		}
+
+		public function generatePaymentPointAccount(){
+		     $data = $this->model->generatePaymentPointAccount($this->userId);
+		     if ($data == 0) {
+                 return $this->createPopMessage("Success!!","Payment Point Account Generated Successfully","green"); 
+             } else { 
+                 return $this->createPopMessage("Failed!", "Unable To Generate Payment Point Account. Please Try Again later", "red"); 
+             }
 		}
 		
 		public function updatePayvesselAccount(){
@@ -1803,6 +1876,13 @@ public function getQueriesAndReplies(){
     return $check;
 	    
 	}
+
+    public function getUserModifications(){
+        $sql = "SELECT * FROM nin_modifications WHERE sId = :id ORDER BY date_created DESC";
+        $query = $this->model->connect()->prepare($sql);
+        $query->execute([':id' => $this->userId]);
+        return $query->fetchAll(PDO::FETCH_OBJ);
+    }
 
 }
 	

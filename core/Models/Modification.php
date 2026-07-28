@@ -212,7 +212,7 @@ class Modification extends Model {
         $sql = "INSERT INTO notifications (msg,url,created_at,reference) VALUES (:msg,:url,:date,:ref)";
         $query = $this->connect()->prepare($sql);
         $query->bindValue(':msg', $message, PDO::PARAM_STR);
-        $query->bindValue(':url', "/admin/ni-modifications?action=view&id=" . $entityId, PDO::PARAM_STR);
+        $query->bindValue(':url', "/admin/nin-modifications?action=view&id=" . $entityId, PDO::PARAM_STR);
         $query->bindValue(':date', date("Y-m-d H:i:s"), PDO::PARAM_STR);
         $query->bindValue(':ref', $entityId, PDO::PARAM_STR);
         $query->execute();

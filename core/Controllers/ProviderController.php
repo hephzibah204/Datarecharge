@@ -319,12 +319,20 @@ class ProviderController extends Controller{
                 $pricingHtml .= "
                 <tr>
                     <td><code>{$pr->service_type}</code></td>
-                    <td>N".number_format($pr->base_fee,2)."</td>
-                    <td>N".number_format($pr->cost_price,2)."</td>
-                    <td>{$pr->plan_name}</td>
-                    <td>{$pr->plan_duration}</td>
-                    <td>$pStatus</td>
-                    <td>
+                    <form method='post'>
+                        <input type='hidden' name='provider-action' value='update_pricing'>
+                        <input type='hidden' name='id' value='{$pr->id}'>
+                        <td><input type='number' step='0.01' name='base_fee' value='{$pr->base_fee}' class='form-control form-control-sm' style='width:80px'></td>
+                        <td><input type='number' step='0.01' name='cost_price' value='{$pr->cost_price}' class='form-control form-control-sm' style='width:80px'></td>
+                        <td>{$pr->plan_name}</td>
+                        <td>{$pr->plan_duration}</td>
+                        <td><select name='is_active' class='form-control form-control-sm'>
+                            <option value='1' ".($pr->is_active ? 'selected':'').">Active</option>
+                            <option value='0' ".(!$pr->is_active ? 'selected':'').">Inactive</option>
+                        </select></td>
+                        <td>
+                            <button type='submit' class='btn btn-primary btn-sm'>Save</button>
+                    </form>
                         <form method='post' style='display:inline' onsubmit='return confirm(\"Delete this pricing?\")'>
                             <input type='hidden' name='provider-action' value='delete_pricing'>
                             <input type='hidden' name='id' value='{$pr->id}'>

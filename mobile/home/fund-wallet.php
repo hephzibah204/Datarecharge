@@ -72,6 +72,27 @@ if ($controller->getConfigValue($data2, "billstackStatus") == "On"):
                 <?php endif; ?><?php endif; ?><?php endif; ?><hr/>
 
                 <!-- PAYVESSEL BANK END -->
+
+                <!-- PAYMENT POINT BANK START-->
+                <?php if($controller->getConfigValue($data2,"paymentpointStatus") == "On"): ?>
+                <?php $ppCharges = $controller->getConfigValue($data2,"paymentpointCharges"); 
+                $ppChargesType = $controller->getConfigValue($data2,"paymentpointChargesType"); 
+                $ppChargesText = ($ppChargesType == "flat") ? "N".$ppCharges : $ppCharges."%";?>
+                <?php if(!empty($data->sPaymentPointBank)): ?>
+                <p class="mb-2 text-dark font-600 font-16"><b>Bank Name: </b>Payment Point Dedicated Bank</p>
+                <p class="mb-2 text-dark font-600 font-16"><b>Account No: </b><?php echo $data->sPaymentPointBank; ?></p>
+                <p class="mb-2 text-danger font-600 font-15"><b>Note: </b> Automated bank transfer attracts additional charges of <?php echo $ppChargesText; ?> only.</p>
+                <button class="btn btn-primary font-700 rounded-xl mt-3" onclick="copyToClipboard('<?php echo $data->sPaymentPointBank; ?>')">Copy Account No</button>
+                <?php else: ?>
+                <p class="mb-2 text-danger font-600 font-15">Get Payment Point Dedicated Account. <?php echo $ppChargesText; ?> Charge only.</p>
+                <form method="POST" id="ppform">
+                    <input type="hidden" name="generate-paymentpoint-account" value="YES" />
+                </form>
+                <button class="btn btn-primary font-700 rounded-xl mt-3" id="ppbtn" onclick="$('#ppbtn').removeClass('btn-primary').addClass('btn-secondary').html('<i class=\'fa fa-spinner fa-spin\'></i> Processing ...'); $('#ppform').submit();">Generate Account</button>
+                <?php endif; ?>
+                <hr/>
+                <?php endif; ?>
+                <!-- PAYMENT POINT BANK END -->
                     
                     <!-- ASPFIY BANK START-->
                     <?php
@@ -190,50 +211,42 @@ if ($controller->getConfigValue($data2, "billstackStatus") == "On"):
                 </div>
 
                 <div data-bs-parent="#tab-group-1" class="collapse" id="tab-2">
-                        <!--div class="text-center">
-                            <p class="text-center">
-                                <span class="icon icon-l gradient-blue shadow-l rounded-sm">
-                                    <i class="fa fa-arrow-up font-30 color-white"></i>
-                                </span>
-                            </p>
-                            <h4 class="text-primary">FUND WALLET</h4>
-                            <p class="mb-2 text-dark font-600 font-16">
-                                Pay with card, bank transfer, ussd, or bank deposit. Secured by Paystack
-                            </p>
-                    
-                        </div-->
-                        
                         <?php if($controller->getConfigValue($data2,"paystackStatus") == "On"): ?>
-                        <form  method="post">
+                        <form method="post">
                         <div class="mt-5 mb-3">
-                            
+                            <div class="input-style has-borders no-icon input-style-always-active mb-4">
+                                <label class="color-highlight">Select Gateway</label>
+                                <select name="gateway" class="form-control">
+                                    <option value="paystack">Paystack</option>
+                                    <option value="payvessel">Payvessel</option>
+                                    <option value="monnify">Monnify</option>
+                                    <option value="paymentpoint">Payment Point</option>
+                                </select>
+                            </div>
                             <div class="input-style has-borders no-icon input-style-always-active mb-4">
                                 <input type="hidden" value="<?php echo $controller->getConfigValue($data2,"paystackCharges"); ?>" id="paystackcharges" name="paystackcharges" />
                                 <input type="number" onkeyup="calculatePaystackCharges()" class="form-control" id="amount" name="amount" placeholder="Amount" required>
                                 <label for="amount" class="color-highlight">Amount</label>
-                                <em>(required)</em>
                             </div>
                             <div class="input-style has-borders no-icon input-style-always-active  mb-4">
                                 <input type="text" class="form-control" id="charges" placeholder="Charges" readonly>
                                 <label for="charges" class="color-highlight">Charges</label>
-                                <em>(required)</em>
                             </div>
                             <div class="input-style has-borders no-icon input-style-always-active  mb-4">
                                 <input type="text" class="form-control" id="amounttopay" placeholder="You Would Get" readonly>
                                 <label for="amounttopay" class="color-highlight">You Would Get</label>
-                                <em>(required)</em>
                             </div>
 
                             <input type="hidden" name="email" value="<?php echo $data->sEmail; ?>" />
                         </div>
 
                         <div class="text-center"><img src="../../assets/img/paystack.png" /></div>
-                        <button type="submit" id="fund-with-paystack" name="fund-with-paystack" style="width: 100%;" class="btn btn-full btn-l font-600 font-15 gradient-highlight mt-4 rounded-s">
+                        <button type="submit" id="fund-with-gateway" name="fund-with-gateway" style="width: 100%;" class="btn btn-full btn-l font-600 font-15 gradient-highlight mt-4 rounded-s">
                                 Pay Now
                         </button>
                         </form>
                         <?php else : ?>
-                            <h3 class="text-center text-danger">Opps!! Paystack Payment Is Disabled, Please Contact Admin</h3>
+                            <h3 class="text-center text-danger">Opps!! Card Payment Is Disabled, Please Contact Admin</h3>
                         <?php endif; ?>
                 </div>
 

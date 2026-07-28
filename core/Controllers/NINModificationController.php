@@ -53,7 +53,7 @@ class NINModificationController extends AdminController {
                 $html .= '<td><span class="label label-' . $this->getStatusClass($request->status) . '">' . htmlspecialchars($request->status) . '</span></td>';
                 $html .= '<td>' . date('M d, Y h:i A', strtotime($request->date_created ?? '')) . '</td>';
                 $html .= '<td>
-                    <a href="ni-modifications?view=' . urlencode($request->ref ?? '') . '" class="btn btn-info btn-xs">View</a>
+                    <a href="nin-modifications?view=' . urlencode($request->ref ?? '') . '" class="btn btn-info btn-xs">View</a>
                     <button class="btn btn-warning btn-xs review-request" data-ref="' . htmlspecialchars($request->ref ?? '') . '">Review</button>
                 </td>';
                 $html .= '</tr>';
@@ -113,9 +113,22 @@ class NINModificationController extends AdminController {
         if (!in_array($status, $validStatuses)) {
             return ['status' => 'fail', 'msg' => 'Invalid status'];
         }
+
+        $reportPath = null;
+        if (isset($_FILES['report_file']) && !empty($_FILES['report_file']['name']) && $_FILES['report_file']['error'] == UPLOAD_ERR_OK) {
+            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . "/assets/reports/";
+            if (!is_dir($uploadDir)) {
+                mkdir($uploadDir, 0777, true);
+            }
+            $filename = time() . "_" . preg_replace("/[^a-zA-Z0-9\._-]/", "", $_FILES['report_file']['name']);
+            $destination = $uploadDir . $filename;
+            if (move_uploaded_file($_FILES['report_file']['tmp_name'], $destination)) {
+                $reportPath = "/assets/reports/" . $filename;
+            }
+        }
         
         $model = new Modification();
-        $model->updateModificationStatus($ref, $status, $this->getCurrentUserId(), $adminNotes);
+        $model->updateModificationStatus($ref, $status, $this->getCurrentUserId(), $adminNotes, $reportPath);
         
         return ['status' => 'success', 'msg' => 'Request status updated'];
     }

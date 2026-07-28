@@ -4,7 +4,7 @@
     <div class="box">
         <div class="box-header with-border d-flex align-items-center justify-content-between">
             <h4 class="box-title">NIN Slip Pricing</h4>
-            <a class="btn btn-info btn-rounded text-white" href="ni-modifications">
+            <a class="btn btn-info btn-rounded text-white" href="nin-modifications">
                 <i class="fa fa-id-card" aria-hidden="true"></i> Back to NIN Modifications
             </a>
         </div>
@@ -53,7 +53,7 @@
                 </table>
             </div>
             <div class="form-group mt-2">
-                <button type="submit" name="update-nin-slip-pricing" class="btn btn-success">
+                <button type="submit" name="update-nin-slip-pricing" class="btn btn-success btn-submit">
                     <i class="fa fa-save"></i> Save Changes
                 </button>
             </div>

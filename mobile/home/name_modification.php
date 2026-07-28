@@ -8,28 +8,39 @@
     </div>
     <div class="card card-style">
         <div class="content">
-            <form method="post" action="name_modification">
+            <form method="post" enctype="multipart/form-data">
                 <fieldset>
-                    <div class="input-style input-style-always-active has-borders mb-4">
-                        <label class="color-theme opacity-80 font-700 font-12">Modification Type</label>
-                        <select name="modification_type" class="form-control" required>
-                            <option value="">Select type</option>
-                            <option value="name">Full Name Change</option>
-                            <option value="surname">Surname Only</option>
-                            <option value="given_name">Given Name(s) Only</option>
-                        </select>
+                    <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                        <label class="color-theme opacity-80 font-700 font-12">NIN</label>
+                        <input type="number" name="nin" placeholder="Enter 11-digit NIN" class="round-small" required>
                     </div>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
-                        <label class="color-theme opacity-80 font-700 font-12">New Value</label>
-                        <input type="text" name="new_value" placeholder="Enter new name" class="round-small" required>
+                        <label class="color-theme opacity-80 font-700 font-12">Surname</label>
+                        <input type="text" name="surname" placeholder="Enter Surname" class="round-small" required>
+                    </div>
+                    <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                        <label class="color-theme opacity-80 font-700 font-12">First Name</label>
+                        <input type="text" name="first_name" placeholder="Enter First Name" class="round-small" required>
+                    </div>
+                    <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                        <label class="color-theme opacity-80 font-700 font-12">Middle Name</label>
+                        <input type="text" name="middle_name" placeholder="Enter Middle Name" class="round-small">
+                    </div>
+                    <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                        <label class="color-theme opacity-80 font-700 font-12">Phone Number</label>
+                        <input type="tel" name="phone" placeholder="Enter Phone Number" class="round-small" required>
                     </div>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
                         <label class="color-theme opacity-80 font-700 font-12">Reason for Change</label>
                         <textarea name="reason" placeholder="Explain why you need this change" class="round-small" rows="3" required></textarea>
                     </div>
+                    <div class="mb-4">
+                        <label class="color-theme opacity-80 font-700 font-12 d-block mb-1">Clear Passport Photograph</label>
+                        <input type="file" name="passport_photo" class="form-control" accept="image/*" required>
+                    </div>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
                         <label class="color-theme opacity-80 font-700 font-12">Amount</label>
-                        <input type="text" value="â‚¦5,000" class="round-small" readonly>
+                        <input type="text" value="₦5,000" class="round-small" readonly>
                     </div>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
                         <label class="color-theme opacity-80 font-700 font-12">Transaction PIN</label>

@@ -559,6 +559,11 @@
 			return $result=$this->model->verifyPayvesselRef($email,$token,$payload);
 		}
 
+        //Verify Payment Point Notification
+		public function verifyPaymentpointRef($email,$headers,$payload){
+			return $result=$this->model->verifyPaymentpointRef($email,$headers,$payload);
+		}
+
         //Record Transaction & Debit User
         public function recordPayvesselTransaction($userid,$servicename,$servicedesc,$amount,$userbalance,$ref,$status){
             $response = array();

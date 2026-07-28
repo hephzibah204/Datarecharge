@@ -4,7 +4,7 @@
     <div class="box">
         <div class="box-header with-border d-flex align-items-center justify-content-between">
             <h4 class="box-title">NIN Modification & Verification Fees</h4>
-            <a class="btn btn-info btn-rounded text-white" href="ni-modifications">
+            <a class="btn btn-info btn-rounded text-white" href="nin-modifications">
                 <i class="fa fa-id-card" aria-hidden="true"></i> Back to NIN Modifications
             </a>
         </div>
@@ -70,7 +70,7 @@
             </div>
 
             <div class="form-group mt-3">
-                <button type="submit" name="update-nin-fee-settings" class="btn btn-success">
+                <button type="submit" name="update-nin-fee-settings" class="btn btn-success btn-submit">
                     <i class="fa fa-save"></i> Save Fee Settings
                 </button>
             </div>

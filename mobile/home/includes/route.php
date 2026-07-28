@@ -79,10 +79,15 @@
          if(isset($_POST["dynamic-account"])) {
        $msg = $controller->monifyDynamic();
      }
-     //Generate Payvessel account
+      //Generate Payvessel account
       if(isset($_POST["generate-payvessel-account"])){
       $msg=$controller->generatePayvesselAccount();
-        }
+      }
+      
+      //Generate Payment Point account
+      if(isset($_POST["generate-paymentpoint-account"])){
+      $msg=$controller->generatePaymentPointAccount();
+      }
        
       //Generate Payvessel account
       if(isset($_POST["update-payvessel-account"])){
@@ -226,9 +231,9 @@
             $msg=$controller->verifyPassport();
         }
         
-        //Fund With Paystack
-        if(isset($_POST["fund-with-paystack"])){
-            $msg=$controller->fundWithPaystack();
+        //Fund With Gateway
+        if(isset($_POST["fund-with-gateway"])){
+            $msg=$controller->fundWallet();
         } 
         
         //Generate aspfiy Account
@@ -631,7 +636,11 @@
                     $data[1]=$controller->getPassport();
                     return $data;
                     break;
-
+                case "nin_modifications": 
+                    $data=array();
+                    $data[0]=$controller->getUserModifications();
+                    return $data;
+                    break;
                 default:
                     return "";
             }

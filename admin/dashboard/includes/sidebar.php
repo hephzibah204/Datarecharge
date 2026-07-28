@@ -90,8 +90,8 @@
         </li>
 
         <li>
-          <a href="<?php echo $urlAddon; ?>ni-modifications">
-            <i class="fa fa-id-card"></i> <span>NIN Modifications</span>
+          <a href="<?php echo $urlAddon; ?>nin-advanced">
+            <i class="fa fa-id-card-o"></i> <span>NIN Advanced Services</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>

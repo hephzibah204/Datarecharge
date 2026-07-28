@@ -324,6 +324,11 @@
         $msg=$controller->updateApiConfiguration();
     }
     
+    //Update Payment Point Configurations
+    if(isset($_POST["update-paymentpoint-config"])){
+        $msg=$controller->updateApiConfiguration();
+    }
+    
     
     //Update Aspfiy Configurations
     if(isset($_POST["update-aspfiy-config"])){

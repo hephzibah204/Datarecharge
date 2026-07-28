@@ -150,18 +150,20 @@
 
     <div class="card card-style no-shadow">
         <div class="content">
-            <div class="text-center">
-                <img src="../../assets/img/ads.png?v=1" style="width:90px; height:80px;">
-                <h1 class="mb-0">ADVERTISEMENT</h1>
-                <p class="mb-4 font-600 color-highlight">Advertise Your Business Here</p>
+            <h4 class="text-center mb-4">New Services</h4>
+            <div class="row text-center mb-0">
+                <div class="col-4 mb-3"><a href="service-form?service=new-enrollment"><i class="fa fa-user-plus font-30"></i><p class="font-10">New Enroll</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=child-enrollment"><i class="fa fa-child font-30"></i><p class="font-10">Child Enroll</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=validation-bulk"><i class="fa fa-list font-30"></i><p class="font-10">Valid Bulk</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=ipe-bulk"><i class="fa fa-database font-30"></i><p class="font-10">IPE Bulk</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=bvn-nin"><i class="fa fa-id-card font-30"></i><p class="font-10">BVN NIN</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=suspended-nin"><i class="fa fa-ban font-30"></i><p class="font-10">Suspended</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=gender-mod"><i class="fa fa-venus-mars font-30"></i><p class="font-10">Gender Mod</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=dob-10yr"><i class="fa fa-birthday-cake font-30"></i><p class="font-10">DOB > 10Yr</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=delinking"><i class="fa fa-unlink font-30"></i><p class="font-10">Delinking</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=email-retrieve"><i class="fa fa-envelope font-30"></i><p class="font-10">Email Retr</p></a></div>
+                <div class="col-4 mb-3"><a href="service-form?service=bvn-retrieve"><i class="fa fa-key font-30"></i><p class="font-10">BVN Retr</p></a></div>
             </div>
-
-            <!-- Updated button to anchor tag -->
-            <a href="https://wa.me/7026417709" style="width: 100%; display: inline-block; text-align: center; border-radius:1rem !important;" 
-            class="btn btn-full btn-l font-600 font-15 gradient-highlight mt-4">
-                <i class="fa fa-envelope"></i> Start
-            </a>
-                
         </div>
     </div>
 </div>

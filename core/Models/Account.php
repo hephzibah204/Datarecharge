@@ -1341,9 +1341,65 @@
         $queryC = $dbh->prepare($c);
         $queryC->bindParam(':status', $status, PDO::PARAM_STR);
         $queryC->bindParam(':id', $id, PDO::PARAM_INT); 
-        $queryC->execute();
     }
 }
+
+    //Generate Payment Point Virtual Bank Account
+    public function generatePaymentPointAccount($id) {
+        $user = $this->getUserById($id);
+        if (!$user) return 1;
+        
+        //Get API Details
+        $d = $this->getApiConfiguration();
+        $paymentpointBusinessId = $this->getConfigValue($d, "paymentpointBusinessId");
+        $paymentpointApiKey = $this->getConfigValue($d, "paymentpointApiKey");
+        $paymentpointSecret = $this->getConfigValue($d, "paymentpointSecret");
+        
+        $url = "https://api.paymentpoint.co/api/v1/createVirtualAccount";
+        
+        $headers = [
+            'Authorization: Bearer ' . $paymentpointSecret,
+            'api-key: ' . $paymentpointApiKey,
+            'Content-Type: application/json',
+        ];
+        
+        $payload = json_encode([
+            'email' => $user->sEmail,
+            'name' => trim(($user->sLname ?? '') . ' ' . ($user->sFname ?? '')),
+            'phoneNumber' => $user->sPhone,
+            'bankCode' => ['20946', '20897'],
+            'businessId' => $paymentpointBusinessId,
+        ]);
+        
+        $ch = curl_init($url);
+        curl_setopt_array($ch, [
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => $payload,
+            CURLOPT_HTTPHEADER => $headers,
+            CURLOPT_RETURNTRANSFER => true,
+        ]);
+        
+        $result = curl_exec($ch);
+        curl_close($ch);
+        
+        file_put_contents("paymentpoint_log.txt", $result);
+        $value = json_decode($result, true);
+        
+        if (isset($value['bankAccounts'][0])) {
+            $accountNumber = $value['bankAccounts'][0];
+            $dbh = $this->connect();
+            $status = "yes";
+            $c = "UPDATE subscribers SET sPaymentPointBank = :pb, pVerify = :status, sAccountLimit = '10000' WHERE sId = :id";
+            $queryC = $dbh->prepare($c);
+            $queryC->bindParam(':pb', $accountNumber, PDO::PARAM_STR);
+            $queryC->bindParam(':status', $status, PDO::PARAM_STR);
+            $queryC->bindParam(':id', $id, PDO::PARAM_INT);
+            if ($queryC->execute()) {
+                return 0;
+            }
+        }
+        return 1;
+    }
 
 	//Create Payvessel Dynamic Virtual Bank Account
    public function generatePayvesselDynamic($id, $fname, $lname, $phone, $email){
