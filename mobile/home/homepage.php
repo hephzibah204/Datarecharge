@@ -20,12 +20,13 @@
     */
 
     
-    $design = $data3->homedesign;
-    $color = $data3->sitecolor;
-    $name = $data3->sitename;
+    $design = (is_object($data3) && isset($data3->homedesign)) ? $data3->homedesign : '6';
+    $color  = (is_object($data3) && isset($data3->sitecolor))  ? $data3->sitecolor  : '#085406';
+    $name   = (is_object($data3) && isset($data3->sitename))   ? $data3->sitename   : 'DataRecharge';
 
     $allowedDesigns = ['1', '2', '3', '4', '5', '6']; // Add valid designs here
-    $design = in_array((string)$design, $allowedDesigns) ? $design : '1';
-    include("homepages/homepage".$design.".php");
+    $design = in_array((string)$design, $allowedDesigns) ? $design : '6';
+    $pageFile = "homepages/homepage".$design.".php";
+    include(file_exists($pageFile) ? $pageFile : "homepages/homepage6.php");
 
 ?>

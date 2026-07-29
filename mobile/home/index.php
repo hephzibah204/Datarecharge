@@ -1,4 +1,10 @@
-<?php require_once("includes/route.php"); ?>
+<?php require_once("includes/route.php");
+if (!isset($siteSettings) || !is_object($siteSettings)) {
+    http_response_code(503);
+    echo '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Maintenance</title><style>body{font-family:sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f5f5f5}.box{background:#fff;padding:2rem;border-radius:1rem;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.1);max-width:320px}h2{color:#d9534f}p{color:#555}</style></head><body><div class="box"><h2>&#9888; Service Unavailable</h2><p>We are unable to connect to the database. Please try again in a moment.</p></div></body></html>';
+    exit;
+}
+?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -24,7 +30,11 @@
     <?php if($title <> "Print Data Pin"): ?>
         
         <!-- Page Header -->
-        <?php include_once("headers/header".$siteSettings->homedesign.".php"); ?>
+        <?php
+            $hd = isset($siteSettings->homedesign) ? $siteSettings->homedesign : '6';
+            $hf = "headers/header".$hd.".php";
+            include_once(file_exists($hf) ? $hf : "headers/header6.php");
+        ?>
 
         <!-- Page Footer -->
         <?php include_once("includes/footer.php"); ?>
