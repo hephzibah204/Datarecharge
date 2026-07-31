@@ -1,4 +1,15 @@
-<?php session_start(); if(isset($_SESSION['sysId'])){header("Location:dashboard/");} require_once("dashboard/includes/auto_loader.php"); ?>
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    ini_set('session.cookie_httponly', 1);
+    ini_set('session.use_only_cookies', 1);
+    if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
+        ini_set('session.cookie_secure', 1);
+    }
+    session_start();
+}
+if(isset($_SESSION['sysId'])){header("Location:dashboard/"); exit();}
+require_once("dashboard/includes/auto_loader.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>

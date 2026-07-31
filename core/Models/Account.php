@@ -4,29 +4,75 @@
        
 		//Verify Admin Login Deatils
 		public function verifyAdminAccount($uname,$pass,$pin){
-			$sql ="SELECT * FROM sysusers WHERE sysUsername=:uname AND sysToken=:password";
-			if(!empty($pin)){$pin=substr(sha1(md5($pin)), 3, 10); $sql.=" AND sysPinToken=:token";}
-		    
-			$query= $this->connect()->prepare($sql);
-		    $query-> bindParam(':uname', $uname, PDO::PARAM_STR);
-		    $query-> bindParam(':password', $pass, PDO::PARAM_STR);
-		    if(!empty($pin)){$query-> bindParam(':token', $pin, PDO::PARAM_STR);}
-		    $query-> execute();
+			$dbh = $this->connect();
+			$sql = "SELECT * FROM sysusers WHERE sysUsername=:uname";
+			$query = $dbh->prepare($sql);
+			$query->bindParam(':uname', $uname, PDO::PARAM_STR);
+			$query->execute();
+			$result = $query->fetch(PDO::FETCH_ASSOC);
 
-	$result=$query->fetch(PDO::FETCH_ASSOC);
-		    
-		    if($result){
-				
-		    		if($result["sysStatus"] <> 0){return json_encode(["status"=>"blocked"]); }
-		    		if($result["sysPinStatus"] == 1 && empty($pin)){return json_encode(["status"=>"pinrequired"]);}
+			if ($result) {
+				if ($result["sysStatus"] != 0) {
+					return json_encode(["status" => "blocked"]);
+				}
 
-		    		$_SESSION['sysUser']=$result["sysUsername"];
-		            $_SESSION['sysRole']=$result["sysRole"];
-		            $_SESSION['sysName']=$result["sysName"];
-		            $_SESSION['sysId']=$result["sysId"];
-		    		return json_encode(["status"=>"success"]);
-		   	} else {return json_encode(["status"=>"invalid"]);}
+				// Check password
+				if (!Model::verifyPassword($pass, $result["sysToken"])) {
+					return json_encode(["status" => "invalid"]);
+				}
 
+				// Check PIN if enabled/required
+				if ($result["sysPinStatus"] == 1) {
+					if (empty($pin)) {
+						return json_encode(["status" => "pinrequired"]);
+					}
+					if (!Model::verifyPassword($pin, $result["sysPinToken"])) {
+						return json_encode(["status" => "invalid"]);
+					}
+				}
+
+				// Auto-migrate credentials if legacy format is used
+				$needsUpdate = false;
+				$updateSql = "UPDATE sysusers SET ";
+				$updateParams = [];
+
+				if (password_get_info($result["sysToken"])['algo'] === null) {
+					$newPasswordHash = Model::hashPassword($pass);
+					$updateSql .= "sysToken=:new_password";
+					$updateParams[':new_password'] = $newPasswordHash;
+					$needsUpdate = true;
+				}
+
+				if ($result["sysPinStatus"] == 1 && !empty($pin) && password_get_info($result["sysPinToken"])['algo'] === null) {
+					$newPinHash = Model::hashPassword($pin);
+					if ($needsUpdate) {
+						$updateSql .= ", ";
+					}
+					$updateSql .= "sysPinToken=:new_pin";
+					$updateParams[':new_pin'] = $newPinHash;
+					$needsUpdate = true;
+				}
+
+				if ($needsUpdate) {
+					$updateSql .= " WHERE sysId=:sys_id";
+					$updateParams[':sys_id'] = $result["sysId"];
+					$updateQuery = $dbh->prepare($updateSql);
+					$updateQuery->execute($updateParams);
+				}
+
+				// Session hardening
+				if (session_status() === PHP_SESSION_ACTIVE) {
+					session_regenerate_id(true);
+				}
+
+				$_SESSION['sysUser'] = $result["sysUsername"];
+				$_SESSION['sysRole'] = $result["sysRole"];
+				$_SESSION['sysName'] = $result["sysName"];
+				$_SESSION['sysId'] = $result["sysId"];
+				return json_encode(["status" => "success"]);
+			} else {
+				return json_encode(["status" => "invalid"]);
+			}
 		} 
 
 		public function verifyAdminAccount2(){
@@ -201,7 +247,7 @@
 			if($result && Model::verifyPassword($key, $result->sPass)){
 
 				// Re-hash if old style password
-				if (password_get_info($result->sPass)['algo'] === 0) {
+				if (password_get_info($result->sPass)['algo'] === null) {
 					$newHash = Model::hashPassword($key);
 					$sqlUpdate = "UPDATE subscribers SET sPass=:p WHERE sId=:id";
 					$queryU = $dbh->prepare($sqlUpdate);

@@ -136,7 +136,7 @@ class Modification extends Model {
             $where = " WHERE nm.status = :status ";
         }
         
-        $sql .= $where . " ORDER BY nm.date_created DESC LIMIT $limit, $offset";
+        $sql .= $where . " ORDER BY nm.date_created DESC LIMIT $offset, $limit";
         
         $query = $this->connect()->prepare($sql);
         if ($status !== 'all') {

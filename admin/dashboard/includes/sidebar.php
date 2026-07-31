@@ -99,7 +99,7 @@
         </li>
 
         <li>
-          <a href="<?php echo $urlAddon; ?>nin-advanced">
+          <a href="<?php echo $urlAddon; ?>nin-modifications">
             <i class="fa fa-id-card-o"></i> <span>NIN Advanced Services</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>

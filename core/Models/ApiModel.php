@@ -85,7 +85,7 @@
 		
 		// Calculate Recharge Pin Discount
        public function calculateRechargePinDiscount($network){
-           $dbh = self::connect();
+           $dbh = $this->connect();
            $sql = "SELECT * FROM airtimepinprice a, networkid b WHERE a.aNetwork=b.networkid AND a.aNetwork=:n";
            $query = $dbh->prepare($sql);
            $query->bindParam(':n', $network, PDO::PARAM_INT);
@@ -254,7 +254,7 @@
         
         //Save Recharge Pin
         public function saveRechargePin($userid,$ref,$business,$networkname,$dataplansize,$quantity,$serial,$pin){
-            $dbh=self::connect();
+            $dbh=$this->connect();
 			$sql = "INSERT INTO rechargetokens (sId,tRef,business,network,datasize,quantity,serial,tokens) VALUES (:user,:ref,:b,:net,:size,:q,:s,:t)";
             $query = $dbh->prepare($sql);
             $query->bindParam(':user',$userid,PDO::PARAM_INT);

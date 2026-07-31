@@ -79,12 +79,16 @@
 
         public static function verifyPassword($password, $hash) {
             // Check if it's already a modern password hash
-            if (password_get_info($hash)['algo'] !== 0) {
+            if (password_get_info($hash)['algo'] !== null) {
                 return password_verify($password, $hash);
             }
             // Check against old legacy hash
             $oldHash = substr(sha1(md5($password)), 3, 10);
-            return $oldHash === $hash;
+            if ($oldHash === $hash) {
+                return true;
+            }
+            // Fallback for plaintext comparison (e.g. unhashed tokens/pins)
+            return $password === $hash;
         }
         
         public function connect(){
@@ -173,7 +177,7 @@
 
         //Get API Setting
 		public function getApiConfiguration(){
-			$dbh=self::connect();
+			$dbh=$this->connect();
 			$sql = "SELECT * FROM apiconfigs";
             $query = $dbh->prepare($sql);
             $query->execute();
@@ -183,7 +187,7 @@
 
         //Get Site Setting
 		public function getSiteConfiguration(){
-			$dbh=self::connect();
+			$dbh=$this->connect();
 			$sql = "SELECT * FROM sitesettings WHERE sId=1";
             $query = $dbh->prepare($sql);
             $query->execute();

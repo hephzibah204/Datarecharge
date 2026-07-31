@@ -192,7 +192,7 @@ class AdminModel extends Model{
 		
 		//Update Site Style
 		public function updateSiteStyleSetting($sitecolor,$loginstyle,$homestyle){
-			$dbh=self::connect();
+			$dbh=$this->connect();
 			$sql="UPDATE sitesettings SET sitecolor=:sc,logindesign=:ls,homedesign=:hs WHERE sId=1";
 			$query = $dbh->prepare($sql);
 			$query->bindParam(':sc',$sitecolor,PDO::PARAM_STR);
@@ -204,7 +204,7 @@ class AdminModel extends Model{
  
 	//Update NIN Fee Settings
 		public function updateNINFeeSettings($fee_name_mod,$fee_phone_mod,$fee_address_mod,$fee_email_mod,$fee_dob_mod,$fee_lga_mod,$fee_gender_mod,$fee_marital_mod,$fee_nin_verification,$fee_affidavit,$fee_birth_certificate){
-			$dbh=self::connect();
+			$dbh=$this->connect();
 			$sql="UPDATE sitesettings SET fee_name_mod=:fnm,fee_phone_mod=:fpm,fee_address_mod=:fam,fee_email_mod=:fem,fee_dob_mod=:fdm,fee_lga_mod=:flm,fee_gender_mod=:fgm,fee_marital_mod=:fmm,fee_nin_verification=:fnv,fee_affidavit=:fa2,fee_birth_certificate=:fbc WHERE sId=1";
 			$query=$dbh->prepare($sql);
 			$query->execute([
@@ -225,7 +225,7 @@ class AdminModel extends Model{
 
 		//Get NIN Slip Pricing
 		public function getNINSlipPricing(){
-			$dbh=self::connect();
+			$dbh=$this->connect();
 			$sql="SELECT * FROM nin_price ORDER BY id ASC";
 			$query=$dbh->prepare($sql);
 			$query->execute();
@@ -234,7 +234,7 @@ class AdminModel extends Model{
 
 		//Update NIN Slip Pricing
 		public function updateNINSlipPricing($id,$slip_name,$buying_price,$user_price){
-			$dbh=self::connect();
+			$dbh=$this->connect();
 			foreach($id as $i => $val){
 				$sql="UPDATE nin_price SET slip_name=:sn,buying_price=:bp,user_price=:up WHERE id=:id";
 				$query=$dbh->prepare($sql);
@@ -250,7 +250,7 @@ class AdminModel extends Model{
 
 		//Add NIN Slip Pricing
 		public function addNINSlip($slip_name,$buying_price,$user_price){
-			$dbh=self::connect();
+			$dbh=$this->connect();
 			$sql="INSERT INTO nin_price (slip_name,buying_price,user_price) VALUES (:sn,:bp,:up)";
 			$query=$dbh->prepare($sql);
 			$query->bindParam(':sn',$slip_name,PDO::PARAM_STR);
@@ -262,7 +262,7 @@ class AdminModel extends Model{
 
 		//Delete NIN Slip Pricing
 		public function deleteNINSlip($id){
-			$dbh=self::connect();
+			$dbh=$this->connect();
 			$sql="DELETE FROM nin_price WHERE id=:id";
 			$query=$dbh->prepare($sql);
 			$query->bindParam(':id',$id,PDO::PARAM_INT);
