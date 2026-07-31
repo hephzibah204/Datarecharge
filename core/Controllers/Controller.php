@@ -297,6 +297,14 @@
             }
 		}
 
+		//Guard Admin-Only Controller Actions
+		public function requireAdmin(){
+			if(!isset($_SESSION['sysId']) || !isset($_SESSION['sysRole']) || $_SESSION['sysId'] === '' || $_SESSION['sysRole'] === ''){
+				header("Location: ../");
+				exit();
+			}
+		}
+
 
 		    	
 	}

@@ -132,11 +132,12 @@ class BulkValidationController extends Controller {
         $batchId = $data['batch_id'] ?? 0;
         $status = $data['status'] ?? 'pending';
         
-        $stmt = $pdo->prepare("UPDATE bulk_nin_validation_requests SET status = ?, date_processed = datetime('now','localtime') WHERE id = ?");
-        $stmt->execute([$status, $batchId]);
-        
-        $itemStmt = $pdo->prepare("UPDATE bulk_nin_validation_items SET status = ?, date_updated = datetime('now','localtime') WHERE batch_id = ?");
-        $itemStmt->execute([$status, $batchId]);
+        $now = date("Y-m-d H:i:s");
+        $stmt = $pdo->prepare("UPDATE bulk_nin_validation_requests SET status = ?, date_processed = ? WHERE id = ?");
+        $stmt->execute([$status, $now, $batchId]);
+
+        $itemStmt = $pdo->prepare("UPDATE bulk_nin_validation_items SET status = ?, date_updated = ? WHERE batch_id = ?");
+        $itemStmt->execute([$status, $now, $batchId]);
         
         return ['status' => 'success', 'msg' => 'Batch status updated successfully'];
     }
@@ -160,12 +161,13 @@ class BulkValidationController extends Controller {
             }
         }
         
+        $now = date("Y-m-d H:i:s");
         if ($docPath) {
-            $stmt = $pdo->prepare("UPDATE bulk_nin_validation_items SET status = ?, admin_reply = ?, result_document = ?, date_updated = datetime('now','localtime') WHERE id = ?");
-            $stmt->execute([$status, $reply, $docPath, $itemId]);
+            $stmt = $pdo->prepare("UPDATE bulk_nin_validation_items SET status = ?, admin_reply = ?, result_document = ?, date_updated = ? WHERE id = ?");
+            $stmt->execute([$status, $reply, $docPath, $now, $itemId]);
         } else {
-            $stmt = $pdo->prepare("UPDATE bulk_nin_validation_items SET status = ?, admin_reply = ?, date_updated = datetime('now','localtime') WHERE id = ?");
-            $stmt->execute([$status, $reply, $itemId]);
+            $stmt = $pdo->prepare("UPDATE bulk_nin_validation_items SET status = ?, admin_reply = ?, date_updated = ? WHERE id = ?");
+            $stmt->execute([$status, $reply, $now, $itemId]);
         }
         
         return ['status' => 'success', 'msg' => 'NIN item updated successfully'];
