@@ -5,7 +5,7 @@ class DataVerifyProvider {
     public $type = 'data';
     public $endpoint = 'https://dataverify.com.ng';
     public $apiKey = null;
-    public $actions = ['verify_nin', 'verify_bvn', 'verify_bank', 'ipe', 'ipe_status'];
+    public $actions = ['verify_nin', 'verify_bvn', 'verify_bank'];
 
     private function post($path, $data) {
         $payload = array_merge(['api_key' => $this->apiKey], $data);

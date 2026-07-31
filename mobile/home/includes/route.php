@@ -205,6 +205,15 @@
                 $msg=$controller->submitNINModification();
             }
         }
+
+        //Submit Bulk NIN Validation Request
+        if(isset($_POST["submit-bulk-nin-validation"])){
+            if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+                $msg = $controller->createPopMessage("Error!!", "CSRF Token Invalid. Please refresh the page and try again.", "red");
+            } else {
+                $msg=$controller->submitBulkNinValidation();
+            }
+        }
         
         //Verify NIN
         if(isset($_POST["verify-pnv"])){
@@ -639,6 +648,11 @@
                 case "nin_modifications": 
                     $data=array();
                     $data[0]=$controller->getUserModifications();
+                    return $data;
+                    break;
+                case "bulk_nin_validation": 
+                    $data=array();
+                    $data[0]=$controller->getSiteSettings();
                     return $data;
                     break;
                 default:

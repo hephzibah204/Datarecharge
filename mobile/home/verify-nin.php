@@ -41,7 +41,7 @@
                 </div>
                 <hr/>
                
-                <form method="post" class="verifyForm" id="verifyForm" action="verify-nin">
+                <form method="post" class="verifyForm" id="verifyForm">
                         <fieldset>
  
                             <div class="input-style input-style-always-active has-borders mb-4">

@@ -327,6 +327,65 @@ class Subscriber extends Controller {
             }
         }
 
+        //Submit Bulk NIN Validation Request
+        public function submitBulkNinValidation(){
+            extract($_POST);
+            $this->setDetails();
+            $transkey = strip_tags($transkey ?? '');
+            $check = $this->model->verifyTransactionPin($this->userId, $transkey);
+
+            if (is_object($check)) {
+                if (!class_exists('NINModification')) {
+                    require_once __DIR__ . '/../Models/NINModification.php';
+                }
+                $ninModel = new NINModification();
+                $validationType = $validation_type ?? 'standard';
+                
+                $rawNins = $_POST['nins'] ?? [];
+                if (is_array($rawNins)) {
+                    $rawNinsStr = implode(',', $rawNins);
+                    $nins = array_filter(array_map('trim', explode(',', $rawNinsStr)));
+                } else {
+                    $nins = array_filter(array_map('trim', explode("\n", $rawNins)));
+                }
+                
+                if (empty($nins)) {
+                    return $this->createPopMessage("Error!!", "No valid NINs provided.", "red");
+                }
+                
+                if (count($nins) > 30) {
+                    return $this->createPopMessage("Error!!", "Maximum 30 NINs allowed per batch.", "red");
+                }
+
+                foreach ($nins as $nin) {
+                    if (!preg_match('/^\d{11}$/', $nin)) {
+                        return $this->createPopMessage("Error!!", "Invalid NIN: $nin. Each NIN must be exactly 11 digits.", "red");
+                    }
+                }
+
+                $settings = $this->getSiteSettings();
+                $baseFee = ($validationType === 'premium') ? (($settings->fee_bulk_validation ?? 500) * 2) : ($settings->fee_bulk_validation ?? 500);
+                $totalAmount = count($nins) * $baseFee;
+
+                $user = $this->model->getUserById($this->userId);
+                $userbalance = (float)($user->sWallet ?? 0);
+
+                if ($userbalance < $totalAmount) {
+                    return $this->createPopMessage("Error!!", "Insufficient wallet balance. Please fund your wallet. Required: ₦" . number_format($totalAmount, 2), "red");
+                }
+
+                $requestResult = $ninModel->createBulkNinValidationRequest($this->userId, $validationType, $nins, $baseFee, $totalAmount);
+
+                if ($requestResult['status'] == "success") {
+                    return $this->createPopMessage("Success!!", "Bulk NIN validation request submitted successfully. Ref: {$requestResult['ref']}", "green");
+                } else {
+                    return $this->createPopMessage("Error!!", $requestResult['msg'] ?? "Request failed", "red");
+                }
+            } else {
+                return $this->createPopMessage("Error!!", "Incorrect Pin, Please Try Again.", "red");
+            }
+        }
+
 		//Verify CAC
         public function verifyCAC(){
             extract($_POST);

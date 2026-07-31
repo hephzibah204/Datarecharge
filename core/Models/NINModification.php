@@ -278,5 +278,48 @@ class NINModification extends Model {
             ['type' => 'birth_certificate', 'display' => 'Birth Certificate / Attestation', 'category' => 'document', 'fee' => 10000, 'processing_days' => 3],
         ];
     }
+
+    public function createBulkNinValidationRequest($userId, $validationType, $nins, $pricePerNin, $totalAmount) {
+        $ref = "BULKNIN_" . time() . rand(1000, 9999);
+        $date = date("Y-m-d H:i:s");
+        
+        $pdo = $this->connect();
+        
+        $sql = "INSERT INTO bulk_nin_validation_requests (sId, ref, validation_type, total_nins, price_per_nin, total_amount, status, date_created) VALUES (:sid, :ref, :type, :total, :price, :amount, 'pending', :date)";
+        $query = $pdo->prepare($sql);
+        $query->execute([
+            ':sid' => $userId,
+            ':ref' => $ref,
+            ':type' => $validationType,
+            ':total' => count($nins),
+            ':price' => $pricePerNin,
+            ':amount' => $totalAmount,
+            ':date' => $date
+        ]);
+        $batchId = $pdo->lastInsertId();
+        
+        $itemSql = "INSERT INTO bulk_nin_validation_items (batch_id, sId, nin, validation_type, status, date_created) VALUES (:batch, :sid, :nin, :type, 'pending', :date)";
+        $itemQuery = $pdo->prepare($itemSql);
+        
+        foreach ($nins as $nin) {
+            $itemQuery->execute([
+                ':batch' => $batchId,
+                ':sid' => $userId,
+                ':nin' => $nin,
+                ':type' => $validationType,
+                ':date' => $date
+            ]);
+        }
+        
+        $user = $this->getUserById($userId);
+        $newBalance = ($user->sWallet ?? 0) - $totalAmount;
+        $this->debitUserBeforeTransaction($userId, $newBalance, "Bulk NIN Validation (" . count($nins) . " NINs)", $ref);
+        
+        return [
+            'status' => 'success',
+            'ref' => $ref,
+            'new_balance' => $newBalance
+        ];
+    }
 }
 

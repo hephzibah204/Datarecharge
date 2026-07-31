@@ -9,14 +9,20 @@
 
     <div class="card card-style">
         <div class="content">
-            <form method="post" action="drivers-license">
+            <form method="post">
                 <fieldset>
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
                         <label class="color-theme opacity-80 font-700 font-12">Driver's License Number</label>
                         <input type="text" name="licenseNo" placeholder="Enter License Number" class="round-small" required />
                     </div>
-
-                    <input name="transkey" id="transkey" type="hidden" />
+                    
+                    <div class="input-style input-style-always-active has-borders validate-field mb-4">
+                        <label class="color-theme opacity-80 font-700 font-12">Transaction PIN</label>
+                        <input type="number" name="transkey" placeholder="Enter Transaction PIN" class="round-small" required>
+                    </div>
+                    
+                    <input name="transref" type="hidden" value="<?php echo $transRef; ?>">
+                    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token'] ?? ''; ?>">
 
                     <div class="form-button">
                         <button type="submit" name="verify-dl" style="width: 100%;" class="btn btn-full btn-l font-600 font-15 gradient-highlight mt-4 rounded-s">
