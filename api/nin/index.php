@@ -147,7 +147,7 @@ function processIPERequest($trackingIds, $result, $controller) {
         $debit = $userbalance - $fee;
         $ref = 'IPE_' . time();
         $controller->debitUserBeforeTransaction($userid, $debit);
-        $controller->recordTransaction($userid, 'IPE Clearance', 'IPE Clearance Processing', $ref, $fee, $userbalance, $debit, '0');
+        $controller->recordTransaction($userid, 'IPE Clearance', 'IPE Clearance Processing', $fee, $userbalance, $ref, '0');
     }
 
     respond($ipeResult);
@@ -169,7 +169,7 @@ function processVerificationRequest($body, $result, $controller) {
     if (!isset($verificationResult['status']) || $verificationResult['status'] === 'success') {
         $debit = $userbalance - $fee;
         $controller->debitUserBeforeTransaction($userid, $debit);
-        $controller->recordTransaction($userid, 'NIN Verification', 'NIN Slip Verification', $ref, $fee, $userbalance, $debit, '0');
+        $controller->recordTransaction($userid, 'NIN Verification', 'NIN Slip Verification', $fee, $userbalance, $ref, '0');
     }
 
     respond([

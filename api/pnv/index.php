@@ -183,7 +183,7 @@
     // -------------------------------------------------------------------
     //  Record Transaction As Processing With Status 5
     // -------------------------------------------------------------------
-    $transRecord=$controller->recordTransaction($userid,'PNV Verification','Personal Name Verification for '.$phone,$body->ref,$amountopay,$userbalance,$deibt,"5");
+    $transRecord=$controller->recordTransaction($userid,'PNV Verification','Personal Name Verification for '.$phone,$amountopay,$userbalance,$body->ref,"5");
         
     // -------------------------------------------------------------------
     //  Send Request To Purchase Airtime
