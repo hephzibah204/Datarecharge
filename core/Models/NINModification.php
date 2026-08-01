@@ -321,5 +321,47 @@ class NINModification extends Model {
             'new_balance' => $newBalance
         ];
     }
+
+    public function createIpeClearanceRequest($userId, $trackingIds, $pricePerTracking, $totalAmount) {
+        $ref = "IPE_" . time() . rand(1000, 9999);
+        $date = date("Y-m-d H:i:s");
+        
+        $pdo = $this->connect();
+        
+        $sql = "INSERT INTO ipe_clearance_requests (sId, ref, tracking_ids, total_tracking_ids, price_per_tracking, total_amount, status, date_created) VALUES (:sid, :ref, :tids, :total, :price, :amount, 'pending', :date)";
+        $query = $pdo->prepare($sql);
+        $query->execute([
+            ':sid' => $userId,
+            ':ref' => $ref,
+            ':tids' => json_encode($trackingIds),
+            ':total' => count($trackingIds),
+            ':price' => $pricePerTracking,
+            ':amount' => $totalAmount,
+            ':date' => $date
+        ]);
+        $batchId = $pdo->lastInsertId();
+        
+        $itemSql = "INSERT INTO ipe_clearance_items (batch_id, sId, tracking_id, status, date_created) VALUES (:batch, :sid, :trkid, 'pending', :date)";
+        $itemQuery = $pdo->prepare($itemSql);
+        
+        foreach ($trackingIds as $trkid) {
+            $itemQuery->execute([
+                ':batch' => $batchId,
+                ':sid' => $userId,
+                ':trkid' => $trkid,
+                ':date' => $date
+            ]);
+        }
+        
+        $user = $this->getUserById($userId);
+        $newBalance = ($user->sWallet ?? 0) - $totalAmount;
+        $this->debitUserBeforeTransaction($userId, $newBalance, "IPE Clearance (" . count($trackingIds) . " Tracking IDs)", $ref);
+        
+        return [
+            'status' => 'success',
+            'ref' => $ref,
+            'new_balance' => $newBalance
+        ];
+    }
 }
 

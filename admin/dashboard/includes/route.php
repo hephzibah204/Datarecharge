@@ -440,19 +440,25 @@
                    "alpha-topup","alpha-request","airtime-to-cash","airtime-to-cash-requests",
                    "agents","dashboard-alpha","airtime-pin-stock","data-pin-stock",
                    "issues","smile-order","smile-plans","transactionss",
-                   "api-link","blacklist-number","cac","referral","sales-by-user"];
+                   "api-link","blacklist-number","cac","referral","sales-by-user", "nin-modifications"];
     $sweetAlertPages = ["system-users","data-plans","data-pins","cable-tv","notifications","messages",
-                        "alpha-topup","alpha-request","site-setting"];
-    if(in_array($url, $tablePages)){ $needsDataTable = true; }
+                        "alpha-topup","alpha-request","site-setting", "nin-modifications"];
+    if(in_array($url, $tablePages) || ($url === 'nin-advanced' && in_array('nin-modifications', $tablePages))){ $needsDataTable = true; }
     if($url == "sales-by-user"){ $needsChart = true; }
-    if(in_array($url, $sweetAlertPages)){ $needsSweetAlert = true; }
+    if(in_array($url, $sweetAlertPages) || ($url === 'nin-advanced' && in_array('nin-modifications', $sweetAlertPages))){ $needsSweetAlert = true; }
 
     function createView($url){
+        if ($url === 'nin-advanced') {
+            $url = 'nin-modifications';
+        }
         $file = __DIR__ . "/../" . $url . ".php";
         if(file_exists($file)){
             global $title,$data,$page;
             $title=str_replace("-"," ",$url);
             $title=ucwords($title);
+            if ($url === 'nin-modifications') {
+                $title = "NIN Advanced Services";
+            }
             $page=$url.".php";
             $data=getDataIfAny($url);
         }

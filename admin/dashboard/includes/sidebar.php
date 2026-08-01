@@ -99,6 +99,15 @@
         </li>
 
         <li>
+          <a href="<?php echo $urlAddon; ?>ipe-clearance">
+            <i class="fa fa-check-square-o"></i> <span>IPE Clearance</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>			
+        </li>
+
+        <li>
           <a href="<?php echo $urlAddon; ?>nin-modifications">
             <i class="fa fa-id-card-o"></i> <span>NIN Advanced Services</span>
             <span class="pull-right-container">

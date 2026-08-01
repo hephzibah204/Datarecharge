@@ -269,7 +269,18 @@
 		}
 
 		public function updateNINFeeSettings(){
-			extract($_POST);
+			$fee_name_mod = $_POST['fee_name_mod'] ?? 5000;
+			$fee_phone_mod = $_POST['fee_phone_mod'] ?? 5000;
+			$fee_address_mod = $_POST['fee_address_mod'] ?? 4000;
+			$fee_email_mod = $_POST['fee_email_mod'] ?? 4000;
+			$fee_dob_mod = $_POST['fee_dob_mod'] ?? 28574;
+			$fee_lga_mod = $_POST['fee_lga_mod'] ?? 3000;
+			$fee_gender_mod = $_POST['fee_gender_mod'] ?? 8000;
+			$fee_marital_mod = $_POST['fee_marital_mod'] ?? 6000;
+			$fee_nin_verification = $_POST['fee_nin_verification'] ?? 1000;
+			$fee_affidavit = $_POST['fee_affidavit'] ?? 5000;
+			$fee_birth_certificate = $_POST['fee_birth_certificate'] ?? 10000;
+
 			$check=$this->model->updateNINFeeSettings($fee_name_mod,$fee_phone_mod,$fee_address_mod,$fee_email_mod,$fee_dob_mod,$fee_lga_mod,$fee_gender_mod,$fee_marital_mod,$fee_nin_verification,$fee_affidavit,$fee_birth_certificate);
 			if($check == 0){return $this->createNotification1("alert-success","NIN Fee Settings Updated Successfully");}
 			else{return $this->createNotification1("alert-danger","Unable To Update NIN Fee Settings");}
@@ -284,14 +295,23 @@
 		}
 
 		public function updateNINSlipPricing(){
-			extract($_POST);
+			$id = $_POST['id'] ?? [];
+			$slip_name = $_POST['slip_name'] ?? [];
+			$buying_price = $_POST['buying_price'] ?? [];
+			$user_price = $_POST['user_price'] ?? [];
+
 			$check = $this->model->updateNINSlipPricing($id, $slip_name, $buying_price, $user_price);
 			if($check == 0){return $this->createNotification1("alert-success","NIN Slip Pricing Updated Successfully");}
 			else{return $this->createNotification1("alert-danger","Unable To Update NIN Slip Pricing");}
 		}
 
 		public function addNINSlip(){
-			extract($_POST);
+			$new_slip_name = $_POST['new_slip_name'] ?? '';
+			$new_buying_price = $_POST['new_buying_price'] ?? 0;
+			$new_user_price = $_POST['new_user_price'] ?? 0;
+
+			if(empty($new_slip_name)){return $this->createNotification1("alert-danger","Slip Name Is Required");}
+
 			$check = $this->model->addNINSlip($new_slip_name, $new_buying_price, $new_user_price);
 			if($check > 0){return $this->createNotification1("alert-success","NIN Slip Added Successfully");}
 			else{return $this->createNotification1("alert-danger","Unable To Add NIN Slip");}

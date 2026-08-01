@@ -214,6 +214,15 @@
                 $msg=$controller->submitBulkNinValidation();
             }
         }
+
+        //Submit IPE Clearance Request
+        if(isset($_POST["submit-ipe-clearance"])){
+            if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+                $msg = $controller->createPopMessage("Error!!", "CSRF Token Invalid. Please refresh the page and try again.", "red");
+            } else {
+                $msg=$controller->submitIpeClearance();
+            }
+        }
         
         //Verify NIN
         if(isset($_POST["verify-pnv"])){
@@ -651,6 +660,11 @@
                     return $data;
                     break;
                 case "bulk_nin_validation": 
+                    $data=array();
+                    $data[0]=$controller->getSiteSettings();
+                    return $data;
+                    break;
+                case "ipe_bulk": 
                     $data=array();
                     $data[0]=$controller->getSiteSettings();
                     return $data;

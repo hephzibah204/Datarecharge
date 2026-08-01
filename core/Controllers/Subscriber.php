@@ -386,6 +386,53 @@ class Subscriber extends Controller {
             }
         }
 
+        //Submit IPE Clearance Request
+        public function submitIpeClearance(){
+            extract($_POST);
+            $this->setDetails();
+            $transkey = strip_tags($transkey ?? '');
+            $check = $this->model->verifyTransactionPin($this->userId, $transkey);
+
+            if (is_object($check)) {
+                if (!class_exists('NINModification')) {
+                    require_once __DIR__ . '/../Models/NINModification.php';
+                }
+                $ninModel = new NINModification();
+                
+                $rawList = $_POST['tracking_list'] ?? ($_POST['tracking_ids'] ?? '');
+                if (strpos($rawList, ',') !== false) {
+                    $trackingIds = array_filter(array_map('trim', explode(',', $rawList)));
+                } else {
+                    $trackingIds = array_filter(array_map('trim', explode("\n", $rawList)));
+                }
+                
+                if (empty($trackingIds)) {
+                    return $this->createPopMessage("Error!!", "No valid Tracking IDs provided.", "red");
+                }
+                
+                $settings = $this->getSiteSettings();
+                $baseFee = (float)($settings->fee_ipe_clearance ?? 1000);
+                $totalAmount = count($trackingIds) * $baseFee;
+
+                $user = $this->model->getUserById($this->userId);
+                $userbalance = (float)($user->sWallet ?? 0);
+
+                if ($userbalance < $totalAmount) {
+                    return $this->createPopMessage("Error!!", "Insufficient wallet balance. Please fund your wallet. Required: ₦" . number_format($totalAmount, 2), "red");
+                }
+
+                $requestResult = $ninModel->createIpeClearanceRequest($this->userId, $trackingIds, $baseFee, $totalAmount);
+
+                if ($requestResult['status'] == "success") {
+                    return $this->createPopMessage("Success!!", "IPE clearance request submitted successfully. Ref: {$requestResult['ref']}", "green");
+                } else {
+                    return $this->createPopMessage("Error!!", $requestResult['msg'] ?? "Request failed", "red");
+                }
+            } else {
+                return $this->createPopMessage("Error!!", "Incorrect Pin, Please Try Again.", "red");
+            }
+        }
+
 		//Verify CAC
         public function verifyCAC(){
             extract($_POST);
