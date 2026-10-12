@@ -384,12 +384,12 @@
 		public function verifyMonnifyRef($email,$monnifyhash,$token){
 			$result=$this->model->verifyMonnifyRef($email,$monnifyhash,$token);
             $response = array();
-			if(is_object($result)){
+			if(is_object($result) && isset($result->sId)){
                 $response["status"] = "success";
                 $response["userid"] = $result->sId;
-                $response["name"] = $result->sLname ." ". $result->sFname;
-                $response["balance"] = $result->sWallet;
-                $response["charges"] = $result->charges;
+                $response["name"] = ($result->sLname ?? '') ." ". ($result->sFname ?? '');
+                $response["balance"] = $result->sWallet ?? 0;
+                $response["charges"] = $result->charges ?? 0;
             }
 		    else{$response["status"] = "fail";} 
             return $response;
@@ -399,12 +399,12 @@
 		public function verifyPaystackRef($email,$token){
 			$result=$this->model->verifyPaystackRef($email,$token);
             $response = array();
-			if(is_object($result)){
+			if(is_object($result) && isset($result->sId)){
                 $response["status"] = "success";
                 $response["userid"] = $result->sId;
-                $response["balance"] = $result->sWallet;
-                $response["amount"] = $result->amount;
-                $response["charges"] = $result->charges;
+                $response["balance"] = $result->sWallet ?? 0;
+                $response["amount"] = $result->amount ?? 0;
+                $response["charges"] = $result->charges ?? 0;
             }
 		    else{
                 $response["status"] = "fail";

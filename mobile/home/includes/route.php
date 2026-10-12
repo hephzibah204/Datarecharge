@@ -11,6 +11,10 @@
     ini_set('display_errors', 0);
     error_reporting(E_ALL & ~E_DEPRECATED);
 
+    if (empty($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    }
+
     //Verify User Is Logged In
     $allow=["settings","register","login","get-user-code","verify-user-code","update-user-pass","update-user-pin","save-message"];
     if(!isset($_SESSION["loginId"])){

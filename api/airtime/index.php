@@ -175,11 +175,12 @@
     }
 
     if($airtime_type == "Momo"){
-        if($networkDetails["networkStatus"] <> "On" || $networkDetails["momoStatus"] <> "On"){
+        $momoStatus = $networkDetails["momoStatus"] ?? "Off";
+        if($networkDetails["networkStatus"] <> "On" || $momoStatus <> "On"){
             header('HTTP/1.0 400 Network Not Available');
             $response['status']="fail";
             $response['msg'] = "Sorry, {$networkDetails["network"]} is not available at the moment";
-            if($networkDetails["momoStatus"] == "Off"){
+            if($momoStatus == "Off"){
                 $response['msg'] = "Sorry, {$networkDetails["network"]} Momo service is not available at the moment";
             }
             echo json_encode($response);
@@ -215,6 +216,7 @@
     //  Calculate Airtime Discount
     // -------------------------------------------------------------------
     
+    $cashback = (float) ($body->cashback ?? 0);
     $result = $controller->calculateAirtimeDiscount($network,$airtime_type,$amount,$usertype);
     $amountopay = (float) $result["discount"] - $cashback;
     $buyamount =  (float) $result["buyamount"]; 

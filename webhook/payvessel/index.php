@@ -57,12 +57,12 @@
             $controller->sendEmailNotification($servicename,$message,$email);
             
 
-            echo "Success";
             http_response_code(200);
+            echo "Success";
             exit();
 
     else:
-        echo "UnAutorized"; http_response_code(401); exit();
+        http_response_code(401); echo "Unauthorized"; exit();
     endif;
     
 ?>

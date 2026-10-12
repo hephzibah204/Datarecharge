@@ -55,7 +55,7 @@ class ProviderAPI {
         
         $result = $stmt->fetch(PDO::FETCH_OBJ);
         if ($result) {
-            $stmt = $this->db->prepare("UPDATE api_configs SET last_used = NOW() WHERE token = :token");
+            $stmt = $this->db->prepare("UPDATE api_configs SET last_used = CURRENT_TIMESTAMP WHERE token = :token");
             $stmt->bindValue(':token', $token, PDO::PARAM_STR);
             $stmt->execute();
             
@@ -161,7 +161,7 @@ class ProviderAPI {
                     user_id, ip_address, user_agent, created_at
                 ) VALUES (
                     :provider_id, :action, :request_data, :response, :status,
-                    :user_id, :ip_address, :user_agent, NOW()
+                    :user_id, :ip_address, :user_agent, CURRENT_TIMESTAMP
                 )";
         
         $stmt = $this->db->prepare($sql);
@@ -295,7 +295,7 @@ class ProviderAPI {
         
         $success = ($httpCode >= 200 && $httpCode < 300) && empty($curlError);
         
-        $sql = "UPDATE providers SET last_check = NOW(), ping_count = ping_count + 1, is_active = :isActive, error_count = error_count + :errorCount WHERE id = :id";
+        $sql = "UPDATE providers SET last_check = CURRENT_TIMESTAMP, ping_count = ping_count + 1, is_active = :isActive, error_count = error_count + :errorCount WHERE id = :id";
         $stmt = $this->db->prepare($sql);
         $stmt->bindValue(':isActive', $success ? 1 : 0, PDO::PARAM_BOOL);
         $stmt->bindValue(':errorCount', $success ? 0 : 1, PDO::PARAM_INT);

@@ -62,6 +62,15 @@
                     $pdo = new PDO("sqlite:$dbPath");
                     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     $pdo->exec("PRAGMA foreign_keys = ON");
+                    $pdo->sqliteCreateFunction('NOW', function() {
+                        return date('Y-m-d H:i:s');
+                    });
+                    $pdo->sqliteCreateFunction('CURDATE', function() {
+                        return date('Y-m-d');
+                    });
+                    $pdo->sqliteCreateFunction('UNIX_TIMESTAMP', function($d = null) {
+                        return $d ? strtotime($d) : time();
+                    });
                     return $pdo;
                 }
                 $pdo = new PDO("mysql:host=".self::$host.";dbname=".self::$dbName,self::$username,self::$password);
@@ -98,6 +107,8 @@
 		//Send Secure Email With SMTP
 		public function sendMail($email,$subject,$message){
 		    global $sitename;
+            $subject = (string)($subject ?? '');
+            $message = (string)($message ?? '');
 	        //Create an instance; passing `true` enables exceptions
             $mail = new PHPMailer(true);
 
@@ -113,7 +124,7 @@
                 $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
             
                 //Recipients
-                $mail->setFrom($this->emailUsername, $sitename);
+                $mail->setFrom($this->emailUsername, $sitename ?? 'DataRecharge');
                 $mail->addAddress($email);     //Add a recipient
                 
                 //Content
@@ -124,46 +135,46 @@
             
                 $mail->send();
                 return 0;
-                return 'Message has been sent';
-            } catch (Exception $e) {
+            } catch (\Throwable $e) {
                 return 1;
-                return "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
             }
 	    }
 	    
 	    public function sendBEmail($recipient, $subject, $body) {
-    $mail = new PHPMailer(true);
-    
-    try {
-        // SMTP settings
-        $mail->isSMTP();
-        $mail->Host       = 'mail.info@datasubzainbayotech.com.ng';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'xtfphfml_data';
-        $mail->Password   = 'Anuoluwapo@'; // Use your actual SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port       = 465;
+            $subject = (string)($subject ?? '');
+            $body = (string)($body ?? '');
+            $mail = new PHPMailer(true);
+            
+            try {
+                // SMTP settings
+                $mail->isSMTP();
+                $mail->Host       = 'mail.info@datasubzainbayotech.com.ng';
+                $mail->SMTPAuth   = true;
+                $mail->Username   = 'xtfphfml_data';
+                $mail->Password   = 'Anuoluwapo@'; // Use your actual SMTP password
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                $mail->Port       = 465;
 
-        // Sender and recipient
-        $mail->setFrom('info@datasubzainbayotech.com.ng', 'DataRecharge');
-        $mail->addAddress($recipient);
+                // Sender and recipient
+                $mail->setFrom('info@datasubzainbayotech.com.ng', 'DataRecharge');
+                $mail->addAddress($recipient);
 
-        // Email content
-        $mail->isHTML(true);
-        $mail->Subject = $subject;
-        $mail->Body    = $body;
-        $mail->AltBody = strip_tags($body);
+                // Email content
+                $mail->isHTML(true);
+                $mail->Subject = $subject;
+                $mail->Body    = $body;
+                $mail->AltBody = strip_tags($body);
 
-        // Send the email
-        if ($mail->send()) {
-            return 'Email sent successfully to ' . $recipient;
-        } else {
-            return 'Email could not be sent. Mailer Error: ' . $mail->ErrorInfo;
+                // Send the email
+                if ($mail->send()) {
+                    return 'Email sent successfully to ' . $recipient;
+                } else {
+                    return 'Email could not be sent. Mailer Error: ' . $mail->ErrorInfo;
+                }
+            } catch (\Throwable $e) {
+                return 'Email could not be sent. Mailer Error: ' . $e->getMessage();
+            }
         }
-    } catch (Exception $e) {
-        return 'Email could not be sent. Mailer Error: ' . $e->getMessage();
-    }
-}
 
         //Get Api Config Values (env overrides DB)
         public function getConfigValue($list,$name){

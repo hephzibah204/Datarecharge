@@ -197,38 +197,28 @@ class Modification extends Model {
             $sql .= " WHERE status = :status";
             $query = $this->connect()->prepare($sql);
             $query->bindValue(':status', $status, PDO::PARAM_STR);
+            $query->execute();
         } else {
             $query = $this->connect()->query($sql);
         }
         
-        $query->execute();
-        $result = $query->fetch(PDO::FETCH_OBJ);
+        $result = $query ? $query->fetch(PDO::FETCH_OBJ) : null;
         
-        return $result->count;
+        return $result ? (int)$result->count : 0;
     }
     
     // Create system notification
     private function createNotification($entityId, $message) {
-        $sql = "INSERT INTO notifications (msg,url,created_at,reference) VALUES (:msg,:url,:date,:ref)";
-        $query = $this->connect()->prepare($sql);
-        $query->bindValue(':msg', $message, PDO::PARAM_STR);
-        $query->bindValue(':url', "/admin/nin-modifications?action=view&id=" . $entityId, PDO::PARAM_STR);
-        $query->bindValue(':date', date("Y-m-d H:i:s"), PDO::PARAM_STR);
-        $query->bindValue(':ref', $entityId, PDO::PARAM_STR);
-        $query->execute();
-        
-        // Notify all admin users
-        $adminSql = "SELECT sId FROM systemusers WHERE role = 'admin' OR role = 'super_admin'";
-        $adminQuery = $this->connect()->query($adminSql);
-        $adminQuery->execute();
-        $admins = $adminQuery->fetchAll(PDO::FETCH_OBJ);
-        
-        foreach ($admins as $admin) {
-            $notifSql = "INSERT INTO admin_notifications (admin_id,notification_id,is_read) VALUES (:admin,:notif,0)";
-            $notifQuery = $this->connect()->prepare($notifSql);
-            $notifQuery->bindValue(':admin', $admin->sId, PDO::PARAM_INT);
-            $notifQuery->bindValue(':notif', $this->connect()->lastInsertId(), PDO::PARAM_INT);
-            $notifQuery->execute();
+        try {
+            $sql = "INSERT INTO notifications (msgfor,subject,message,status,dPosted) VALUES ('admin',:subject,:msg,'unread',:date)";
+            $query = $this->connect()->prepare($sql);
+            $subject = "NIN Modification: $entityId";
+            $query->bindValue(':subject', $subject, PDO::PARAM_STR);
+            $query->bindValue(':msg', $message, PDO::PARAM_STR);
+            $query->bindValue(':date', date("Y-m-d H:i:s"), PDO::PARAM_STR);
+            $query->execute();
+        } catch (\Throwable $e) {
+            // Log or ignore notification failure gracefully
         }
     }
     

@@ -612,6 +612,9 @@
                 $queryA->bindParam(':e',$email,PDO::PARAM_STR);
                 $queryA->execute();
                 $resultA=$queryA->fetch(PDO::FETCH_OBJ);
+                if(!$resultA){
+                    return 2;
+                }
                 $resultA = (array) $resultA;
                 $resultA["charges"] = $charges;
                 $resultA = (object) $resultA;

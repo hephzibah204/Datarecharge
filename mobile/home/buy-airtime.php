@@ -43,7 +43,7 @@
                                 <select id="networkid" name="network">
                                     <option value="" disabled="" selected="">~Select Network~</option>
                                     <?php foreach($data AS $network): if($network->networkStatus == "On"): ?>
-                                        <option value="<?php echo $network->nId; ?>" networkname="<?php echo $network->network; ?>" vtu="<?php echo $network->vtuStatus; ?>" sharesell="<?php echo $network->sharesellStatus; ?>" momo="<?php echo $network->momoStatus; ?>"><?php echo $network->network; ?></option>
+                                        <option value="<?php echo $network->nId; ?>" networkname="<?php echo $network->network; ?>" vtu="<?php echo $network->vtuStatus; ?>" sharesell="<?php echo $network->sharesellStatus; ?>" momo="<?php echo $network->momoStatus ?? 'Off'; ?>"><?php echo $network->network; ?></option>
                                     <?php endif; endforeach; ?>
                                 </select>
                                 <span><i class="fa fa-chevron-down"></i></span>
