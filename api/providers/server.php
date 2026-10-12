@@ -134,7 +134,7 @@ class ProviderAPI {
         $provider = $stmt->fetch(PDO::FETCH_OBJ);
         
         if (!$provider) {
-            return ['status' => 'fail', 'message' 'Provider not found or inactive'];
+            return ['status' => 'fail', 'message' => 'Provider not found or inactive'];
         }
         
         if (!empty($provider->supported_actions) && !is_null($action)) {
@@ -303,7 +303,7 @@ class ProviderAPI {
         $stmt->execute();
         
         return [
-            'status' вещейar 'success',
+            'status' => 'success',
             'provider' => $provider->name,
             'http_code' => $httpCode,
             'curl_error' => $curlError,
