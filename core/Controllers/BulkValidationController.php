@@ -43,10 +43,12 @@ class BulkValidationController extends Controller {
         foreach ($requests as $req) {
             $statusBadge = '<span class="label label-' . ($req['status'] == 'completed' ? 'success' : ($req['status'] == 'processing' ? 'info' : ($req['status'] == 'failed' ? 'danger' : 'warning'))) . '">' . ucfirst($req['status']) . '</span>';
             
+            $typeLabel = ucwords(str_replace('_', ' ', $req['validation_type']));
+            
             $html .= '<tr>';
             $html .= '<td>' . htmlspecialchars($req['ref']) . '</td>';
             $html .= '<td>' . htmlspecialchars($req['sFname'] . ' ' . $req['sLname']) . '<br><small>' . htmlspecialchars($req['sPhone']) . '</small></td>';
-            $html .= '<td>' . ucfirst($req['validation_type']) . '</td>';
+            $html .= '<td><span class="badge badge-info">' . htmlspecialchars($typeLabel) . '</span></td>';
             $html .= '<td>' . $req['total_nins'] . ' NINs</td>';
             $html .= '<td>₦' . number_format($req['total_amount'], 2) . '</td>';
             $html .= '<td>' . $statusBadge . '</td>';

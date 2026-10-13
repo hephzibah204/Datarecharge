@@ -85,10 +85,16 @@ $isModification = isset($body->modification_type) || (isset($body->verification_
 $isIPE = !empty($tracking_ids) || $service === 'ipe';
 $isValidation = !$isModification && !$isIPE;
 
+// If nin was passed directly instead of phone
+if (empty($phone) && !empty($body->nin)) {
+    $phone = trim($body->nin);
+    $body->phone = $phone;
+}
+
 // Validate required fields
 $requiredField = "";
-if ($isValidation && empty($phone)) $requiredField = "Phone is required";
-if ($isValidation && empty($network)) $requiredField = "Network Id required";
+if ($isValidation && empty($phone)) $requiredField = "NIN or Phone number is required";
+if ($isValidation && empty($network) && empty($body->validation_type)) $requiredField = "Network Id or validation_type required";
 if ($isIPE && !is_array($tracking_ids)) $requiredField = "tracking_ids must be an array";
 
 if (!empty($requiredField)) {

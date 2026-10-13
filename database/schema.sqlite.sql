@@ -230,7 +230,7 @@ VALUES ('DataVerify', 'dataverify', 'DataVerify ID Service', 'NIN, BVN, Bank Acc
      "ipe_status": "/api/developers/ipe_status2.php"
    }
  }',
- 'https://dataverify.com.ng',
+ 'https://dataverify.org',
  'DATAVERIFY_9G1UPLC6V4C5UUOD2NVM');
 
 -- Airtime

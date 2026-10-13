@@ -364,7 +364,7 @@ class Subscriber extends Controller {
                 }
 
                 $settings = $this->getSiteSettings();
-                $baseFee = ($validationType === 'premium') ? (($settings->fee_bulk_validation ?? 500) * 2) : ($settings->fee_bulk_validation ?? 500);
+                $baseFee = (float)($settings->fee_bulk_validation ?? $settings->fee_nin_verification ?? 500);
                 $totalAmount = count($nins) * $baseFee;
 
                 $user = $this->model->getUserById($this->userId);

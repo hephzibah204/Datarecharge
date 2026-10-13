@@ -12,12 +12,83 @@
                 return ["status" => "fail", "msg" => "NIN service is currently disabled"];
             }
 
-            $nin = $body->phone;
-            $validationType = $body->validation_type ?? 'Modification';
+            $nin = $body->phone ?? $body->nin ?? '';
+            $validationType = $body->validation_type ?? 'no_record_found';
 
+            // Map and normalize to the 5 supported DataVerify validation types
+            $typeMap = [
+                'no_record_found'           => 'no_record_found',
+                'no record found'           => 'no_record_found',
+                'standard'                  => 'no_record_found',
+                'sim_validation'            => 'sim_validation',
+                'sim validation'            => 'sim_validation',
+                'premium'                   => 'sim_validation',
+                'bank_validation'           => 'bank_validation',
+                'bank validation'           => 'bank_validation',
+                'modification_validation'   => 'modification_validation',
+                'modification validation'   => 'modification_validation',
+                'modification'              => 'modification_validation',
+                'photographic_error'        => 'photographic_error',
+                'photographic error'        => 'photographic_error',
+            ];
+            $normalizedType = $typeMap[strtolower(trim($validationType))] ?? $validationType;
+
+            // Route to DataVerify if configured or fallback
+            $dataVerifyApiKey = $this->getConfigValue($details, 'dataVerifyApi') ?: getenv('PROVIDER_DataVerify_API_KEY');
+            $dataVerifyEndpoint = $this->getConfigValue($details, 'dataVerifyProvider') ?: 'https://dataverify.org';
+
+            if (strpos($apiUrl, 'dataverify') !== false || !empty($body->use_dataverify)) {
+                $dvKey = $apiKey ?: ($dataVerifyApiKey ?: 'DATAVERIFY_9G1UPLC6V4C5UUOD2NVM');
+                $dvUrl = rtrim($dataVerifyEndpoint, '/') . '/api/developers/validation.php';
+                $load = json_encode([
+                    "api_key"         => $dvKey,
+                    "nin"             => $nin,
+                    "validation_type" => $normalizedType
+                ]);
+
+                $ch = curl_init();
+                curl_setopt_array($ch, [
+                    CURLOPT_URL            => $dvUrl,
+                    CURLOPT_RETURNTRANSFER => true,
+                    CURLOPT_POST           => true,
+                    CURLOPT_POSTFIELDS     => $load,
+                    CURLOPT_HTTPHEADER     => [
+                        'Content-Type: application/json',
+                        'Authorization: Bearer ' . $dvKey,
+                        'X-API-Key: ' . $dvKey
+                    ],
+                    CURLOPT_TIMEOUT        => 30,
+                    CURLOPT_SSL_VERIFYPEER => false,
+                ]);
+                $exereq = curl_exec($ch);
+                $err = curl_error($ch);
+                curl_close($ch);
+
+                if ($err) {
+                    return ["status" => "fail", "msg" => "DataVerify connection error: $err"];
+                }
+                $result = json_decode($exereq);
+                if (isset($result->status) && ($result->status === true || $result->status === 'success')) {
+                    return [
+                        "status"          => "success",
+                        "msg"             => $result->message ?? "NIN validation submitted successfully",
+                        "data"            => $result,
+                        "transaction_id"  => $result->transaction_id ?? '',
+                        "request_status"  => $result->request_status ?? 'pending',
+                        "validation_type" => $normalizedType
+                    ];
+                }
+                return [
+                    "status" => "fail",
+                    "msg"    => $result->message ?? $result->error ?? "Unable to validate NIN",
+                    "data"   => $result
+                ];
+            }
+
+            // Default AmbVerify / standard endpoint
             $load = json_encode([
                 "nins" => [$nin],
-                "validation_type" => $validationType
+                "validation_type" => $normalizedType
             ]);
 
             $curl = curl_init();
@@ -85,6 +156,36 @@
             $apiKey = $this->getConfigValue($details, 'ninApi') ?: '';
 
             if (!is_array($trackingIds)) $trackingIds = [$trackingIds];
+
+            if (strpos($apiUrl, 'dataverify') !== false) {
+                require_once __DIR__ . '/../../api/providers/dataverify.php';
+                $dv = new DataVerifyProvider();
+                $dv->apiKey = $apiKey ?: ($this->getConfigValue($details, 'dataVerifyApi') ?: 'DATAVERIFY_9G1UPLC6V4C5UUOD2NVM');
+                $dv->endpoint = $this->getConfigValue($details, 'dataVerifyProvider') ?: 'https://dataverify.org';
+
+                $results = [];
+                $firstRes = null;
+                foreach ($trackingIds as $tid) {
+                    $res = $dv->ipeClearance($tid);
+                    $results[] = $res;
+                    if (!$firstRes) $firstRes = $res;
+                }
+
+                $ok = !empty($firstRes['status']) && ($firstRes['status'] === true || $firstRes['status'] === 'success');
+                if ($ok) {
+                    return [
+                        "status"   => "success",
+                        "msg"      => $firstRes['message'] ?? "IPE clearance submitted successfully",
+                        "data"     => count($results) === 1 ? $firstRes : $results,
+                        "batch_id" => $firstRes['transaction_id'] ?? ''
+                    ];
+                }
+                return [
+                    "status" => "fail",
+                    "msg"    => $firstRes['message'] ?? "IPE clearance submission failed",
+                    "data"   => $results
+                ];
+            }
 
             $load = json_encode(["tracking_ids" => $trackingIds]);
             $curl = curl_init();

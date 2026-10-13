@@ -15,8 +15,11 @@
                         <label class="color-theme opacity-80 font-700 font-12">Validation Type</label>
                         <select name="validation_type" class="form-control" required onchange="updatePrice()">
                             <option value="">Select validation type</option>
-                            <option value="standard" data-price="<?php echo $siteSettings->fee_bulk_validation ?? 500; ?>">Standard Validation - ₦<?php echo number_format($siteSettings->fee_bulk_validation ?? 500); ?>/NIN</option>
-                            <option value="premium" data-price="<?php echo ($siteSettings->fee_bulk_validation ?? 500) * 2; ?>">Premium Validation - ₦<?php echo number_format(($siteSettings->fee_bulk_validation ?? 500) * 2); ?>/NIN</option>
+                            <option value="no_record_found" data-price="<?php echo $siteSettings->fee_bulk_validation ?? 500; ?>">No Record Found - ₦<?php echo number_format($siteSettings->fee_bulk_validation ?? 500); ?>/NIN</option>
+                            <option value="sim_validation" data-price="<?php echo $siteSettings->fee_bulk_validation ?? 500; ?>">SIM Validation - ₦<?php echo number_format($siteSettings->fee_bulk_validation ?? 500); ?>/NIN</option>
+                            <option value="bank_validation" data-price="<?php echo $siteSettings->fee_bulk_validation ?? 500; ?>">Bank Validation - ₦<?php echo number_format($siteSettings->fee_bulk_validation ?? 500); ?>/NIN</option>
+                            <option value="modification_validation" data-price="<?php echo $siteSettings->fee_bulk_validation ?? 500; ?>">Modification Validation - ₦<?php echo number_format($siteSettings->fee_bulk_validation ?? 500); ?>/NIN</option>
+                            <option value="photographic_error" data-price="<?php echo $siteSettings->fee_bulk_validation ?? 500; ?>">Photographic Error - ₦<?php echo number_format($siteSettings->fee_bulk_validation ?? 500); ?>/NIN</option>
                         </select>
                     </div>
 

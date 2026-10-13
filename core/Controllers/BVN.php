@@ -21,10 +21,17 @@ class BVN extends ApiAccess{
             $dv = new DataVerifyProvider;
             $details = $this->model->getApiDetails();
             $apiKey = '';
+            $endpoint = '';
             foreach ($details as $d) {
-                if ($d['name'] === 'dataVerifyApi') { $apiKey = $d['value']; break; }
+                if ($d['name'] === 'dataVerifyApi') { $apiKey = $d['value']; }
+                if ($d['name'] === 'dataVerifyProvider') { $endpoint = $d['value']; }
             }
-            $dv->apiKey = $apiKey ?: 'DATAVERIFY_9G1UPLC6V4C5UUOD2NVM';
+            $dv->apiKey = $apiKey ?: (getenv('PROVIDER_DataVerify_API_KEY') ?: 'DATAVERIFY_9G1UPLC6V4C5UUOD2NVM');
+            if (!empty($endpoint)) {
+                $dv->endpoint = rtrim($endpoint, '/');
+            } elseif (getenv('PROVIDER_DataVerify_ENDPOINT')) {
+                $dv->endpoint = rtrim(getenv('PROVIDER_DataVerify_ENDPOINT'), '/');
+            }
             $result = $dv->verifyBVN($bvn);
 
             $dvStatus = $result['status'] ?? '';

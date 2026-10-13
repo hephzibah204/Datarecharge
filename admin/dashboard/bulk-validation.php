@@ -21,6 +21,14 @@
                 <div class="box-tools">
                     <form method="get" class="form-inline">
                         <input type="hidden" name="url" value="bulk-validation">
+                        <select name="type" class="form-control input-sm mr-2" onchange="this.form.submit()">
+                            <option value="">All Types</option>
+                            <option value="no_record_found" <?php echo (isset($_GET['type']) && $_GET['type'] == 'no_record_found') ? 'selected' : ''; ?>>No Record Found</option>
+                            <option value="sim_validation" <?php echo (isset($_GET['type']) && $_GET['type'] == 'sim_validation') ? 'selected' : ''; ?>>SIM Validation</option>
+                            <option value="bank_validation" <?php echo (isset($_GET['type']) && $_GET['type'] == 'bank_validation') ? 'selected' : ''; ?>>Bank Validation</option>
+                            <option value="modification_validation" <?php echo (isset($_GET['type']) && $_GET['type'] == 'modification_validation') ? 'selected' : ''; ?>>Modification Validation</option>
+                            <option value="photographic_error" <?php echo (isset($_GET['type']) && $_GET['type'] == 'photographic_error') ? 'selected' : ''; ?>>Photographic Error</option>
+                        </select>
                         <select name="status" class="form-control input-sm" onchange="this.form.submit()">
                             <option value="">All Statuses</option>
                             <option value="pending" <?php echo (isset($_GET['status']) && $_GET['status'] == 'pending') ? 'selected' : ''; ?>>Pending</option>
