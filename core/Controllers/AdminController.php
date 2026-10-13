@@ -324,6 +324,140 @@
 		}
 
 		//----------------------------------------------------------------------------------------------------------------
+		// System Update Management (Git Version Control)
+		//----------------------------------------------------------------------------------------------------------------
+
+		private function runGitCommand($cmd){
+			$repoRoot = realpath(__DIR__ . '/../../');
+			$descriptorspec = [
+				0 => ["pipe", "r"], // stdin
+				1 => ["pipe", "w"], // stdout
+				2 => ["pipe", "w"]  // stderr
+			];
+
+			$command = "git " . $cmd;
+			$process = proc_open($command, $descriptorspec, $pipes, $repoRoot);
+
+			if (is_resource($process)) {
+				fclose($pipes[0]);
+				$stdout = stream_get_contents($pipes[1]);
+				fclose($pipes[1]);
+				$stderr = stream_get_contents($pipes[2]);
+				fclose($pipes[2]);
+				$return_value = proc_close($process);
+
+				return [
+					'code' => $return_value,
+					'stdout' => trim($stdout),
+					'stderr' => trim($stderr)
+				];
+			}
+
+			return [
+				'code' => -1,
+				'stdout' => '',
+				'stderr' => 'Failed to execute git process (proc_open unavailable).'
+			];
+		}
+
+		public function getSystemUpdateStatus(){
+			$gitInstalled = true;
+			$versionRes = $this->runGitCommand("--version");
+			if($versionRes['code'] !== 0){
+				$gitInstalled = false;
+			}
+
+			$currentCommit = $this->runGitCommand('log -1 --format="%h|%s|%an|%ad|%ar" --date=short');
+			$branch = $this->runGitCommand('rev-parse --abbrev-ref HEAD');
+			$remote = $this->runGitCommand('config --get remote.origin.url');
+
+			// Try fetching updates from remote
+			$fetchRes = $this->runGitCommand('fetch origin');
+
+			// Check incoming commits
+			$currentBranch = $branch['stdout'] ?: 'main';
+			$incomingCommits = [];
+			$incomingCount = 0;
+			if($gitInstalled){
+				$logDiff = $this->runGitCommand('log HEAD..origin/' . escapeshellarg($currentBranch) . ' --pretty=format:"%h|%s|%an|%ad|%ar" --date=short');
+				if(!empty($logDiff['stdout'])){
+					$lines = explode("\n", $logDiff['stdout']);
+					foreach($lines as $line){
+						$line = trim($line);
+						if(!empty($line)){
+							$parts = explode("|", $line, 5);
+							$incomingCommits[] = [
+								'hash' => $parts[0] ?? '',
+								'subject' => $parts[1] ?? '',
+								'author' => $parts[2] ?? '',
+								'date' => $parts[3] ?? '',
+								'relative' => $parts[4] ?? ''
+							];
+						}
+					}
+					$incomingCount = count($incomingCommits);
+				}
+			}
+
+			// Local recent commit history (last 10)
+			$recentCommits = [];
+			$recentLog = $this->runGitCommand('log -n 10 --pretty=format:"%h|%s|%an|%ad|%ar" --date=short');
+			if(!empty($recentLog['stdout'])){
+				$lines = explode("\n", $recentLog['stdout']);
+				foreach($lines as $line){
+					$line = trim($line);
+					if(!empty($line)){
+						$parts = explode("|", $line, 5);
+						$recentCommits[] = [
+							'hash' => $parts[0] ?? '',
+							'subject' => $parts[1] ?? '',
+							'author' => $parts[2] ?? '',
+							'date' => $parts[3] ?? '',
+							'relative' => $parts[4] ?? ''
+						];
+					}
+				}
+			}
+
+			// Working tree status (check for unstaged / modified files)
+			$statusRes = $this->runGitCommand('status -s');
+
+			return [
+				'git_installed' => $gitInstalled,
+				'git_version' => $versionRes['stdout'] ?: 'Git not detected',
+				'branch' => $currentBranch,
+				'remote_url' => $remote['stdout'] ?: 'No remote configured',
+				'current_commit' => $currentCommit['stdout'],
+				'incoming_count' => $incomingCount,
+				'incoming_commits' => $incomingCommits,
+				'recent_commits' => $recentCommits,
+				'local_changes' => $statusRes['stdout'],
+				'last_checked' => date("Y-m-d H:i:s")
+			];
+		}
+
+		public function pullSystemUpdate(){
+			if(self::$role != 1){
+				return $this->createNotification1("alert-danger", "Unauthorized: Only Super Administrators can pull system updates.");
+			}
+
+			$branchRes = $this->runGitCommand('rev-parse --abbrev-ref HEAD');
+			$branch = $branchRes['stdout'] ?: 'main';
+
+			// Pull from origin
+			$pullRes = $this->runGitCommand('pull origin ' . escapeshellarg($branch));
+
+			if($pullRes['code'] === 0){
+				$msg = "System updated successfully!<br/><strong>Git Output:</strong><br/><pre class='mb-0 text-white' style='background:#222;'>" . htmlspecialchars($pullRes['stdout'] ?: 'Already up to date.') . "</pre>";
+				return $this->createNotification1("alert-success", $msg);
+			} else {
+				$err = $pullRes['stderr'] ?: $pullRes['stdout'] ?: 'Unknown error during git pull';
+				$msg = "Failed to pull update from Git.<br/><strong>Error:</strong><br/><pre class='mb-0 text-white' style='background:#700;'>" . htmlspecialchars($err) . "</pre>";
+				return $this->createNotification1("alert-danger", $msg);
+			}
+		}
+
+		//----------------------------------------------------------------------------------------------------------------
 		// SMILE Data Plan Management
 		//----------------------------------------------------------------------------------------------------------------
 

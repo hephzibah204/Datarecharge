@@ -429,6 +429,11 @@
         $msg = $controller->deleteNINSlip($_GET["delete"]);
     }
 
+    //System Update (Git Pull)
+    if(isset($_POST["pull-system-update"])){
+        $msg = $controller->pullSystemUpdate();
+    }
+
     //Fetch The View Of The Page To Be Displayed
     createView($url);
     if($page == "dashboard.php"){createView("dashboard");}
@@ -443,9 +448,9 @@
                    "alpha-topup","alpha-request","airtime-to-cash","airtime-to-cash-requests",
                    "agents","dashboard-alpha","airtime-pin-stock","data-pin-stock",
                    "issues","smile-order","smile-plans","transactionss",
-                   "api-link","blacklist-number","cac","referral","sales-by-user", "nin-modifications", "bulk-validation", "ipe-clearance"];
+                   "api-link","blacklist-number","cac","referral","sales-by-user", "nin-modifications", "bulk-validation", "ipe-clearance", "system-update"];
     $sweetAlertPages = ["system-users","data-plans","data-pins","cable-tv","notifications","messages",
-                        "alpha-topup","alpha-request","site-setting", "nin-modifications", "bulk-validation", "ipe-clearance"];
+                        "alpha-topup","alpha-request","site-setting", "nin-modifications", "bulk-validation", "ipe-clearance", "system-update"];
     if(in_array($url, $tablePages) || ($url === 'nin-advanced' && in_array('nin-modifications', $tablePages))){ $needsDataTable = true; }
     if($url == "sales-by-user"){ $needsChart = true; }
     if(in_array($url, $sweetAlertPages) || ($url === 'nin-advanced' && in_array('nin-modifications', $sweetAlertPages))){ $needsSweetAlert = true; }
@@ -578,6 +583,10 @@
                 $data["settings"] = $controller->getNINFeeSettings();
                 $data["slips"] = $controller->getNINSlipPricing();
                 return $data;
+                break;
+
+            case "system-update":
+                return $controller->getSystemUpdateStatus();
                 break;
             
             case "data-sale-analysis":

@@ -156,6 +156,15 @@
           </a>			
         </li>
 
+        <li>
+          <a href="<?php echo $urlAddon; ?>system-update">
+            <i class="fa fa-cloud-download"></i> <span>System Update</span>
+			      <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>			
+        </li>
+
         <?php endif; ?>
 
         <li>
