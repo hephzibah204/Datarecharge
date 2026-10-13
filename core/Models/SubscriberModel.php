@@ -12,7 +12,7 @@
 			if(isset($_COOKIE['loginId'])){
 				if(!isset($_COOKIE['loginVisit'])){
 					$loginId=(float) base64_decode($_COOKIE['loginId']);
-					$loginState=base64_decode($_COOKIE['loginState']);
+					$loginState=base64_decode($_COOKIE['loginState'] ?? '');
 					$visitDate=time();
 
 					$dbh=$this->connect();
@@ -42,7 +42,7 @@
 	      	$resultA=$queryA->fetch(PDO::FETCH_OBJ);
 
 			//Validate User Login token
-			$curentUserToken = $_SESSION["loginAccToken"];
+			$curentUserToken = $_SESSION["loginAccToken"] ?? '';
 			$userToken = $resultA->token;
 
 			if($curentUserToken <> $userToken){
@@ -66,6 +66,13 @@
 			$queryC = $dbh->prepare($sql);
 	    	$queryC->execute();
 	      	$result=$queryC->fetch(PDO::FETCH_OBJ);
+
+			// Guard: if user not found, return a safe stub to avoid fatal errors on ->sPhone etc.
+			if (!$result) {
+				return (object)['sId'=>0,'sPhone'=>'','sEmail'=>'','sFname'=>'','sLname'=>'',
+				                'sWallet'=>0,'sBonus'=>0,'sReferal'=>'','sRegStatus'=>0,
+				                'sPinStatus'=>0,'sType'=>0,'refCount'=>0];
+			}
 
 			//Count Total Referal ForThe User
 			$refCheck="Select COUNT(sId) AS refCount FROM subscribers WHERE sReferal=:ref";

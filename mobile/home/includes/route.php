@@ -321,7 +321,7 @@
         //Fetch The View Of The Page To Be Displayed
         createView($url);
         if($page == "homepage.php"){createView("homepage");}
-        if(!isset($_GET["settings"])){$sitecolor = $_SESSION["sitecolor"];}
+        if(!isset($_GET["settings"])){$sitecolor = $_SESSION["sitecolor"] ?? '';}
         if(isset($_SESSION["pinStatus"])){$pinstatus = (int) $_SESSION["pinStatus"];}
         
         //Email Verification
@@ -345,9 +345,9 @@
                 
                 //Get Site Settings
                 $generalData = getDataIfAny("fund-wallet");
-                $siteSettings = $generalData[2];
-                $profileDetails = $generalData[0];
-                $apiDetails = $generalData[1];
+                $siteSettings = $generalData[2] ?? null;
+                $profileDetails = $generalData[0] ?? null;
+                $apiDetails = $generalData[1] ?? null;
                 
                 $data=getDataIfAny($url);
                 if(isset($data[6])){$data7=$data[6];}

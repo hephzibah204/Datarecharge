@@ -67,13 +67,15 @@ class Subscriber extends Controller {
 
 		//Logout Users From System
 		public function logoutUser(){
-			session_start();
+			if(session_status() === PHP_SESSION_NONE){ session_start(); }
 			session_destroy();
 			setcookie("loginId", "", time() - 3600, "/");
 			setcookie("loginVisit", "", time() - 3600, "/");
 			setcookie("loginAccount", "", time() - 3600, "/");
 			setcookie("loginState", "", time() - 3600, "/");
-			header("Location: ../");
+			if(!headers_sent()){
+				header("Location: ../");
+			}
 			exit();
 		}
  
