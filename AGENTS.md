@@ -115,3 +115,23 @@ Both user and admin login were broken ("Processing..." hangs). Three issues fixe
 - Accepts `modification_type`, `new_value`, `reason`, `phone`, `ref` in JSON body
 - Uses `NINModification` model to create and persist requests
 - Returns ref, fee, new_balance on success
+
+## DataVerify Integration Update (2026-10-13)
+- **Domain Migration**: Updated all references from legacy `dataverify.com.ng` to official `https://dataverify.org` (docs: `https://dataverify.org/documentation`).
+- **Provider Class (`api/providers/dataverify.php`)**: Fully implemented all endpoints:
+  - `getBalance($includePrices)`: `GET /api/developers/balance.php`
+  - `verifyNIN($nin)`: `POST /developers/nin_slips/nin_premium.php`
+  - `verifyNINByPhone($phone)`: `POST /developers/nin_slips/nin_by_phone.php` (sends `nin: <phone>`)
+  - `verifyNINByDemo(...)`: `POST /developers/nin_slips/nin_premium_demo.php`
+  - `verifyBVN($bvn)`: `POST /developers/bvn_slip/bvn_premium.php`
+  - `verifyBankAccount($bvn, $bankCode, $bankAccount)`: `POST /developers/nin_slips/bank_account_verify.php`
+  - `validateNIN($nin, $type)` & `checkValidationStatus($id)`: `POST /api/developers/validation.php` & `validation_status.php`
+  - `ipeClearance($trackingID)` & `ipeStatus($trackingID)`: `POST /api/developers/ipe.php` & `ipe_status.php`
+  - `submitPersonalization($trackingId)` & `checkPersonalizationStatus($id)`: `POST /api/developers/personalization.php` & `personalization_status.php`
+  - `submitBvnRetrieval($phone, $fname, $lname)` & `checkBvnRetrievalStatus($id)`: `POST /api/developers/bvn_retrieval.php` & `bvn_retrieval_status.php`
+- **Controller Updates**:
+  - `core/Controllers/NIN.php`: Updated validation status check for boolean `true`/string `'success'`, added DataVerify IPE submission support, and updated endpoint resolution.
+  - `core/Controllers/BVN.php`: Configured dynamic DataVerify endpoint resolution with fallback to `https://dataverify.org`.
+- **Admin Dashboard**: Enhanced `admin/dashboard/nin-api-setting.php` with direct DataVerify configuration and live wallet balance widget connected to `dataverify.org`.
+- **Database & Env**: Seeded `DataVerify` in `providers` table and `apiconfigs` (`dataVerifyApi`, `dataVerifyProvider`), updated `.env` and `database/schema.sqlite.sql`.
+
