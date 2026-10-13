@@ -425,7 +425,7 @@
     }
 
     //NIN Slip Pricing Delete
-    if($url == "nin-slip-pricing" && isset($_GET["delete"])){
+    if(($url == "nin-slip-pricing" || $url == "nin-fee-settings") && isset($_GET["delete"])){
         $msg = $controller->deleteNINSlip($_GET["delete"]);
     }
 
@@ -573,11 +573,11 @@
                 break;
 
             case "nin-fee-settings":
-                return $controller->getNINFeeSettings();
-                break;
-
             case "nin-slip-pricing":
-                return $controller->getNINSlipPricing();
+                $data = array();
+                $data["settings"] = $controller->getNINFeeSettings();
+                $data["slips"] = $controller->getNINSlipPricing();
+                return $data;
                 break;
             
             case "data-sale-analysis":

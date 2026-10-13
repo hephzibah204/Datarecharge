@@ -118,16 +118,7 @@
 
         <li>
           <a href="<?php echo $urlAddon; ?>nin-fee-settings">
-            <i class="fa fa-money"></i> <span>NIN Fee Settings</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-right pull-right"></i>
-            </span>
-          </a>			
-        </li>
-
-        <li>
-          <a href="<?php echo $urlAddon; ?>nin-slip-pricing">
-            <i class="fa fa-tags"></i> <span>NIN Slip Pricing</span>
+            <i class="fa fa-money"></i> <span>NIN Fees & Pricing</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
