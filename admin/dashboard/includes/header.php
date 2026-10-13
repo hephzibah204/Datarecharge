@@ -7,7 +7,7 @@
 		<a href="dashboard" class="logo" >
 		  <!-- logo-->
 		  <span class="logo-lg">
-			  <img src="<?php echo $assetsLoc; ?>/img/logodark0.png?v=1" alt="logo" class="dark-logo" width="80">
+			  <img src="<?php echo $assetsLoc; ?>/img/logodark0.png?v=2" alt="logo" class="dark-logo" style="max-height: 40px; width: auto;">
 		  </span>
 		</a>	  
 	  </div>

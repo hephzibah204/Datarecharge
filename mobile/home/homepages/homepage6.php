@@ -67,9 +67,13 @@
 .my-float{
 	margin-top:15px;
 }
-</style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://wa.me/234<?php echo $data3->whatsapp; ?>" class="float" target="_blank">
+<?php 
+    $waFloat = preg_replace('/[^0-9]/', '', $data3->whatsapp ?? '09038940198');
+    if(substr($waFloat, 0, 3) === '234') { $waFloat = substr($waFloat, 3); }
+    $waFloat = ltrim($waFloat, '0');
+?>
+<a href="https://wa.me/234<?php echo $waFloat; ?>" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
 </head>

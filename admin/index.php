@@ -31,7 +31,7 @@ require_once("dashboard/includes/auto_loader.php");
             background-size:cover;-o-background-size:cover;background-repeat:no-repeat;background-attachment:fixed}
             #loginContainerContent{margin-top:20vh;margin-bottom:10px;text-align:left;color:#000;font-weight:600;}
             .brand_logo_container{margin-top:-120px; margin-bottom: 20px; padding:10px;}
-            .brand_logo{height:150px;width:155px;text-align:center;}
+            .brand_logo{height:150px;width:155px;text-align:center;object-fit:contain;}
             .position{max-width:400px;height:auto;margin:auto;position:relative}
             .user_card{
                 background:rgba(255,255,255,0.9); padding:30px;  

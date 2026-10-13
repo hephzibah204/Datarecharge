@@ -425,7 +425,7 @@
     }
 
     //NIN Slip Pricing Delete
-    if(($url == "nin-slip-pricing" || $url == "nin-fee-settings") && isset($_GET["delete"])){
+    if(($url == "nin-slip-pricing" || $url == "nin-fee-settings" || $url == "nin-pricing") && isset($_GET["delete"])){
         $msg = $controller->deleteNINSlip($_GET["delete"]);
     }
 
@@ -459,6 +459,9 @@
         if ($url === 'nin-advanced') {
             $url = 'nin-modifications';
         }
+        if ($url === 'nin-pricing') {
+            $url = 'nin-fee-settings';
+        }
         $file = __DIR__ . "/../" . $url . ".php";
         if(file_exists($file)){
             global $title,$data,$page;
@@ -466,6 +469,9 @@
             $title=ucwords($title);
             if ($url === 'nin-modifications') {
                 $title = "NIN Advanced Services";
+            }
+            if ($url === 'nin-fee-settings' || $url === 'nin-slip-pricing' || $url === 'nin-pricing') {
+                $title = "NIN Fees & Pricing";
             }
             $page=$url.".php";
             $data=getDataIfAny($url);
@@ -579,6 +585,7 @@
 
             case "nin-fee-settings":
             case "nin-slip-pricing":
+            case "nin-pricing":
                 $data = array();
                 $data["settings"] = $controller->getNINFeeSettings();
                 $data["slips"] = $controller->getNINSlipPricing();

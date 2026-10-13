@@ -35,8 +35,12 @@
                         <i class="fa font-14 fa-envelope color-mail"></i>
                         <span><?php echo $data->email; ?></span>
                         <i class="fa fa-arrow-circle-right font-14"></i>
-                    </a>
-                                        <a href="https://wa.me/234<?php echo $data->whatsapp; ?>" class="external-link">
+                                        <?php 
+                                            $waClean = preg_replace('/[^0-9]/', '', $data->whatsapp ?? '09038940198');
+                                            if(substr($waClean, 0, 3) === '234') { $waClean = substr($waClean, 3); }
+                                            $waClean = ltrim($waClean, '0');
+                                        ?>
+                                        <a href="https://wa.me/234<?php echo $waClean; ?>" class="external-link" target="_blank">
                         <i class="fab fa-whatsapp font-14  color-phone"></i>
                         <span>Whatsapp</span>
                         <i class="fa fa-arrow-circle-right font-14"></i>

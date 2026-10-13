@@ -260,10 +260,13 @@ if ($controller->getConfigValue($data2, "billstackStatus") == "On"):
                     <h4 class="text-primary">FUND WALLET</h4-->
                     <p class="mb-2 text-dark font-600 font-16"><b>Bank Name: </b><?php echo $data3->bankname; ?></p>
                     <p class="mb-2 text-dark font-600 font-16"><b>Account Name: </b><?php echo $data3->accountname; ?></p>
-                    <p class="mb-2 text-dark font-600 font-16"><b>Account No: </b><?php echo $data3->accountno; ?></p>
-                    <p class="mb-2 text-danger font-600 font-15"><b>Note: </b> Please contact admin before making any transfer.</p>
                     <button class="btn btn-primary font-700  mt-3" onclick="copyToClipboard('<?php echo $data3->accountno; ?>')" style="background:#f2f2f2; color :<?php echo $sitecolor; ?>;">Copy Account No</button>
-                    <a class="btn btn-success font-700  mt-3" href="https://wa.me/234<?php echo $data3->whatsapp; ?>" style="background:#f2f2f2; color :<?php echo $sitecolor; ?>;">Contact Admin</a>
+                    <?php 
+                        $waFund = preg_replace('/[^0-9]/', '', $data3->whatsapp ?? '09038940198');
+                        if(substr($waFund, 0, 3) === '234') { $waFund = substr($waFund, 3); }
+                        $waFund = ltrim($waFund, '0');
+                    ?>
+                    <a class="btn btn-success font-700  mt-3" href="https://wa.me/234<?php echo $waFund; ?>" target="_blank" style="background:#f2f2f2; color :<?php echo $sitecolor; ?>;">Contact Admin</a>
                     
                 </div>
                 </div>

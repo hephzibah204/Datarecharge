@@ -68,7 +68,12 @@
 }
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://wa.link/szd1jx" class="float" target="_blank">
+<?php 
+    $waFloat6 = preg_replace('/[^0-9]/', '', $data3->whatsapp ?? '09038940198');
+    if(substr($waFloat6, 0, 3) === '234') { $waFloat6 = substr($waFloat6, 3); }
+    $waFloat6 = ltrim($waFloat6, '0');
+?>
+<a href="https://wa.me/234<?php echo $waFloat6; ?>" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
 </head>
