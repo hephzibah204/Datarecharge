@@ -15,5 +15,13 @@ if (preg_match('#^/admin/dashboard/([a-z0-9_-]+)$#', $uri, $m)) {
     return true;
 }
 
+// Mobile home clean URL routing: /mobile/home/page-name
+if (preg_match('#^/mobile/home/([a-z0-9_-]+)$#', $uri, $m)) {
+    $_GET['url'] = $m[1];
+    chdir(__DIR__ . '/mobile/home');
+    require __DIR__ . '/mobile/home/index.php';
+    return true;
+}
+
 // Fallback: let PHP return 404
 return false;
