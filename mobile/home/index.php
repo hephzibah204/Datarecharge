@@ -32,8 +32,8 @@ if (!isset($siteSettings) || !is_object($siteSettings)) {
         <!-- Page Header -->
         <?php
             $hd = isset($siteSettings->homedesign) ? $siteSettings->homedesign : '6';
-            $hf = "headers/header".$hd.".php";
-            include_once(file_exists($hf) ? $hf : "headers/header6.php");
+            $hf = __DIR__ . "/headers/header".$hd.".php";
+            include_once(file_exists($hf) ? $hf : __DIR__ . "/headers/header6.php");
         ?>
 
         <!-- Page Footer -->

@@ -320,13 +320,13 @@
 
         //Fetch The View Of The Page To Be Displayed
         createView($url);
-        if($page == "homepage.php"){createView("homepage");}
+        if($url == ""){createView("homepage");}  // homepage fallback
         if(!isset($_GET["settings"])){$sitecolor = $_SESSION["sitecolor"] ?? '';}
         if(isset($_SESSION["pinStatus"])){$pinstatus = (int) $_SESSION["pinStatus"];}
         
         //Email Verification
         if(isset($_SESSION["verification"])){
-            if($_SESSION["verification"] == "NO" && $page <> "email-verification.php"){
+            if($_SESSION["verification"] == "NO" && basename($page) <> "email-verification.php"){
                 header("Location: email-verification");
                 exit();
             }
@@ -336,12 +336,16 @@
     endif;
     
         function createView($url){
-        
-            if(file_exists($url.".php")){
+            // Use __DIR__ (mobile/home/includes/) so file resolution works on Apache too
+            // (Apache CWD is document root, not mobile/home/)
+            $pageDir = __DIR__ . '/..';
+            $pageFile = $pageDir . '/' . $url . '.php';
+
+            if(file_exists($pageFile)){
                 global $title,$data,$data2,$data3,$data4,$data5,$data6,$data7,$page,$siteSettings,$profileDetails;
                 $title=str_replace("-"," ",$url);
                 $title=ucwords($title);
-                $page=$url.".php";
+                $page=$pageFile; // absolute path for include($page) in index.php
                 
                 //Get Site Settings
                 $generalData = getDataIfAny("fund-wallet");
