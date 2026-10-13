@@ -302,7 +302,7 @@
 
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">
                         <label class="color-theme opacity-80 font-700 font-12">Amount</label>
-                        <input type="text" value="₦28,574" class="round-small" readonly>
+                        <input type="text" value="₦<?php echo number_format($siteSettings->fee_dob_mod ?? 28574); ?>" class="round-small" readonly>
                     </div>
 
                     <div class="input-style input-style-always-active has-borders validate-field mb-4">

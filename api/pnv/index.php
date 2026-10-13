@@ -113,18 +113,24 @@
         $networkDetails=$result; 
     }
     
-    if($body->slip == "regular"){
-     $amountopay = 300; 
-    }elseif($body->slip == "standard"){
-      $amountopay = 300;   
-    }elseif($body->slip == "premium"){
-      $amountopay = 350;   
-    }else{
-                    header('HTTP/1.0 400 Insufficient Balance');
-            $response['status']="fail";
-            $response['msg'] = "Invalid printig slip";
-            echo json_encode($response);
-            exit();
+    $amountopay = 500;
+    $slip = strtolower($body->slip ?? 'regular');
+    try {
+        $model = new Model();
+        $db = $model->connectDb();
+        $slipKey = str_replace(['slip', ' ', '_', '-'], '', $slip);
+        $stmt = $db->prepare("SELECT user_price FROM nin_price WHERE LOWER(REPLACE(REPLACE(slip_name, ' ', ''), '_', '')) LIKE :slip LIMIT 1");
+        $stmt->execute([':slip' => '%' . $slipKey . '%']);
+        $matchedPrice = $stmt->fetchColumn();
+        if ($matchedPrice !== false && (float)$matchedPrice > 0) {
+            $amountopay = (float)$matchedPrice;
+        } else {
+            if ($slip == "regular") { $amountopay = 500; }
+            elseif ($slip == "standard") { $amountopay = 1000; }
+            elseif ($slip == "premium") { $amountopay = 1500; }
+        }
+    } catch (\Throwable $e) {
+        $amountopay = 500;
     }
     // -------------------------------------------------------------------
     //  Check Id User Balance Can Perform The Transaction

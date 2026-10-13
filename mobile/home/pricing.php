@@ -180,6 +180,35 @@
                     </table>
                 </div>
 
+                <h1 class="font-20">NIN & Identity Services</h1>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <tr class="bg-blue-dark">
+                            <td class="text-white"><b>Service / Slip</b></td>
+                            <td class="text-white"><b>Price</b></td>
+                        </tr>
+                        <tr><td>NIN Single Verification</td><td>₦<?php echo number_format($siteSettings->fee_nin_verification ?? 1000); ?></td></tr>
+                        <tr><td>Name Modification</td><td>₦<?php echo number_format($siteSettings->fee_name_mod ?? 5000); ?></td></tr>
+                        <tr><td>Phone Modification</td><td>₦<?php echo number_format($siteSettings->fee_phone_mod ?? 5000); ?></td></tr>
+                        <tr><td>Address Modification</td><td>₦<?php echo number_format($siteSettings->fee_address_mod ?? 4000); ?></td></tr>
+                        <tr><td>Date of Birth Modification</td><td>₦<?php echo number_format($siteSettings->fee_dob_mod ?? 28574); ?></td></tr>
+                        <tr><td>Gender Modification</td><td>₦<?php echo number_format($siteSettings->fee_gender_mod ?? 8000); ?></td></tr>
+                        <tr><td>Bulk NIN Validation</td><td>₦<?php echo number_format($siteSettings->fee_bulk_validation ?? 500); ?> / record</td></tr>
+                        <tr><td>IPE Clearance</td><td>₦<?php echo number_format($siteSettings->fee_ipe_clearance ?? 1000); ?> / tracking ID</td></tr>
+                        <?php
+                            try {
+                                $pm = new Model();
+                                $pdb = $pm->connectDb();
+                                $slpPrices = $pdb->query("SELECT slip_name, user_price FROM nin_price ORDER BY id ASC")->fetchAll(PDO::FETCH_OBJ);
+                                if (!empty($slpPrices)) {
+                                    foreach ($slpPrices as $sp) {
+                                        echo "<tr><td>" . htmlspecialchars($sp->slip_name) . "</td><td>₦" . number_format($sp->user_price) . "</td></tr>";
+                                    }
+                                }
+                            } catch (\Throwable $e) {}
+                        ?>
+                    </table>
+                </div>
 
             </div>
 

@@ -280,8 +280,14 @@
 			$fee_nin_verification = $_POST['fee_nin_verification'] ?? 1000;
 			$fee_affidavit = $_POST['fee_affidavit'] ?? 5000;
 			$fee_birth_certificate = $_POST['fee_birth_certificate'] ?? 10000;
+			$fee_bulk_validation = $_POST['fee_bulk_validation'] ?? 500;
+			$fee_ipe_clearance = $_POST['fee_ipe_clearance'] ?? 1000;
+			$fee_bulk_nin_mod = $_POST['fee_bulk_nin_modification'] ?? 5000;
+			$fee_bulk_dob_mod = $_POST['fee_bulk_dob_modification'] ?? 5000;
+			$fee_bulk_phone_mod = $_POST['fee_bulk_phone_modification'] ?? 5000;
+			$fee_bulk_address_mod = $_POST['fee_bulk_address_modification'] ?? 5000;
 
-			$check=$this->model->updateNINFeeSettings($fee_name_mod,$fee_phone_mod,$fee_address_mod,$fee_email_mod,$fee_dob_mod,$fee_lga_mod,$fee_gender_mod,$fee_marital_mod,$fee_nin_verification,$fee_affidavit,$fee_birth_certificate);
+			$check=$this->model->updateNINFeeSettings($fee_name_mod,$fee_phone_mod,$fee_address_mod,$fee_email_mod,$fee_dob_mod,$fee_lga_mod,$fee_gender_mod,$fee_marital_mod,$fee_nin_verification,$fee_affidavit,$fee_birth_certificate,$fee_bulk_validation,$fee_ipe_clearance,$fee_bulk_nin_mod,$fee_bulk_dob_mod,$fee_bulk_phone_mod,$fee_bulk_address_mod);
 			if($check == 0){return $this->createNotification1("alert-success","NIN Fee Settings Updated Successfully");}
 			else{return $this->createNotification1("alert-danger","Unable To Update NIN Fee Settings");}
 		}

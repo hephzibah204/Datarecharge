@@ -203,9 +203,9 @@ class AdminModel extends Model{
 		}
  
 	//Update NIN Fee Settings
-		public function updateNINFeeSettings($fee_name_mod,$fee_phone_mod,$fee_address_mod,$fee_email_mod,$fee_dob_mod,$fee_lga_mod,$fee_gender_mod,$fee_marital_mod,$fee_nin_verification,$fee_affidavit,$fee_birth_certificate){
+		public function updateNINFeeSettings($fee_name_mod,$fee_phone_mod,$fee_address_mod,$fee_email_mod,$fee_dob_mod,$fee_lga_mod,$fee_gender_mod,$fee_marital_mod,$fee_nin_verification,$fee_affidavit,$fee_birth_certificate,$fee_bulk_validation=500,$fee_ipe_clearance=1000,$fee_bulk_nin_mod=5000,$fee_bulk_dob_mod=5000,$fee_bulk_phone_mod=5000,$fee_bulk_address_mod=5000){
 			$dbh=$this->connect();
-			$sql="UPDATE sitesettings SET fee_name_mod=:fnm,fee_phone_mod=:fpm,fee_address_mod=:fam,fee_email_mod=:fem,fee_dob_mod=:fdm,fee_lga_mod=:flm,fee_gender_mod=:fgm,fee_marital_mod=:fmm,fee_nin_verification=:fnv,fee_affidavit=:fa2,fee_birth_certificate=:fbc WHERE sId=1";
+			$sql="UPDATE sitesettings SET fee_name_mod=:fnm,fee_phone_mod=:fpm,fee_address_mod=:fam,fee_email_mod=:fem,fee_dob_mod=:fdm,fee_lga_mod=:flm,fee_gender_mod=:fgm,fee_marital_mod=:fmm,fee_nin_verification=:fnv,fee_affidavit=:fa2,fee_birth_certificate=:fbc,fee_bulk_validation=:fbv,fee_ipe_clearance=:fic,fee_bulk_nin_modification=:fbnm,fee_bulk_dob_modification=:fbdm,fee_bulk_phone_modification=:fbpm,fee_bulk_address_modification=:fbam WHERE sId=1";
 			$query=$dbh->prepare($sql);
 			$query->execute([
 				':fnm' => $fee_name_mod,
@@ -218,7 +218,13 @@ class AdminModel extends Model{
 				':fmm' => $fee_marital_mod,
 				':fnv' => $fee_nin_verification,
 				':fa2' => $fee_affidavit,
-				':fbc' => $fee_birth_certificate
+				':fbc' => $fee_birth_certificate,
+				':fbv' => $fee_bulk_validation,
+				':fic' => $fee_ipe_clearance,
+				':fbnm' => $fee_bulk_nin_mod,
+				':fbdm' => $fee_bulk_dob_mod,
+				':fbpm' => $fee_bulk_phone_mod,
+				':fbam' => $fee_bulk_address_mod
 			]);
 			return 0;
 		}

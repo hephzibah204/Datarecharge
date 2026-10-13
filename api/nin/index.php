@@ -161,6 +161,24 @@ function processIPERequest($trackingIds, $result, $controller) {
 
 function processVerificationRequest($body, $result, $controller) {
     $fee = 500;
+    $slip = strtolower($body->slip ?? ($body->network ?? 'regular'));
+    try {
+        $model = new Model();
+        $db = $model->connectDb();
+        $slipKey = str_replace(['slip', ' ', '_', '-'], '', $slip);
+        $stmt = $db->prepare("SELECT user_price FROM nin_price WHERE LOWER(REPLACE(REPLACE(slip_name, ' ', ''), '_', '')) LIKE :slip LIMIT 1");
+        $stmt->execute([':slip' => '%' . $slipKey . '%']);
+        $matchedPrice = $stmt->fetchColumn();
+        if ($matchedPrice !== false && (float)$matchedPrice > 0) {
+            $fee = (float)$matchedPrice;
+        } else {
+            $settings = (new NINModification())->getSiteSettings();
+            $fee = (float)($settings->fee_nin_verification ?? 500);
+        }
+    } catch (\Throwable $e) {
+        $fee = 500;
+    }
+
     $userid = (float) $result["userid"];
     $userbalance = (float) $result["balance"];
     $ref = $body->ref ?? 'NIN_' . time();

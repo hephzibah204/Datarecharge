@@ -41,6 +41,14 @@
                 </div>
                 <hr/>
                
+                <?php
+                    $ninSlips = [];
+                    try {
+                        $ninDbModel = new Model();
+                        $ninDb = $ninDbModel->connectDb();
+                        $ninSlips = $ninDb->query("SELECT * FROM nin_price ORDER BY id ASC")->fetchAll(PDO::FETCH_OBJ);
+                    } catch (\Throwable $e) {}
+                ?>
                 <form method="post" class="verifyForm" id="verifyForm">
                         <fieldset>
  
@@ -48,9 +56,18 @@
                                 <label for="networkid" class="color-theme opacity-80 font-700 font-12">Slip Design</label>
                                 <select onchange="getPo()" id="networkid" name="network">
                                     <option value="" disabled="" selected="">~Select Slip Design~</option>
+                                    <?php if (!empty($ninSlips)): foreach ($ninSlips as $slip):
+                                        $sKey = strtolower(str_replace(['slip', ' ', '_'], '', strtolower($slip->slip_name)));
+                                        if (empty($sKey)) $sKey = strtolower($slip->slip_name);
+                                    ?>
+                                        <option data-price="<?php echo (float)$slip->user_price; ?>" value="<?php echo htmlspecialchars($sKey); ?>">
+                                            <?php echo htmlspecialchars($slip->slip_name); ?> - ₦<?php echo number_format($slip->user_price); ?>
+                                        </option>
+                                    <?php endforeach; else: ?>
                                         <option data-price=500 value="regular">Regular Slip</option>
                                         <option data-price=1000 value="standard">Standard Slip</option>
                                         <option data-price=1500 value="premium">Premium Slip</option>
+                                    <?php endif; ?>
                                 </select>
                                 <span><i class="fa fa-chevron-down"></i></span>
                                 <i class="fa fa-check disabled valid color-green-dark"></i>
