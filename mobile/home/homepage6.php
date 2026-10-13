@@ -84,7 +84,7 @@
     <div class="avbal"><b>Available Balance</b></div>
     <a href="transactions" class="transaction-history"><font color="#ffffff"><b>Transaction History</b></font></a>
     <div class="balance-container">
-        <div class="balance"><span id="hideEyeDiv" style="display:none;">&#8358; <?php echo number_format($profileDetails->sWallet); ?></span>
+        <div class="balance"><span id="hideEyeDiv" style="display:none;">&#8358; <?php echo number_format((float)($profileDetails->sWallet ?? 0)); ?></span>
                     <span id="openEyeDiv" >&#8358; *****</span>
                 
                     <span id="hideEye"><i class="fa fa-eye-slash" style="margin-left:20px;" aria-hidden="true"></i></span>

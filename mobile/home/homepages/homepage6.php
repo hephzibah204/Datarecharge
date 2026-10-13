@@ -67,6 +67,7 @@
 .my-float{
 	margin-top:15px;
 }
+</style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <?php 
     $waFloat = preg_replace('/[^0-9]/', '', $data3->whatsapp ?? '09038940198');
@@ -87,7 +88,7 @@
    </div>
     <a href="transactions" class="transaction-history"><font color="#ffffff"><b>Transaction History ></b></font></a>
     <div class="balance-container">
-        <div class="balance"><span id="hideEyeDiv" style="display:none;">&#8358; <?php echo number_format($profileDetails->sWallet); ?></span>
+        <div class="balance"><span id="hideEyeDiv" style="display:none;">&#8358; <?php echo number_format((float)($profileDetails->sWallet ?? 0)); ?></span>
                     <span id="openEyeDiv" >&#8358; ****</span>
                     </div>
         <a href="fund-wallet" class="add-money">

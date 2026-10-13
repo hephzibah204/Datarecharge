@@ -22,6 +22,21 @@ if (!isset($siteSettings) || !is_object($siteSettings)) {
 
 <?php if($title <> "Print Data Pin"): ?>
 <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<script>
+    (function(){
+        function removePreloader(){
+            var p = document.getElementById('preloader');
+            if(p){ p.classList.add('preloader-hide'); }
+        }
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            setTimeout(removePreloader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', removePreloader);
+            window.addEventListener('load', removePreloader);
+        }
+        setTimeout(removePreloader, 800);
+    })();
+</script>
 <?php endif; ?>
     
 <div id="page">
@@ -176,7 +191,7 @@ if (!isset($siteSettings) || !is_object($siteSettings)) {
     
     <!-- Main Menu--> 
     <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-pages">
-        <?php include("../menu/menu-main.php"); ?>
+        <?php include(__DIR__ . "/../menu/menu-main.php"); ?>
     </div>
      
     <?php endif; ?>

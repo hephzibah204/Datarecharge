@@ -26,7 +26,7 @@
 
     $allowedDesigns = ['1', '2', '3', '4', '5', '6']; // Add valid designs here
     $design = in_array((string)$design, $allowedDesigns) ? $design : '6';
-    $pageFile = "homepages/homepage".$design.".php";
-    include(file_exists($pageFile) ? $pageFile : "homepages/homepage6.php");
+    $pageFile = __DIR__ . "/homepages/homepage".$design.".php";
+    include(file_exists($pageFile) ? $pageFile : __DIR__ . "/homepages/homepage6.php");
 
 ?>
