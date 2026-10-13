@@ -443,9 +443,9 @@
                    "alpha-topup","alpha-request","airtime-to-cash","airtime-to-cash-requests",
                    "agents","dashboard-alpha","airtime-pin-stock","data-pin-stock",
                    "issues","smile-order","smile-plans","transactionss",
-                   "api-link","blacklist-number","cac","referral","sales-by-user", "nin-modifications"];
+                   "api-link","blacklist-number","cac","referral","sales-by-user", "nin-modifications", "bulk-validation", "ipe-clearance"];
     $sweetAlertPages = ["system-users","data-plans","data-pins","cable-tv","notifications","messages",
-                        "alpha-topup","alpha-request","site-setting", "nin-modifications"];
+                        "alpha-topup","alpha-request","site-setting", "nin-modifications", "bulk-validation", "ipe-clearance"];
     if(in_array($url, $tablePages) || ($url === 'nin-advanced' && in_array('nin-modifications', $tablePages))){ $needsDataTable = true; }
     if($url == "sales-by-user"){ $needsChart = true; }
     if(in_array($url, $sweetAlertPages) || ($url === 'nin-advanced' && in_array('nin-modifications', $sweetAlertPages))){ $needsSweetAlert = true; }

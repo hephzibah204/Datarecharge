@@ -1,4 +1,3 @@
-<?= PHP ?>
 <?php
 
 require_once "core/Models/Modification.php";

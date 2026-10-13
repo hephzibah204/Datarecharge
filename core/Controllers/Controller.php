@@ -2,6 +2,9 @@
  
 	class Controller{
 		
+		public function __construct() {
+			// Base constructor
+		}
 
 		// CSRF Token Protection
 		public function generateCsrfToken() {

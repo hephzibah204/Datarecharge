@@ -12,12 +12,12 @@
 		public function __construct(){
 			if(isset($_SESSION['sysId']) && isset($_SESSION["sysRole"])){
 				if($_SESSION['sysId']!='' && $_SESSION["sysRole"] !=''){
-					self::$role=(float) $_SESSION["sysRole"];
-					self::$adminName=$_SESSION["sysName"];
-					self::$adminUsername=$_SESSION["sysUser"];
-				    self::$sysId=$_SESSION['sysId'];
+					self::$role = (float) ($_SESSION["sysRole"] ?? 1);
+					self::$adminName = $_SESSION["sysName"] ?? 'Admin';
+					self::$adminUsername = $_SESSION["sysUser"] ?? $_SESSION["sysUsername"] ?? 'Admin';
+				    self::$sysId = $_SESSION['sysId'] ?? 1;
 					
-					$this->model=new AdminModel;
+					$this->model = new AdminModel;
 				}
 				else{ header("Location: ../"); exit();} 
 			}
