@@ -261,7 +261,7 @@ class Subscriber extends Controller {
                 $modificationType = $modification_type_code ?? '';
                 $fee = $ninModel->getModificationFee($modificationType);
 
-                $user = $this->model->getUserById($this->userId);
+                $user = method_exists($this->model, 'getUserById') ? $this->model->getUserById($this->userId) : $this->model->getProfileInfo($this->userId);
                 $userbalance = (float)($user->sWallet ?? 0);
 
                 if ($userbalance < $fee) {
@@ -271,9 +271,9 @@ class Subscriber extends Controller {
                 // Process uploaded files
                 $documents = [];
                 if (isset($_FILES) && !empty($_FILES)) {
-                    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . "/assets/userImage/";
+                    $uploadDir = dirname(__DIR__, 2) . "/assets/userImage/";
                     if (!is_dir($uploadDir)) {
-                        mkdir($uploadDir, 0777, true);
+                        @mkdir($uploadDir, 0777, true);
                     }
                     foreach ($_FILES as $key => $file) {
                         if (!empty($file['name']) && $file['error'] == UPLOAD_ERR_OK) {
@@ -367,7 +367,7 @@ class Subscriber extends Controller {
                 $baseFee = (float)($settings->fee_bulk_validation ?? $settings->fee_nin_verification ?? 500);
                 $totalAmount = count($nins) * $baseFee;
 
-                $user = $this->model->getUserById($this->userId);
+                $user = method_exists($this->model, 'getUserById') ? $this->model->getUserById($this->userId) : $this->model->getProfileInfo($this->userId);
                 $userbalance = (float)($user->sWallet ?? 0);
 
                 if ($userbalance < $totalAmount) {
@@ -414,7 +414,7 @@ class Subscriber extends Controller {
                 $baseFee = (float)($settings->fee_ipe_clearance ?? 1000);
                 $totalAmount = count($trackingIds) * $baseFee;
 
-                $user = $this->model->getUserById($this->userId);
+                $user = method_exists($this->model, 'getUserById') ? $this->model->getUserById($this->userId) : $this->model->getProfileInfo($this->userId);
                 $userbalance = (float)($user->sWallet ?? 0);
 
                 if ($userbalance < $totalAmount) {

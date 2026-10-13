@@ -1,7 +1,7 @@
 <?php
 
-require_once "core/Models/Model.php";
-require_once "core/helpers/vendor/modification_helper.php";
+require_once __DIR__ . "/Model.php";
+require_once __DIR__ . "/../helpers/vendor/modification_helper.php";
 
 class NINModification extends Model {
 
@@ -19,8 +19,10 @@ class NINModification extends Model {
         $this->createModificationRecord($userId, $ref, $body, $fee, $documents, $date);
         
         $user = $this->getUserById($userId);
-        $newBalance = ($user->sWallet ?? 0) - $fee;
+        $oldBalance = (float)($user->sWallet ?? 0);
+        $newBalance = $oldBalance - $fee;
         $this->debitUserBeforeTransaction($userId, $newBalance, "NIN Modification Fee", $ref);
+        $this->recordTransaction($userId, "NIN Modification (" . ucfirst($body->modification_type ?? 'Request') . ")", $fee, $oldBalance, $newBalance, 0);
         
         return [
             'status' => "success",
@@ -37,8 +39,10 @@ class NINModification extends Model {
         $this->createModificationRecord($userId, $ref, $body, $fee, [], $date);
         
         $user = $this->getUserById($userId);
-        $newBalance = ($user->sWallet ?? 0) - $fee;
+        $oldBalance = (float)($user->sWallet ?? 0);
+        $newBalance = $oldBalance - $fee;
         $this->debitUserBeforeTransaction($userId, $newBalance, "NIN Verification Fee", $ref);
+        $this->recordTransaction($userId, "NIN Verification Slip", $fee, $oldBalance, $newBalance, 0);
         
         return [
             'status' => "success",

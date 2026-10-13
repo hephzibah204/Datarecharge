@@ -79,6 +79,11 @@
 			return $result;
 		}
 
+		//User Info By Id
+		public function getUserById($id){
+			return $this->getProfileInfo($id);
+		}
+
 		//Update Profile Password
 		public function updateProfileKey($id,$oldKey,$newKey){
 			

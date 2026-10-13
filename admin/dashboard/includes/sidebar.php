@@ -1,11 +1,20 @@
 <?php
   // Determine current active section for menu expansion
   $curUrl = $url ?? '';
+  $isJobsGroup = in_array($curUrl, ['job-requests', 'nin-modifications', 'nin-advanced', 'cac', 'ipe-clearance']);
   $isNinGroup = in_array($curUrl, ['nin-modifications', 'nin-advanced', 'bulk-validation', 'ipe-clearance', 'nin-fee-settings', 'nin-slip-pricing']);
   $isServicesGroup = in_array($curUrl, ['all-services', 'exam-pin', 'providers', 'airtime-discount', 'recharge-pin-discount', 'data-plans', 'data-pins', 'cable-tv', 'electricity-bill', 'cashback', 'alpha-topup', 'alpha-request', 'airtime-to-cash', 'smile-order', 'smile-plans', 'airtime-pin-stock', 'data-pin-stock']);
   $isUserGroup = in_array($curUrl, ['subscribers', 'credit-user-account', 'credit-user', 'system-users', 'agents']);
   $isFinanceGroup = in_array($curUrl, ['transactions-list', 'transactions', 'processing-transactions', 'manual-orders', 'failed-transactions', 'sales-by-user', 'sale-analysis', 'data-sale-analysis', 'wallet-balance']);
   $isSystemGroup = in_array($curUrl, ['configurations', 'site-setting', 'website-style', 'contact-setting', 'network-setting', 'api-setting', 'monnify-setting', 'paystack-setting', 'payment-gateway', 'blacklist-setting', 'blacklist-number', 'cac', 'referral', 'system-update', 'messaging', 'notifications', 'messages', 'issues']);
+
+  // Fetch pending job count badge
+  $pendingJobCount = 0;
+  try {
+    $jobCountHelper = new JobRequestController();
+    $jCounts = $jobCountHelper->getJobCounts();
+    $pendingJobCount = $jCounts['total_pending'] ?? 0;
+  } catch (Exception $e) {}
 ?>
 
 <!-- Left side column. contains the logo and sidebar -->
@@ -25,6 +34,18 @@
           </a>			
         </li>
 
+        <!-- Job Requests Queue (NIN, CAC, Affidavits) -->
+        <li class="<?php echo ($curUrl == 'job-requests') ? 'active' : ''; ?>">
+          <a href="<?php echo $urlAddon; ?>job-requests">
+            <i class="fa fa-tasks text-yellow"></i> <span>Pick Job Requests</span>
+            <?php if($pendingJobCount > 0): ?>
+              <span class="pull-right-container">
+                <span class="label label-warning pull-right"><?php echo $pendingJobCount; ?></span>
+              </span>
+            <?php endif; ?>
+          </a>			
+        </li>
+
         <li class="<?php echo ($curUrl == 'community') ? 'active' : ''; ?>">
           <a href="<?php echo $urlAddon; ?>community">
             <i class="fa fa-cubes"></i> <span>Community</span>
@@ -40,8 +61,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
+            <li class="<?php echo ($curUrl == 'job-requests') ? 'active' : ''; ?>">
+              <a href="<?php echo $urlAddon; ?>job-requests"><i class="fa fa-circle-o"></i> Pick All Job Requests</a>
+            </li>
             <li class="<?php echo ($curUrl == 'nin-modifications' || $curUrl == 'nin-advanced') ? 'active' : ''; ?>">
-              <a href="<?php echo $urlAddon; ?>nin-modifications"><i class="fa fa-circle-o"></i> NIN Advanced Services</a>
+              <a href="<?php echo $urlAddon; ?>nin-modifications"><i class="fa fa-circle-o"></i> NIN Modifications</a>
             </li>
             <li class="<?php echo ($curUrl == 'bulk-validation') ? 'active' : ''; ?>">
               <a href="<?php echo $urlAddon; ?>bulk-validation"><i class="fa fa-circle-o"></i> Bulk NIN Validation</a>

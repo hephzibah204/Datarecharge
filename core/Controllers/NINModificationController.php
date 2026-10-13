@@ -51,11 +51,14 @@ class NINModificationController extends AdminController {
                 $html .= '<td>' . htmlspecialchars($request->type ?? '') . '</td>';
                 $html .= '<td>N' . number_format((float)($request->fee ?? 0), 2) . '</td>';
                 $html .= '<td><span class="label label-' . $this->getStatusClass($request->status) . '">' . htmlspecialchars($request->status) . '</span></td>';
-                $html .= '<td>' . date('M d, Y h:i A', strtotime($request->date_created ?? '')) . '</td>';
-                $html .= '<td>
-                    <a href="nin-modifications?view=' . urlencode($request->ref ?? '') . '" class="btn btn-info btn-xs">View</a>
-                    <button class="btn btn-warning btn-xs review-request" data-ref="' . htmlspecialchars($request->ref ?? '') . '">Review</button>
-                </td>';
+                $actions = '';
+                if ($request->status === 'pending') {
+                    $actions .= '<a href="nin-modifications?update-status=1&ref=' . urlencode($request->ref ?? '') . '&status=in_review" class="btn btn-primary btn-xs" onclick="return confirm(\'Pick up this request to start review?\')"><i class="fa fa-hand-paper-o"></i> Pick Up</a> ';
+                }
+                $actions .= '<a href="nin-modifications?view=' . urlencode($request->ref ?? '') . '" class="btn btn-info btn-xs"><i class="fa fa-eye"></i> View</a> ';
+                $actions .= '<button class="btn btn-warning btn-xs review-request" data-ref="' . htmlspecialchars($request->ref ?? '') . '"><i class="fa fa-edit"></i> Review</button>';
+
+                $html .= '<td>' . $actions . '</td>';
                 $html .= '</tr>';
             }
         }

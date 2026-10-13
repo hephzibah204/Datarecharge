@@ -39,12 +39,22 @@
 
             if (strpos($apiUrl, 'dataverify') !== false || !empty($body->use_dataverify)) {
                 $dvKey = $apiKey ?: ($dataVerifyApiKey ?: 'DATAVERIFY_9G1UPLC6V4C5UUOD2NVM');
-                $dvUrl = rtrim($dataVerifyEndpoint, '/') . '/api/developers/validation.php';
-                $load = json_encode([
-                    "api_key"         => $dvKey,
-                    "nin"             => $nin,
-                    "validation_type" => $normalizedType
-                ]);
+                $isSlip = !empty($body->slip) || in_array(strtolower($body->network ?? ''), ['regular', 'standard', 'premium']);
+
+                if ($isSlip) {
+                    $dvUrl = rtrim($dataVerifyEndpoint, '/') . '/developers/nin_slips/nin_premium.php';
+                    $load = json_encode([
+                        "api_key" => $dvKey,
+                        "nin"     => $nin
+                    ]);
+                } else {
+                    $dvUrl = rtrim($dataVerifyEndpoint, '/') . '/api/developers/validation.php';
+                    $load = json_encode([
+                        "api_key"         => $dvKey,
+                        "nin"             => $nin,
+                        "validation_type" => $normalizedType
+                    ]);
+                }
 
                 $ch = curl_init();
                 curl_setopt_array($ch, [
@@ -57,7 +67,7 @@
                         'Authorization: Bearer ' . $dvKey,
                         'X-API-Key: ' . $dvKey
                     ],
-                    CURLOPT_TIMEOUT        => 30,
+                    CURLOPT_TIMEOUT        => 35,
                     CURLOPT_SSL_VERIFYPEER => false,
                 ]);
                 $exereq = curl_exec($ch);
@@ -68,19 +78,32 @@
                     return ["status" => "fail", "msg" => "DataVerify connection error: $err"];
                 }
                 $result = json_decode($exereq);
-                if (isset($result->status) && ($result->status === true || $result->status === 'success')) {
+                if (isset($result->status) && ($result->status === true || $result->status === 'success' || !empty($result->user_data))) {
+                    if ($isSlip && !empty($body->userID)) {
+                        $userData = $result->user_data ?? $result;
+                        $placeholder = $userData->firstName ?? ($userData->first_name ?? $nin);
+                        $this->model->recordReport(
+                            $body->userID,
+                            $body->ref ?? ('NIN_' . time()),
+                            $placeholder,
+                            $nin,
+                            json_encode($userData),
+                            $body->slip ?? ($body->network ?? 'regular'),
+                            'Processing'
+                        );
+                    }
                     return [
                         "status"          => "success",
-                        "msg"             => $result->message ?? "NIN validation submitted successfully",
+                        "msg"             => $result->message ?? ($isSlip ? "NIN verification completed successfully" : "NIN validation submitted successfully"),
                         "data"            => $result,
                         "transaction_id"  => $result->transaction_id ?? '',
-                        "request_status"  => $result->request_status ?? 'pending',
+                        "request_status"  => $result->request_status ?? ($isSlip ? 'completed' : 'pending'),
                         "validation_type" => $normalizedType
                     ];
                 }
                 return [
                     "status" => "fail",
-                    "msg"    => $result->message ?? $result->error ?? "Unable to validate NIN",
+                    "msg"    => $result->message ?? $result->error ?? "Unable to process NIN request",
                     "data"   => $result
                 ];
             }
