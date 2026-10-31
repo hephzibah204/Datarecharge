@@ -75,14 +75,19 @@
                     <?php endif; ?>
                     <?php
                     if($data->servicename == "ID Verification"){
-                        $conn = mysqli_connect("localhost","keytopup_vc","keytopup_vc","keytopup_vc");   
-                        $report  = $_GET["ref"];
                         $pdf = "";
-                        $check = mysqli_query($conn, "SELECT * FROM reports WHERE transid = '$report'");
-                        if(mysqli_num_rows($check) == 1){
-                            $report = mysqli_fetch_assoc($check);
-                            $pdf = $report["pdf"];    
-                        }
+                        $reportRef = $_GET["ref"] ?? "";
+                        try {
+                            $dbPath = dirname(__DIR__, 2) . '/database/providers.db';
+                            $dbh = new PDO("sqlite:$dbPath");
+                            $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                            $stmt = $dbh->prepare("SELECT pdf FROM reports WHERE transid = :ref LIMIT 1");
+                            $stmt->execute([':ref' => $reportRef]);
+                            $reportData = $stmt->fetch(PDO::FETCH_ASSOC);
+                            if ($reportData && !empty($reportData['pdf'])) {
+                                $pdf = $reportData['pdf'];
+                            }
+                        } catch (\Throwable $e) {}
                     }   
                     ?>
                     

@@ -1,14 +1,25 @@
 <?php 
-    $conn = mysqli_connect("localhost","keytopup_vc","keytopup_vc","keytopup_vc");
-    $report  = $_GET["reportID"];
-    $report = filter_var($report, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $report = mysqli_real_escape_string($conn, $report);
-    $check = mysqli_query($conn, "SELECT * FROM reports WHERE transid = '$report'");
-    if(mysqli_num_rows($check) == 0){
+    $dbPath = __DIR__ . '/../../database/providers.db';
+    try {
+        $db = new PDO("sqlite:$dbPath");
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (Exception $e) {
+        http_response_code(500);
+        die();
+    }
+
+    $reportId = $_GET["reportID"] ?? '';
+    $reportId = filter_var($reportId, FILTER_UNSAFE_RAW);
+
+    $query = $db->prepare("SELECT * FROM reports WHERE transid = :id");
+    $query->bindValue(':id', $reportId, PDO::PARAM_STR);
+    $query->execute();
+    $report = $query->fetch(PDO::FETCH_ASSOC);
+
+    if (!$report) {
         http_response_code(404);
         die();
     }
-    $report = mysqli_fetch_assoc($check);
     
     $reponse = json_decode($report["response"]);
 ?>
